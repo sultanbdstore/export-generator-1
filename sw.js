@@ -1,7 +1,7 @@
 // Network-first: always tries to load the newest version; falls back to the
 // saved copy when you're offline. Chat sends always need internet.
-const CACHE_NAME = 'export-gen-cache-v2';
-const FILES = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png', './icon-512-maskable.png'];
+const CACHE_NAME = 'export-gen-cache-v3';
+const FILES = ['./', './index.html', './manifest.json', './logo-192.png', './logo-512.png', './logo-512-maskable.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
