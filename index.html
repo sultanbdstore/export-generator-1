@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Export Program & Transport Order Generator - Sultan (Store)</title>
-    <link rel="icon" type="image/png" href="data:image/png;base64,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
+    <!-- SheetJS for Excel Export -->
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
     <style>
         :root {
             --bg-main: #0b0f19;
@@ -145,7 +146,6 @@
             main { grid-template-columns: 1fr; }
         }
 
-        /* ===== MOBILE (phone-width Chrome) ===== */
         @media (max-width: 760px) {
             header {
                 flex-direction: column;
@@ -483,22 +483,16 @@
             flex-shrink: 0;
         }
     </style>
-    <!-- PWA: install + offline support -->
-    <link rel="manifest" href="./manifest.json">
-    <meta name="theme-color" content="#10B981">
-    <link rel="apple-touch-icon" href="./logo-512-maskable.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Export Gen">
-    <!-- SheetJS for Excel Export -->
-    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
 </head>
 <body>
 
     <header>
         <div class="brand-title">
             <div class="brand-logo-container">
-                <img class="brand-logo-img" src="data:image/png;base64,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" alt="Sultan logo" width="52" height="52" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'52\' height=\'52\' viewBox=\'0 0 52 52\'><rect width=\'52\' height=\'52\' rx=\'26\' fill=\'%2310B981\'/><text x=\'50%25\' y=\'55%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'white\' font-weight=\'bold\' font-size=\'20\'>S</text></svg>'">
+                <svg class="brand-logo-img" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="26" cy="26" r="26" fill="#10B981"/>
+                    <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-weight="bold" font-size="22" font-family="sans-serif">S</text>
+                </svg>
             </div>
             <div class="brand-text">
                 <h1>Export Program & Transport Order Generator</h1>
@@ -781,7 +775,7 @@
                 </div>
             </div>
 
-            <!-- Output 2: TRANSPORTER REQUISITION SMS (Big & Small Cargo Feet Format) -->
+            <!-- Output 2: TRANSPORTER REQUISITION SMS -->
             <div id="separated-transporter-container" style="display: flex; flex-direction: column; gap: 20px;"></div>
 
             <!-- Output 3: Email Reply Format -->
@@ -917,7 +911,7 @@
                 <div class="modal-title" style="font-weight:700;"><span>📊</span> Fleet Allocation Rules</div>
                 <button class="btn" style="padding:4px 8px;" onclick="closeFleetRulesModal()">✕</button>
             </div>
-            <div class="help-text">These control how "Total Volume (CBM)" gets split between Salim Cargo, Shahjoki, and New JS, and which feet size gets picked. Change them any time your real-world rules change — no code editing needed. (You can also override the % just for one day's program from the Transporter Allocation Engine box, without changing these defaults.)</div>
+            <div class="help-text">These control how "Total Volume (CBM)" gets split between Salim Cargo, Shahjoki, and New JS, and which feet size gets picked.</div>
 
             <div class="form-group">
                 <label>Default transporter split (%)</label>
@@ -935,7 +929,6 @@
                         <input type="number" id="rule-newjs-pct" min="0" max="100" value="20">
                     </div>
                 </div>
-                <div class="help-text">Used for larger shipments split across multiple trucks. Should add up to 100% (the tool will tell you if they don't).</div>
             </div>
 
             <div class="form-row">
@@ -952,17 +945,15 @@
                     <input type="number" id="rule-thresh-18" value="15" step="0.1">
                 </div>
             </div>
-            <div class="help-text" id="thresh23-hint">Above the 18 Feet threshold, cargo is split across 23-Feet trucks.</div>
 
             <div class="form-group">
-                <label>CBM capacity per 23 Feet truck (max CBM a single 23ft covered van carries)</label>
+                <label>CBM capacity per 23 Feet truck</label>
                 <input type="number" id="rule-truck-capacity" value="30" step="0.5">
             </div>
 
             <div class="form-group">
                 <label>✈️ Air Export: use our own cargo (van) below this CBM</label>
                 <input type="number" id="rule-air-own-threshold" value="5" step="0.1">
-                <div class="help-text">Small air shipments use our own covered van (Van No/Driver fields). Above this, air shipments are split between Salim Cargo and Shahjoki exactly like a Sea program.</div>
             </div>
 
             <div style="display:flex; justify-content:flex-end; gap:8px;">
@@ -979,7 +970,6 @@
                 <div class="modal-title" style="font-weight:700;"><span>📜</span> Saved Program History</div>
                 <button class="btn" style="padding:4px 8px;" onclick="closeHistoryModal()">✕</button>
             </div>
-            <div class="help-text">Saved locally in this browser only. Use "Save Program" in the header each day to build up a record for reporting or quick re-use.</div>
 
             <div class="form-row" style="margin-bottom:10px;">
                 <input type="text" id="history-search" placeholder="Search by buyer, depot, ERP no..." oninput="renderHistoryList()">
@@ -1006,16 +996,8 @@
                 <button class="btn" style="padding:4px 8px;" onclick="closeChatSettingsModal()">✕</button>
             </div>
 
-            <div class="help-text" style="background:rgba(20,184,166,0.08); border:1px solid rgba(20,184,166,0.25); padding:10px 12px; border-radius:8px;">
-                Google Chat webhook URLs can't be called directly from a browser (CORS). This tool sends through a tiny free
-                <strong>Google Apps Script relay</strong> you deploy once. It forwards your message to whichever webhook you pick, so you can keep multiple Chat spaces/groups and choose the right one per message.
-            </div>
-
             <div class="form-group">
-                <label style="color:#5eead4;"><span class="step-num">1</span>&nbsp; Deploy the relay (one-time, ~2 min)</label>
-                <div class="help-text">
-                    Go to <strong>script.google.com</strong> → New project → paste the code below → Deploy → "New deployment" → type "Web app" → Execute as <strong>Me</strong>, who has access <strong>Anyone</strong> → Deploy → copy the Web App URL into Step 2 below.
-                </div>
+                <label style="color:#5eead4;"><span class="step-num">1</span>&nbsp; Deploy Google Apps Script relay</label>
                 <div class="code-box" id="apps-script-code">function doPost(e) {
   var data = JSON.parse(e.postData.contents);
   var options = {
@@ -1034,16 +1016,15 @@
             </div>
 
             <div class="form-group">
-                <label style="color:#5eead4;"><span class="step-num">2</span>&nbsp; Paste your relay Web App URL</label>
+                <label style="color:#5eead4;"><span class="step-num">2</span>&nbsp; Paste Web App URL</label>
                 <input type="text" id="relay-url" placeholder="https://script.google.com/macros/s/AKfycb.../exec" oninput="saveChatSettings()">
             </div>
 
             <div class="form-group">
-                <label style="color:#5eead4;"><span class="step-num">3</span>&nbsp; Add a Chat group (one per Space/room)</label>
-                <div class="help-text">In each Google Chat space: Space name → Apps → Manage webhooks → Create webhook → copy that URL here (not the chat.google.com room link — the "chat.googleapis.com/v1/spaces/..." one).</div>
+                <label style="color:#5eead4;"><span class="step-num">3</span>&nbsp; Add Chat Group</label>
                 <div class="form-row">
                     <input type="text" id="new-group-name" placeholder="Group name e.g. Store Team">
-                    <input type="text" id="new-group-webhook" placeholder="https://chat.googleapis.com/v1/spaces/.../messages?key=...&token=...">
+                    <input type="text" id="new-group-webhook" placeholder="https://chat.googleapis.com/v1/spaces/.../messages?key=...">
                 </div>
                 <button class="btn btn-success" style="align-self:flex-start;" onclick="addChatGroup()">➕ Add Group</button>
             </div>
@@ -1054,8 +1035,7 @@
             </div>
 
             <div class="form-group">
-                <label style="color:#5eead4;"><span class="step-num">4</span>&nbsp; Default group per message type (used by "Send All")</label>
-                <div class="help-text">Pick which group each message type goes to automatically. Transporter Requisition SMS auto-matches a group with the same name as the transporter if one exists — otherwise pick manually on that card.</div>
+                <label style="color:#5eead4;"><span class="step-num">4</span>&nbsp; Defaults per message type</label>
                 <div class="form-row">
                     <div class="form-group">
                         <label>Store SMS default</label>
@@ -1070,11 +1050,6 @@
                         <select id="default-group-air" onchange="saveChatSettings(); populateGroupSelects();"></select>
                     </div>
                 </div>
-            </div>
-
-            <div class="form-group">
-                <label>Recent Sends</label>
-                <div id="delivery-log-container" style="display:flex; flex-direction:column; gap:5px; max-height:150px; overflow-y:auto;"></div>
             </div>
 
             <div style="display:flex; justify-content:flex-end;">
@@ -1102,53 +1077,9 @@
 
         let programHistory = [];
 
-        const ownDrivers = [
-            { van: "11-3261", driver: "Mr. Arun", contact: "01728-883132" },
-            { van: "11-3260", driver: "Mr. Anwar", contact: "01939-385175" }
-        ];
+        const sampleSeaEmail = `Dear Mr.Sultan Mahamud,\n\nBuyer : Primark\n\nErp No : 311 (Novel) = 4.13 Cbm\nErp No : 316 (Novel) = 21.29 Cbm\nErp No : 350 (Novel) = 1.77 Cbm\n\nEx-Factory Date: 13/09/2026\nHand Over Date: 14/09/2026\n\nDeport : KDS\nTotal Cbm =Actual 27.15 Cbm.\n\nToday shipment plan for Primark\nPlease arrange the cargo for shipment Purpose.\n\n(As per Merchant Team Mr. Rakibul Islam\n& Commercial Mr. Golam Mostafa Confirmed me)\n\nThanks\nMd.Sohan Hossen`;
 
-        const sampleSeaEmail = `Dear Mr.Sultan Mahamud,
-
-Buyer : Primark
-
-Erp No : 311 (Novel) = 4.13 Cbm
-Erp No : 316 (Novel) = 21.29 Cbm
-Erp No : 350 (Novel) = 1.77 Cbm
-
-Ex-Factory Date: 13/09/2026
-Hand Over Date: 14/09/2026
-
-Deport : KDS
-Total Cbm =Actual 27.15 Cbm.
-
-Today shipment plan for Primark
-Please arrange the cargo for shipment Purpose.
-
-(As per Merchant Team Mr. Rakibul Islam
-& Commercial Mr. Golam Mostafa Confirmed me)
-
-Thanks
-Md.Sohan Hossen`;
-
-        const sampleAirEmail = `Dear Mr.Sultan Mahamud,
-
-Buyer : Tudorknight (Next)
-
-Erp No : 181 = 0.95 Cbm
-
-Ex-Factory Date: 13/09/2026
-Hand Over Date: 13/09/2026
-
-Deport : All Port ( Kamarpara-Tungi )
-Total Cbm = Actual 0.95 Cbm.
-
-Air Freight Program Request.
-
-(As per Merchant Team Mr. Rakibul Islam
-& Commercial Mr. Shahin Confirmed me)
-
-Thanks
-Md.Sohan Hossen`;
+        const sampleAirEmail = `Dear Mr.Sultan Mahamud,\n\nBuyer : Tudorknight (Next)\n\nErp No : 181 = 0.95 Cbm\n\nEx-Factory Date: 13/09/2026\nHand Over Date: 13/09/2026\n\nDeport : All Port ( Kamarpara-Tungi )\nTotal Cbm = Actual 0.95 Cbm.\n\nAir Freight Program Request.\n\n(As per Merchant Team Mr. Rakibul Islam\n& Commercial Mr. Shahin Confirmed me)\n\nThanks\nMd.Sohan Hossen`;
 
         window.onload = function() {
             loadTransportList();
@@ -1158,14 +1089,12 @@ Md.Sohan Hossen`;
             loadChatSettings();
             loadHistory();
             
-            // Restore working draft if available
             if (!loadDraftState()) {
                 loadSampleData('sea');
             }
             attachAutoSaveListeners();
         };
 
-        // AUTO SAVE DRAFT STATE LOGIC
         function attachAutoSaveListeners() {
             const inputs = document.querySelectorAll('input, textarea, select');
             inputs.forEach(input => {
@@ -1201,7 +1130,6 @@ Md.Sohan Hossen`;
                 document.getElementById('f-salimfeetsize').value = p.salimFeet || '23 Feet';
                 document.getElementById('f-shahjokicargocount').value = p.shahjokiCount || '0';
                 document.getElementById('f-shahjokifeetsize').value = p.shahjokiFeet || '18 Feet';
-                document.getElementById('f-newjscargocount').value = p.newjsCount || '0';
                 document.getElementById('f-newjscargocount').value = p.newjsCount || '0';
                 document.getElementById('f-newjsfeetsize').value = p.newjsFeet || '14 Feet';
                 document.getElementById('f-manual-split-override').checked = !!p.manualSplitOverride;
@@ -1312,14 +1240,10 @@ Md.Sohan Hossen`;
 
         function loadChatSettings() {
             try {
-                const savedRelay = localStorage.getItem('chat_relay_url');
-                const savedGroups = localStorage.getItem('chat_groups');
-                const savedDefaults = localStorage.getItem('chat_message_defaults');
-                const savedLog = localStorage.getItem('chat_delivery_log');
-                relayUrl = savedRelay || "";
-                chatGroups = savedGroups ? JSON.parse(savedGroups) : [];
-                messageDefaults = savedDefaults ? JSON.parse(savedDefaults) : { sms: "", email: "", air: "" };
-                deliveryLog = savedLog ? JSON.parse(savedLog) : [];
+                relayUrl = localStorage.getItem('chat_relay_url') || "";
+                chatGroups = JSON.parse(localStorage.getItem('chat_groups') || "[]");
+                messageDefaults = JSON.parse(localStorage.getItem('chat_message_defaults') || '{"sms":"","email":"","air":""}');
+                deliveryLog = JSON.parse(localStorage.getItem('chat_delivery_log') || "[]");
             } catch (e) {
                 relayUrl = "";
                 chatGroups = [];
@@ -1329,7 +1253,6 @@ Md.Sohan Hossen`;
             document.getElementById('relay-url').value = relayUrl;
             renderChatGroupList();
             populateDefaultGroupPickers();
-            renderDeliveryLog();
             populateGroupSelects();
         }
 
@@ -1362,38 +1285,10 @@ Md.Sohan Hossen`;
             });
         }
 
-        function renderDeliveryLog() {
-            const container = document.getElementById('delivery-log-container');
-            if (!container) return;
-            if (deliveryLog.length === 0) {
-                container.innerHTML = '<div class="help-text">Nothing sent yet.</div>';
-                return;
-            }
-            container.innerHTML = deliveryLog.slice(-20).reverse().map(entry => `
-                <div style="display:flex; justify-content:space-between; font-size:11px; padding:6px 8px; background:var(--bg-input); border-radius:6px; border:1px solid var(--border-color);">
-                    <span>${entry.ok ? '✅' : '❌'} ${entry.type} → ${entry.group || '—'}</span>
-                    <span style="color:var(--text-secondary);">${entry.time}</span>
-                </div>
-            `).join('');
-        }
-
-        function logDelivery(type, group, ok, detail) {
-            const time = new Date().toLocaleString();
-            deliveryLog.push({ time, type, group, ok, detail: detail || '' });
-            if (deliveryLog.length > 100) deliveryLog = deliveryLog.slice(-100);
-            try { localStorage.setItem('chat_delivery_log', JSON.stringify(deliveryLog)); } catch (e) {}
-            renderDeliveryLog();
-        }
-
-        function markGroupSelectTouched(sel) {
-            touchedSelects.add(sel.id);
-        }
-
         function openChatSettingsModal() {
             document.getElementById('relay-url').value = relayUrl;
             renderChatGroupList();
             populateDefaultGroupPickers();
-            renderDeliveryLog();
             document.getElementById('chat-settings-modal').classList.add('open');
         }
 
@@ -1406,7 +1301,7 @@ Md.Sohan Hossen`;
         async function copyAppsScriptCode() {
             const code = document.getElementById('apps-script-code').innerText;
             const ok = await copyTextRobust(code);
-            if (ok) showToast('Apps Script code copied — paste into script.google.com');
+            if (ok) showToast('Apps Script code copied!');
         }
 
         function addChatGroup() {
@@ -1416,15 +1311,7 @@ Md.Sohan Hossen`;
             const url = urlInput.value.trim();
 
             if (!name || !url) {
-                showToast('Enter both a group name and webhook URL', true);
-                return;
-            }
-            if (!url.startsWith('https://chat.googleapis.com/')) {
-                showToast('That doesn\'t look like a Chat webhook URL', true);
-                return;
-            }
-            if (chatGroups.some(g => g.name === name)) {
-                showToast('A group with that name already exists', true);
+                showToast('Enter both group name and webhook URL', true);
                 return;
             }
 
@@ -1439,12 +1326,12 @@ Md.Sohan Hossen`;
         }
 
         function removeChatGroup(index) {
-            const removed = chatGroups.splice(index, 1);
+            chatGroups.splice(index, 1);
             saveChatSettings();
             renderChatGroupList();
             populateDefaultGroupPickers();
             populateGroupSelects();
-            showToast(`Removed ${removed[0] ? removed[0].name : 'group'}`);
+            showToast('Removed group');
         }
 
         function renderChatGroupList() {
@@ -1453,7 +1340,7 @@ Md.Sohan Hossen`;
             container.innerHTML = '';
 
             if (chatGroups.length === 0) {
-                container.innerHTML = '<div class="help-text">No groups yet — add one above.</div>';
+                container.innerHTML = '<div class="help-text">No groups configured yet.</div>';
                 return;
             }
 
@@ -1466,7 +1353,6 @@ Md.Sohan Hossen`;
                         <span class="url">${g.webhook}</span>
                     </div>
                     <div class="actions">
-                        <button class="btn btn-teal btn-sm" onclick="testChatGroup(${index})">Test</button>
                         <button class="btn btn-danger btn-sm" onclick="removeChatGroup(${index})">Delete</button>
                     </div>
                 `;
@@ -1483,63 +1369,24 @@ Md.Sohan Hossen`;
                 const sel = document.getElementById(id);
                 if (!sel) return;
                 const current = sel.value;
-                const wasTouched = touchedSelects.has(id);
                 sel.innerHTML = '';
                 if (chatGroups.length === 0) {
-                    sel.add(new Option('No groups configured — set up in 🔔 Chat Auto-Send', ''));
+                    sel.add(new Option('No groups configured', ''));
                     return;
                 }
                 chatGroups.forEach(g => sel.add(new Option(g.name, g.name)));
-
-                if (wasTouched && chatGroups.some(g => g.name === current)) {
-                    sel.value = current;
-                    return;
-                }
-
-                let defaultVal = '';
-                if (staticMap[id]) {
-                    defaultVal = messageDefaults[staticMap[id]] || '';
-                } else {
-                    const cardTitle = sel.closest('.card') ? sel.closest('.card').querySelector('.card-title').textContent : '';
-                    const matched = chatGroups.find(g => cardTitle.includes(g.name));
-                    defaultVal = matched ? matched.name : '';
-                }
-                if (chatGroups.some(g => g.name === defaultVal)) {
-                    sel.value = defaultVal;
-                } else if (chatGroups.some(g => g.name === current)) {
-                    sel.value = current;
-                }
+                if (chatGroups.some(g => g.name === current)) sel.value = current;
             });
         }
 
         async function relayPost(webhookUrl, text) {
-            if (!relayUrl) {
-                throw new Error('No relay URL set. Open 🔔 Chat Auto-Send Setup and complete steps 1–2.');
-            }
+            if (!relayUrl) throw new Error('No relay URL set up.');
             const res = await fetch(relayUrl, {
                 method: 'POST',
                 headers: { 'Content-Type': 'text/plain;charset=utf-8' },
                 body: JSON.stringify({ webhookUrl, text })
             });
-            let data;
-            try { data = await res.json(); } catch (e) { data = null; }
-            if (!res.ok || (data && data.ok === false)) {
-                throw new Error('Relay reported failure' + (data && data.code ? ` (code ${data.code})` : ''));
-            }
-            return data;
-        }
-
-        async function testChatGroup(index) {
-            const g = chatGroups[index];
-            if (!g) return;
-            try {
-                await relayPost(g.webhook, `✅ Test message from Export Program Generator — "${g.name}" is connected.`);
-                showToast(`Test sent to ${g.name}!`);
-                logDelivery('Test', g.name, true);
-            } catch (err) {
-                showToast(`Test failed: ${err.message}`, true);
-                logDelivery('Test', g.name, false, err.message);
-            }
+            return res.json();
         }
 
         async function sendToChat(outputElId, selectElId, btnEl) {
@@ -1548,75 +1395,35 @@ Md.Sohan Hossen`;
             const group = chatGroups.find(g => g.name === groupName);
 
             if (!group) {
-                showToast('Pick a Chat group first (or add one in 🔔 Chat Auto-Send Setup)', true);
+                showToast('Pick a Chat group first', true);
                 return;
             }
 
             const el = document.getElementById(outputElId);
             const text = (el.innerText || el.textContent || '').trim();
-            if (!text) {
-                showToast('Nothing to send yet', true);
-                return;
-            }
+            if (!text) return;
 
-            const originalLabel = btnEl ? btnEl.innerHTML : null;
-            if (btnEl) { btnEl.disabled = true; btnEl.innerHTML = '⏳ Sending...'; }
-
+            if (btnEl) btnEl.disabled = true;
             try {
                 await relayPost(group.webhook, text);
                 showToast(`Sent to ${group.name} ✅`);
-                logDelivery(outputElId, group.name, true);
             } catch (err) {
                 showToast(`Send failed: ${err.message}`, true);
-                logDelivery(outputElId, group.name, false, err.message);
             } finally {
-                if (btnEl) { btnEl.disabled = false; btnEl.innerHTML = originalLabel; }
+                if (btnEl) btnEl.disabled = false;
             }
         }
 
         async function sendAllToChat() {
-            const issues = validateProgram();
-            if (issues.length > 0) {
-                if (!confirm(`Heads up — this program has warnings:\n\n${issues.join('\n')}\n\nSend to Chat anyway?`)) return;
-            }
             if (chatGroups.length === 0) {
-                showToast('No Chat groups configured yet — open 🔔 Chat Auto-Send Setup', true);
+                showToast('No Chat groups set up', true);
                 return;
             }
-
-            const jobs = [];
-            jobs.push({ outId: 'out-sms', selId: 'group-sel-sms', label: 'Store SMS' });
-            document.querySelectorAll('[id^="out-trans-"]').forEach(el => {
-                const idx = el.id.split('-').pop();
-                jobs.push({ outId: el.id, selId: `group-sel-trans-${idx}`, label: `Transporter SMS #${idx}` });
+            sendToChat('out-sms', 'group-sel-sms');
+            document.querySelectorAll('[id^="out-trans-"]').forEach((el, idx) => {
+                sendToChat(el.id, `group-sel-trans-${idx}`);
             });
-            jobs.push({ outId: 'out-email-text', selId: 'group-sel-email', label: 'Email' });
-            const airCard = document.getElementById('air-card');
-            if (airCard && airCard.style.display !== 'none') {
-                jobs.push({ outId: 'out-air', selId: 'group-sel-air', label: 'Air Export SMS' });
-            }
-
-            let sent = 0, skipped = 0, failed = 0;
-            for (const job of jobs) {
-                const sel = document.getElementById(job.selId);
-                const groupName = sel ? sel.value : '';
-                const group = chatGroups.find(g => g.name === groupName);
-                const el = document.getElementById(job.outId);
-                const text = el ? (el.innerText || el.textContent || '').trim() : '';
-
-                if (!group || !text) { skipped++; continue; }
-
-                try {
-                    await relayPost(group.webhook, text);
-                    logDelivery(job.label, group.name, true);
-                    sent++;
-                } catch (err) {
-                    logDelivery(job.label, group.name, false, err.message);
-                    failed++;
-                }
-            }
-
-            showToast(`Send All done — ${sent} sent, ${failed} failed, ${skipped} skipped (no group picked)`, failed > 0);
+            sendToChat('out-email-text', 'group-sel-email');
         }
 
         function loadFleetRules() {
@@ -1636,13 +1443,11 @@ Md.Sohan Hossen`;
             const box = document.getElementById('fleet-badge-info-box');
             if (!box) return;
             const r = fleetRules;
-            const fmt = (n) => (Number.isInteger(n) ? n : n.toFixed(2));
             box.innerHTML = `📐 <strong>CBM to Feet Conversion Engine:</strong><br>
-                • 01 – ${fmt(r.thresh08)} CBM = 08 Feet Covered Van<br>
-                • ${fmt(r.thresh08 + 0.01)} – ${fmt(r.thresh14)} CBM = 14 Feet Covered Van<br>
-                • ${fmt(r.thresh14 + 0.01)} – ${fmt(r.thresh18)} CBM = 18 Feet Covered Van<br>
-                • ${fmt(r.thresh18 + 0.01)} – ${fmt(r.truckCapacity)} CBM = 23 Feet Covered Van<br>
-                <span style="color:var(--text-secondary); font-size:10.5px;">Above ${fmt(r.truckCapacity)} CBM, volume is split across multiple 23 Feet trucks. Edit these in 📊 Fleet Rules.</span>`;
+                • 01 – ${r.thresh08} CBM = 08 Feet Covered Van<br>
+                • ${r.thresh08 + 0.01} – ${r.thresh14} CBM = 14 Feet Covered Van<br>
+                • ${r.thresh14 + 0.01} – ${r.thresh18} CBM = 18 Feet Covered Van<br>
+                • ${r.thresh18 + 0.01} – ${r.truckCapacity} CBM = 23 Feet Covered Van`;
         }
 
         function openFleetRulesModal() {
@@ -1672,17 +1477,12 @@ Md.Sohan Hossen`;
                 truckCapacity: parseFloat(document.getElementById('rule-truck-capacity').value) || DEFAULT_FLEET_RULES.truckCapacity,
                 airOwnThreshold: parseFloat(document.getElementById('rule-air-own-threshold').value) || DEFAULT_FLEET_RULES.airOwnThreshold
             };
-            const pctSum = fleetRules.salimPct + fleetRules.shahjokiPct + fleetRules.newjsPct;
             saveFleetRules();
             renderFleetBadgeInfo();
             closeFleetRulesModal();
             recalculateFleet();
             updateOutputs();
-            if (Math.abs(pctSum - 100) > 0.5) {
-                showToast(`Fleet rules saved — heads up, your % adds up to ${pctSum}%, not 100%`, true);
-            } else {
-                showToast('Fleet rules saved');
-            }
+            showToast('Fleet rules saved!');
         }
 
         function resetFleetRules() {
@@ -1692,13 +1492,12 @@ Md.Sohan Hossen`;
             openFleetRulesModal();
             recalculateFleet();
             updateOutputs();
-            showToast('Fleet rules reset to defaults');
+            showToast('Fleet rules reset!');
         }
 
         function loadHistory() {
             try {
-                const saved = localStorage.getItem('program_history');
-                programHistory = saved ? JSON.parse(saved) : [];
+                programHistory = JSON.parse(localStorage.getItem('program_history') || "[]");
             } catch (e) {
                 programHistory = [];
             }
@@ -1745,13 +1544,10 @@ Md.Sohan Hossen`;
 
         function saveProgramToHistory() {
             const program = collectCurrentProgram();
-            if (!program.buyer && !program.depot) {
-                showToast('Nothing meaningful to save yet', true);
-                return;
-            }
+            if (!program.buyer && !program.depot) return;
             programHistory.push(program);
             saveHistory();
-            showToast(`Saved: ${program.buyer || 'Program'} — ${program.exFactory || ''}`);
+            showToast(`Saved program for ${program.buyer || 'Export'}`);
         }
 
         function openHistoryModal() {
@@ -1769,22 +1565,19 @@ Md.Sohan Hossen`;
 
             const filtered = programHistory
                 .map((p, idx) => ({ p, idx }))
-                .filter(({ p }) => {
-                    if (!query) return true;
-                    return [p.buyer, p.depot, p.erpBreakdown, p.merchandiser, p.commercial].join(' ').toLowerCase().includes(query);
-                })
+                .filter(({ p }) => !query || [p.buyer, p.depot, p.erpBreakdown].join(' ').toLowerCase().includes(query))
                 .reverse();
 
             if (filtered.length === 0) {
-                container.innerHTML = '<div class="help-text">No saved programs yet — click "💾 Save Program" in the header after generating one.</div>';
+                container.innerHTML = '<div class="help-text">No saved history yet.</div>';
                 return;
             }
 
             container.innerHTML = filtered.map(({ p, idx }) => `
                 <div class="trans-list-item">
                     <div class="meta">
-                        <span style="font-weight:600;">${p.buyer || 'Unknown buyer'} — ${p.exFactory || '?'} ${p.isAir ? '✈️' : '🚛'}</span>
-                        <span class="url">${p.depot || ''} • ${p.totalCbm || ''} • saved ${new Date(p.savedAt).toLocaleString()}</span>
+                        <span style="font-weight:600;">${p.buyer || 'Buyer'} — ${p.exFactory || ''}</span>
+                        <span class="url">${p.depot || ''} • ${p.totalCbm || ''}</span>
                     </div>
                     <div class="actions">
                         <button class="btn btn-primary btn-sm" onclick="loadHistoryItem(${idx})">Load</button>
@@ -1810,66 +1603,39 @@ Md.Sohan Hossen`;
             document.getElementById('f-shahjokicargocount').value = p.shahjokiCount || '0';
             document.getElementById('f-shahjokifeetsize').value = p.shahjokiFeet || '18 Feet';
             document.getElementById('f-newjscargocount').value = p.newjsCount || '0';
-            document.getElementById('f-newjscargocount').value = p.newjsCount || '0';
             document.getElementById('f-newjsfeetsize').value = p.newjsFeet || '14 Feet';
-            document.getElementById('f-manual-split-override').checked = !!p.manualSplitOverride;
-            document.getElementById('f-manual-cargo-override').checked = !!p.manualCargoOverride;
-            syncManualSplitVisibility();
-            if (p.manualSalimPct !== undefined) document.getElementById('f-manual-salim-pct').value = p.manualSalimPct;
-            if (p.manualShahjokiPct !== undefined) document.getElementById('f-manual-shahjoki-pct').value = p.manualShahjokiPct;
-            if (p.manualNewjsPct !== undefined) document.getElementById('f-manual-newjs-pct').value = p.manualNewjsPct;
             document.getElementById('f-isair').checked = !!p.isAir;
-            document.getElementById('f-van-no').value = p.vanNo || '';
-            document.getElementById('f-driver-name').value = p.driverName || '';
-            document.getElementById('f-driver-contact').value = p.driverContact || '';
             document.getElementById('f-merchandiser').value = p.merchandiser || '';
-            document.getElementById('f-merchandiser-team').checked = !!p.merchandiserTeam;
             document.getElementById('f-commercial').value = p.commercial || '';
-
-            populateTransporterDropdowns();
-            if (p.salimTransporter) document.getElementById('f-salimtransporter').value = p.salimTransporter;
-            if (p.shahjokiTransporter) document.getElementById('f-shahjokitransporter').value = p.shahjokiTransporter;
-            if (p.newjsTransporter) document.getElementById('f-newjstransporter').value = p.newjsTransporter;
-            if (p.airTransporter) document.getElementById('f-airtransporter').value = p.airTransporter;
 
             closeHistoryModal();
             updateOutputs();
-            showToast('Loaded saved program — review before sending');
+            showToast('Loaded saved program!');
         }
 
         function deleteHistoryItem(idx) {
             programHistory.splice(idx, 1);
             saveHistory();
             renderHistoryList();
-            showToast('Deleted saved program');
+            showToast('Deleted item');
         }
 
         function exportHistoryCSV() {
-            if (programHistory.length === 0) {
-                showToast('No history to export', true);
-                return;
-            }
-            const cols = ['savedAt','buyer','exFactory','handover','depot','totalCbm','salimTransporter','salimCount','salimFeet','shahjokiTransporter','shahjokiCount','shahjokiFeet','newjsTransporter','newjsCount','newjsFeet','isAir','merchandiser','commercial'];
-            const escape = v => `"${String(v == null ? '' : v).replace(/"/g, '""')}"`;
+            if (programHistory.length === 0) return;
+            const cols = ['savedAt','buyer','exFactory','handover','depot','totalCbm','isAir'];
             const rows = [cols.join(',')].concat(
-                programHistory.map(p => cols.map(c => escape(p[c])).join(','))
+                programHistory.map(p => cols.map(c => `"${p[c] || ''}"`).join(','))
             );
-            const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
-            const url = URL.createObjectURL(blob);
+            const blob = new Blob([rows.join('\n')], { type: 'text/csv' });
             const a = document.createElement('a');
-            a.href = url;
-            a.download = `export-program-history-${new Date().toISOString().slice(0,10)}.csv`;
-            document.body.appendChild(a);
+            a.href = URL.createObjectURL(blob);
+            a.download = `export-history.csv`;
             a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-            showToast('History exported as CSV');
         }
 
-        // DAYWISE & MONTHWISE EXCEL EXPORT ENGINE
         function exportHistoryExcel(filterType) {
             if (programHistory.length === 0) {
-                showToast('No history records available to export', true);
+                showToast('No history available to export', true);
                 return;
             }
 
@@ -1880,11 +1646,8 @@ Md.Sohan Hossen`;
             let filtered = programHistory.filter(p => {
                 if (!p.savedAt) return true;
                 const recordDate = p.savedAt.slice(0, 10);
-                if (filterType === 'day') {
-                    return recordDate === todayStr;
-                } else if (filterType === 'month') {
-                    return recordDate.startsWith(currentMonthStr);
-                }
+                if (filterType === 'day') return recordDate === todayStr;
+                if (filterType === 'month') return recordDate.startsWith(currentMonthStr);
                 return true;
             });
 
@@ -1893,51 +1656,33 @@ Md.Sohan Hossen`;
                 return;
             }
 
-            const excelRows = filtered.map((p, i) => {
-                const totalCargo = (parseInt(p.salimCount)||0) + (parseInt(p.shahjokiCount)||0) + (parseInt(p.newjsCount)||0);
-                return {
-                    "SL": i + 1,
-                    "Saved Date": p.savedAt ? new Date(p.savedAt).toLocaleString() : '',
-                    "Ex-Factory Date": p.exFactory || '',
-                    "Handover Date": p.handover || '',
-                    "Buyer": p.buyer || '',
-                    "Depot": p.depot || '',
-                    "Total Volume (CBM)": parseFloat(p.totalCbm) || p.totalCbm || 0,
-                    "Total Cargoes": totalCargo,
-                    "Mode": p.isAir ? 'Air' : 'Sea',
-                    "Salim Count": p.salimCount || 0,
-                    "Salim Feet": p.salimFeet || '',
-                    "Shahjoki Count": p.shahjokiCount || 0,
-                    "Shahjoki Feet": p.shahjokiFeet || '',
-                    "New JS Count": p.newjsCount || 0,
-                    "New JS Feet": p.newjsFeet || '',
-                    "Merchandiser": p.merchandiser || '',
-                    "Commercial": p.commercial || '',
-                    "ERP Breakdown": p.erpBreakdown || ''
-                };
-            });
+            const excelRows = filtered.map((p, i) => ({
+                "SL": i + 1,
+                "Saved Date": p.savedAt ? new Date(p.savedAt).toLocaleString() : '',
+                "Ex-Factory Date": p.exFactory || '',
+                "Handover Date": p.handover || '',
+                "Buyer": p.buyer || '',
+                "Depot": p.depot || '',
+                "Total Volume (CBM)": parseFloat(p.totalCbm) || p.totalCbm || 0,
+                "Mode": p.isAir ? 'Air' : 'Sea',
+                "Salim Count": p.salimCount || 0,
+                "Shahjoki Count": p.shahjokiCount || 0,
+                "New JS Count": p.newjsCount || 0,
+                "Merchandiser": p.merchandiser || '',
+                "Commercial": p.commercial || ''
+            }));
 
             const worksheet = XLSX.utils.json_to_sheet(excelRows);
             const workbook = XLSX.utils.book_new();
             XLSX.utils.book_append_sheet(workbook, worksheet, "Export History");
-
-            // Auto-fit column widths
-            const max_widths = Object.keys(excelRows[0] || {}).map(key => ({
-                wch: Math.max(key.length, ...excelRows.map(row => String(row[key] || '').length)) + 3
-            }));
-            worksheet['!cols'] = max_widths;
-
-            const filename = `Export_Program_${filterType === 'day' ? 'Today_' + todayStr : 'Month_' + currentMonthStr}.xlsx`;
-            XLSX.writeFile(workbook, filename);
+            XLSX.writeFile(workbook, `Export_Program_${filterType}.xlsx`);
             showToast(`Exported ${filtered.length} records to Excel!`);
         }
 
         function loadTransportList() {
             try {
-                const saved = JSON.parse(localStorage.getItem('transport_list') || 'null');
-                if (Array.isArray(saved) && saved.length > 0 && saved.every(t => typeof t === 'string' && t.trim())) {
-                    transportList = saved;
-                }
+                const saved = JSON.parse(localStorage.getItem('transport_list'));
+                if (Array.isArray(saved) && saved.length > 0) transportList = saved;
             } catch (e) {}
         }
 
@@ -1946,38 +1691,19 @@ Md.Sohan Hossen`;
         }
 
         function buildBackupJson() {
-            const data = {
-                chat_relay_url: relayUrl || '',
-                chat_groups: JSON.stringify(chatGroups),
-                chat_message_defaults: JSON.stringify(messageDefaults),
-                chat_delivery_log: JSON.stringify(deliveryLog),
-                fleet_rules: JSON.stringify(fleetRules),
-                program_history: JSON.stringify(programHistory),
-                transport_list: JSON.stringify(transportList)
-            };
-            return JSON.stringify({ app: 'export-program-generator', version: 1, exportedAt: new Date().toISOString(), data }, null, 2);
-        }
-
-        function backupFileName() {
-            return `export-gen-backup-${new Date().toISOString().slice(0, 10)}.json`;
-        }
-
-        function renderBackupSummary() {
-            const el = document.getElementById('backup-summary');
-            if (!el) return;
-            el.innerHTML = `A backup right now would contain: <strong>${programHistory.length}</strong> saved program(s), <strong>${chatGroups.length}</strong> Chat group(s)${relayUrl ? ' plus your relay link' : ''}, <strong>${transportList.length}</strong> transporter(s), and your Fleet Rules.`;
-        }
-
-        function canShareBackupFile() {
-            try {
-                if (!navigator.share || !navigator.canShare || typeof File !== 'function') return false;
-                return navigator.canShare({ files: [new File(['x'], 'x.json', { type: 'text/plain' })] });
-            } catch (e) { return false; }
+            return JSON.stringify({
+                app: 'export-program-generator',
+                data: {
+                    chat_relay_url: relayUrl || '',
+                    chat_groups: JSON.stringify(chatGroups),
+                    fleet_rules: JSON.stringify(fleetRules),
+                    program_history: JSON.stringify(programHistory),
+                    transport_list: JSON.stringify(transportList)
+                }
+            }, null, 2);
         }
 
         function openBackupModal() {
-            renderBackupSummary();
-            document.getElementById('backup-share-btn').style.display = canShareBackupFile() ? 'inline-flex' : 'none';
             document.getElementById('backup-modal').classList.add('open');
         }
 
@@ -1987,180 +1713,26 @@ Md.Sohan Hossen`;
 
         function downloadBackup() {
             const blob = new Blob([buildBackupJson()], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
-            a.href = url;
-            a.download = backupFileName();
-            document.body.appendChild(a);
+            a.href = URL.createObjectURL(blob);
+            a.download = `backup.json`;
             a.click();
-            document.body.removeChild(a);
-            setTimeout(() => URL.revokeObjectURL(url), 2000);
-            showToast('Backup saved — look in your Downloads folder');
-        }
-
-        async function shareBackup() {
-            try {
-                const file = new File([buildBackupJson()], backupFileName(), { type: 'text/plain' });
-                if (!navigator.canShare || !navigator.canShare({ files: [file] })) {
-                    showToast('Sharing files is not supported here — use Download instead', true);
-                    return;
-                }
-                await navigator.share({ files: [file], title: 'Export Generator backup' });
-                showToast('Backup shared');
-            } catch (err) {
-                if (err && err.name !== 'AbortError') showToast('Share failed: ' + err.message, true);
-            }
-        }
-
-        async function copyBackupText() {
-            const ok = await copyTextRobust(buildBackupJson());
-            if (ok) showToast('Backup text copied — paste it somewhere safe (Notes, or a chat with yourself)');
-        }
-
-        function backupShapeOk(key, value) {
-            const want = BACKUP_SHAPES[key];
-            if (!want) return true;
-            if (want === 'array') return Array.isArray(value);
-            return value !== null && typeof value === 'object' && !Array.isArray(value);
-        }
-
-        function restoreFromText(text) {
-            let obj;
-            try { obj = JSON.parse(text); } catch (e) {
-                showToast('That is not a valid backup — nothing was changed', true);
-                return false;
-            }
-            if (!obj || obj.app !== 'export-program-generator' || !obj.data || typeof obj.data !== 'object') {
-                showToast('This is not an Export Generator backup — nothing was changed', true);
-                return false;
-            }
-
-            const toWrite = {};
-            for (const key of BACKUP_KEYS) {
-                const raw = obj.data[key];
-                if (typeof raw !== 'string') continue;
-                if (key !== 'chat_relay_url') {
-                    let parsed;
-                    try { parsed = JSON.parse(raw); } catch (e) {
-                        showToast(`Backup looks damaged (${key}) — nothing was changed`, true);
-                        return false;
-                    }
-                    if (!backupShapeOk(key, parsed)) {
-                        showToast(`Backup looks damaged (${key}) — nothing was changed`, true);
-                        return false;
-                    }
-                    if (key === 'transport_list' && (parsed.length === 0 || !parsed.every(t => typeof t === 'string' && t.trim()))) {
-                        showToast('Backup looks damaged (transport_list) — nothing was changed', true);
-                        return false;
-                    }
-                }
-                toWrite[key] = raw;
-            }
-
-            const keys = Object.keys(toWrite);
-            if (keys.length === 0) {
-                showToast('There is nothing to restore in that file', true);
-                return false;
-            }
-
-            const when = obj.exportedAt ? new Date(obj.exportedAt).toLocaleString() : 'an unknown date';
-            if (!confirm(`Restore the backup made on ${when}?\n\nThis REPLACES the matching items in this app (Chat groups, relay link, Fleet Rules, transporters, History) with the ones from the backup.`)) {
-                return false;
-            }
-
-            try {
-                keys.forEach(k => localStorage.setItem(k, toWrite[k]));
-            } catch (e) {
-                showToast('Could not save — browser storage is full or blocked', true);
-                return false;
-            }
-
-            loadTransportList();
-            populateTransporterDropdowns();
-            loadFleetRules();
-            renderFleetBadgeInfo();
-            loadChatSettings();
-            loadHistory();
-            recalculateFleet();
-            updateOutputs();
-            renderBackupSummary();
-            showToast(`Backup restored (${keys.length} item${keys.length === 1 ? '' : 's'})`);
-            return true;
-        }
-
-        function onRestoreFileChosen(input) {
-            const f = input.files && input.files[0];
-            if (!f) return;
-            const reader = new FileReader();
-            reader.onload = () => { restoreFromText(String(reader.result)); input.value = ''; };
-            reader.onerror = () => showToast('Could not read that file', true);
-            reader.readAsText(f);
         }
 
         function restoreFromTextarea() {
-            const box = document.getElementById('restore-text');
-            const text = box.value.trim();
-            if (!text) { showToast('Paste the backup text first', true); return; }
-            if (restoreFromText(text)) box.value = '';
-        }
-
-        function validateProgram() {
-            const issues = [];
-            const buyer = document.getElementById('f-buyer').value.trim();
-            const depot = document.getElementById('f-depot').value.trim();
-            const totalCbmRaw = document.getElementById('f-totalcbm').value;
-            const totalCbm = parseFloat(totalCbmRaw) || 0;
-            const erpText = document.getElementById('f-erpbreakdown').value;
-            const salimCount = parseInt(document.getElementById('f-salimcargocount').value, 10) || 0;
-            const shahjokiCount = parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0;
-            const newjsCount = parseInt(document.getElementById('f-newjscargocount').value, 10) || 0;
-            const isAir = document.getElementById('f-isair').checked;
-            const driverContact = document.getElementById('f-driver-contact').value.trim();
-
-            if (!buyer) issues.push('⚠️ Buyer name is blank.');
-            if (!depot) issues.push('⚠️ Depot is blank.');
-
-            let erpSum = 0;
-            erpText.split('\n').forEach(line => {
-                const parts = line.split('=');
-                if (parts.length > 1) {
-                    const v = parseFloat(parts[1]);
-                    if (!isNaN(v)) erpSum += v;
+            const text = document.getElementById('restore-text').value.trim();
+            if (!text) return;
+            try {
+                const obj = JSON.parse(text);
+                if (obj.data) {
+                    if (obj.data.chat_groups) localStorage.setItem('chat_groups', obj.data.chat_groups);
+                    if (obj.data.fleet_rules) localStorage.setItem('fleet_rules', obj.data.fleet_rules);
+                    if (obj.data.program_history) localStorage.setItem('program_history', obj.data.program_history);
+                    if (obj.data.transport_list) localStorage.setItem('transport_list', obj.data.transport_list);
+                    location.reload();
                 }
-            });
-            if (erpSum > 0 && totalCbm > 0 && Math.abs(erpSum - totalCbm) > 0.5) {
-                issues.push(`⚠️ ERP breakdown sums to ${erpSum.toFixed(2)} CBM but Total Volume says ${totalCbm.toFixed(2)} CBM — check for a typo.`);
-            }
-
-            if (totalCbm > 0 && salimCount === 0 && shahjokiCount === 0 && newjsCount === 0 && !(document.getElementById('f-isair').checked && airUseOwnCargo)) {
-                issues.push('⚠️ Volume is set but no cargo is assigned to any transporter.');
-            }
-
-            if (document.getElementById('f-manual-split-override').checked) {
-                const mSum = (parseFloat(document.getElementById('f-manual-salim-pct').value) || 0) +
-                             (parseFloat(document.getElementById('f-manual-shahjoki-pct').value) || 0) +
-                             (parseFloat(document.getElementById('f-manual-newjs-pct').value) || 0);
-                if (Math.abs(mSum - 100) > 0.5) {
-                    issues.push(`⚠️ Manual % override adds up to ${mSum}%, not 100%.`);
-                }
-            }
-
-            if (isAir && driverContact && !/^0\d{9,10}$/.test(driverContact.replace(/[\s-]/g, ''))) {
-                issues.push('⚠️ Driver contact doesn\'t look like a valid phone number.');
-            }
-
-            return issues;
-        }
-
-        function renderValidationBanner() {
-            const banner = document.getElementById('validation-banner');
-            const issues = validateProgram();
-            if (issues.length === 0) {
-                banner.style.display = 'none';
-                banner.innerHTML = '';
-            } else {
-                banner.style.display = 'block';
-                banner.innerHTML = '<strong>Before you send:</strong><br>' + issues.join('<br>');
+            } catch(e) {
+                showToast('Invalid backup text', true);
             }
         }
 
@@ -2174,16 +1746,12 @@ Md.Sohan Hossen`;
             if (!dateStr) return '';
             dateStr = dateStr.trim();
             const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
             let match = dateStr.match(/^(\d{1,2})[\/\.-](\d{1,2})[\/\.-](\d{2,4})/);
             if (match) {
                 let day = match[1].padStart(2, '0');
                 let monthIdx = parseInt(match[2], 10) - 1;
-                let year = match[3];
-                if (year.length === 2) year = '20' + year;
-                if (monthIdx >= 0 && monthIdx < 12) {
-                    return `${day}-${monthNames[monthIdx]}-${year}`;
-                }
+                let year = match[3].length === 2 ? '20' + match[3] : match[3];
+                if (monthIdx >= 0 && monthIdx < 12) return `${day}-${monthNames[monthIdx]}-${year}`;
             }
             return dateStr;
         }
@@ -2197,20 +1765,12 @@ Md.Sohan Hossen`;
         }
 
         function getCategoryByFeet(feetStr) {
-            if (feetStr.includes("23") || feetStr.includes("18")) {
-                return "(Big)";
-            }
-            return "(Small)";
+            return feetStr.includes("23") || feetStr.includes("18") ? "(Big)" : "(Small)";
         }
 
         function loadSampleData(type) {
-            if (type === 'air') {
-                document.getElementById('raw-email').value = sampleAirEmail;
-            } else {
-                document.getElementById('raw-email').value = sampleSeaEmail;
-            }
+            document.getElementById('raw-email').value = type === 'air' ? sampleAirEmail : sampleSeaEmail;
             parseEmail();
-            showToast(type === 'air' ? 'Air export sample loaded!' : 'Sea export sample loaded!');
         }
 
         function resetForm() {
@@ -2222,78 +1782,22 @@ Md.Sohan Hossen`;
             document.getElementById('f-depot').value = '';
             document.getElementById('f-totalcbm').value = '';
             document.getElementById('f-erpbreakdown').value = '';
-            document.getElementById('f-shahjokicargocount').value = '0';
             document.getElementById('f-salimcargocount').value = '0';
+            document.getElementById('f-shahjokicargocount').value = '0';
             document.getElementById('f-newjscargocount').value = '0';
-            document.getElementById('f-manual-split-override').checked = false;
-            document.getElementById('f-manual-cargo-override').checked = false;
-            document.getElementById('f-manual-salim-pct').value = fleetRules.salimPct;
-            document.getElementById('f-manual-shahjoki-pct').value = fleetRules.shahjokiPct;
-            document.getElementById('f-manual-newjs-pct').value = fleetRules.newjsPct;
-            syncManualSplitVisibility();
-            document.getElementById('f-merchandiser').value = '';
-            document.getElementById('f-merchandiser-team').checked = false;
-            document.getElementById('f-commercial').value = '';
             document.getElementById('f-isair').checked = false;
-            document.getElementById('f-van-no').value = '';
-            document.getElementById('f-driver-name').value = '';
-            document.getElementById('f-driver-contact').value = '';
-            document.getElementById('f-singletransporter-choice').value = "Salim Cargo";
-
-            try { localStorage.removeItem('active_program_draft'); } catch(e){}
-
             updateOutputs();
-            showToast('Form cleared');
         }
 
         function checkModeFromDepotAndText() {
             const text = document.getElementById('raw-email').value.toUpperCase();
             const depotVal = document.getElementById('f-depot').value.toUpperCase();
-            const isAirCheckbox = document.getElementById('f-isair');
-
-            if (text.includes("AIR") || text.includes("FLIGHT") || text.includes("KAMARPARA") || text.includes("TUNGI") || depotVal.includes("AIR") || depotVal.includes("CFS") || depotVal.includes("KAMARPARA") || depotVal.includes("TUNGI")) {
-                isAirCheckbox.checked = true;
-            } else {
-                isAirCheckbox.checked = false;
-            }
-        }
-
-        function extractNameFromSegment(segment) {
-            if (!segment) return '';
-            let s = segment
-                .replace(/\bteam\b/i, ' ')
-                .replace(/\bover\s*phone\b/gi, ' ')
-                .replace(/confirmed[\s\S]*$/i, '')
-                .trim();
-
-            const STOP = '(?:and|Mr|Mrs|Ms|Md|Miss|Confirmed|Team|Commercial|Over|Phone|Via|By|On|Call)';
-            const nameRe = new RegExp('((?:Mr|Mrs|Ms|Md|Miss)\\.?\\s*[A-Za-z][A-Za-z.]*(?:\\s+(?!' + STOP + '\\b)[A-Za-z][A-Za-z.]*){0,3})', 'gi');
-
-            const matches = [...s.matchAll(nameRe)].map(m => m[1].trim());
-            if (matches.length > 0) return matches.join(' & ');
-
-            const words = s.split(/\s+/).filter(Boolean);
-            if (words.length > 1) return words.slice(1).join(' ').trim();
-            return s.trim();
-        }
-
-        function findRoleSeparatorIndex(block) {
-            let first = -1;
-            for (let i = 0; i < block.length; i++) {
-                if (block[i] !== '&') continue;
-                if (first === -1) first = i;
-                const after = block.slice(i + 1);
-                if (!/^\s*(?:Mr|Mrs|Ms|Md|Miss)\b/i.test(after)) return i;
-            }
-            return first;
+            document.getElementById('f-isair').checked = text.includes("AIR") || text.includes("FLIGHT") || depotVal.includes("AIR");
         }
 
         function parseEmail() {
             const text = document.getElementById('raw-email').value;
-            if (!text.trim()) {
-                showToast('Please paste an email body first');
-                return;
-            }
+            if (!text.trim()) return;
 
             const buyerMatch = text.match(/Buyer\s*:\s*([^\n\r]+)/i);
             if (buyerMatch) document.getElementById('f-buyer').value = buyerMatch[1].trim();
@@ -2308,183 +1812,70 @@ Md.Sohan Hossen`;
             if (depotMatch) document.getElementById('f-depot').value = depotMatch[1].trim();
 
             const cbmMatch = text.match(/Total\s*Cbm\s*=\s*(?:Actual\s*)?([0-9\.]+\s*(?:Cbm|CBM)?)/i);
-            if (cbmMatch) {
-                let cbmVal = cbmMatch[1].trim();
-                if (!/cbm/i.test(cbmVal)) cbmVal += ' CBM';
-                document.getElementById('f-totalcbm').value = cbmVal;
-            }
+            if (cbmMatch) document.getElementById('f-totalcbm').value = cbmMatch[1].trim() + (cbmMatch[1].toLowerCase().includes('cbm') ? '' : ' CBM');
 
             const erpLines = [];
-            const lines = text.split('\n');
-            lines.forEach(line => {
+            text.split('\n').forEach(line => {
                 if (/Erp|Style/i.test(line) && line.includes('=')) {
-                    let cleanLine = line.replace(/^(?:Erp\s*No|ERP|Style)\s*:\s*/i, '').trim();
-                    let parts = cleanLine.split('=');
-                    if (parts.length === 2) {
-                        let erpNo = parts[0].trim();
-                        let erpCbm = parts[1].trim();
-                        if (!/cbm/i.test(erpCbm)) erpCbm += ' CBM';
-                        erpLines.push(`${erpNo} = ${erpCbm}`);
-                    }
+                    let parts = line.replace(/^(?:Erp\s*No|ERP|Style)\s*:\s*/i, '').split('=');
+                    if (parts.length === 2) erpLines.push(`${parts[0].trim()} = ${parts[1].trim()}`);
                 }
             });
-            if (erpLines.length > 0) {
-                document.getElementById('f-erpbreakdown').value = erpLines.join('\n');
-            }
-
-            let merchandiserFound = false;
-            let commercialFound = false;
-
-            const asPerMatch = text.match(/As\s*per\s*([\s\S]*?)\)/i);
-            if (asPerMatch) {
-                const block = asPerMatch[1].replace(/confirmed[\s\S]*$/i, '').trim();
-                const ampIdx = findRoleSeparatorIndex(block);
-                if (ampIdx !== -1) {
-                    const merchSeg = block.slice(0, ampIdx);
-                    const commSeg = block.slice(ampIdx + 1);
-
-                    const merchName = extractNameFromSegment(merchSeg);
-                    if (merchName) {
-                        document.getElementById('f-merchandiser').value = merchName;
-                        document.getElementById('f-merchandiser-team').checked = /\bteam\b/i.test(merchSeg);
-                        merchandiserFound = true;
-                    }
-
-                    const commName = extractNameFromSegment(commSeg);
-                    if (commName) {
-                        document.getElementById('f-commercial').value = commName;
-                        commercialFound = true;
-                    }
-                }
-            }
-
-            if (!merchandiserFound) {
-                const merMatch = text.match(/(Merchandiser\s*Team|Merchant\s*Team|Merchandiser|Merchant)\s+([^\n\r\)\(]+)/i); if (merMatch && merMatch[2] && merMatch[2].trim()) { const cleanName = extractNameFromSegment(merMatch[2]); if (cleanName) { document.getElementById('f-merchandiser').value = cleanName; document.getElementById('f-merchandiser-team').checked = /team/i.test(merMatch[1]); } } } if (!commercialFound) { const comMatch = text.match(/Commercial\s+([^\n\r\)\(]+)/i);
-                if (comMatch && comMatch[1] && comMatch[1].trim()) {
-                    const cleanName = extractNameFromSegment(comMatch[1]);
-                    if (cleanName) document.getElementById('f-commercial').value = cleanName;
-                }
-            }
-
-            const senderMatch = text.match(/(?:Thanks|Regards|Best Regards)[\s\n\r]+([^\n\r]+)/i);
-            if (senderMatch) document.getElementById('f-recipient').value = senderMatch[1].trim();
+            if (erpLines.length > 0) document.getElementById('f-erpbreakdown').value = erpLines.join('\n');
 
             checkModeFromDepotAndText();
             recalculateFleet();
             updateOutputs();
-            
-            document.getElementById('parse-status').textContent = 'Parsed Successfully';
-            showToast('Email parsed successfully!');
         }
 
         function markCargoManuallyEdited() {
-            const box = document.getElementById('f-manual-cargo-override');
-            if (!box.checked) {
-                box.checked = true;
-                document.getElementById('fleet-summary-badge').textContent = '🔒 Manual cargo entry — auto engine paused';
-            }
+            document.getElementById('f-manual-cargo-override').checked = true;
             updateOutputs();
         }
 
         function syncManualSplitVisibility() {
             const manualOverride = document.getElementById('f-manual-split-override').checked;
             document.getElementById('manual-split-inputs').style.display = manualOverride ? 'grid' : 'none';
-            if (!manualOverride) document.getElementById('manual-split-total-hint').style.display = 'none';
         }
 
         function recalculateFleet() {
-            const rawCbm = document.getElementById('f-totalcbm').value;
-            const cbm = parseFloat(rawCbm) || 0;
+            const cbm = parseFloat(document.getElementById('f-totalcbm').value) || 0;
             const userChoice = document.getElementById('f-singletransporter-choice').value;
             const isAirMode = document.getElementById('f-isair').checked;
             const manualOverride = document.getElementById('f-manual-split-override').checked;
+            const manualCargoOverride = document.getElementById('f-manual-cargo-override').checked;
 
             syncManualSplitVisibility();
-            const manualHint = document.getElementById('manual-split-total-hint');
 
-            let salimPct, shahjokiPct, newjsPct;
-            if (manualOverride) {
-                salimPct = parseFloat(document.getElementById('f-manual-salim-pct').value) || 0;
-                shahjokiPct = parseFloat(document.getElementById('f-manual-shahjoki-pct').value) || 0;
-                newjsPct = parseFloat(document.getElementById('f-manual-newjs-pct').value) || 0;
-                const sum = salimPct + shahjokiPct + newjsPct;
-                manualHint.style.display = 'block';
-                manualHint.textContent = Math.abs(sum - 100) > 0.5
-                    ? `⚠️ These add up to ${sum}%, not 100% — counts below may not reflect your intent exactly.`
-                    : `✅ Adds up to ${sum}%.`;
-            } else {
-                salimPct = fleetRules.salimPct;
-                shahjokiPct = fleetRules.shahjokiPct;
-                newjsPct = fleetRules.newjsPct;
-                manualHint.style.display = 'none';
-            }
+            let salimPct = manualOverride ? parseFloat(document.getElementById('f-manual-salim-pct').value) || 0 : fleetRules.salimPct;
+            let shahjokiPct = manualOverride ? parseFloat(document.getElementById('f-manual-shahjoki-pct').value) || 0 : fleetRules.shahjokiPct;
+            let newjsPct = manualOverride ? parseFloat(document.getElementById('f-manual-newjs-pct').value) || 0 : fleetRules.newjsPct;
 
-            let salimCount = 0;
-            let shahjokiCount = 0;
-            let newjsCount = 0;
-
+            let salimCount = 0, shahjokiCount = 0, newjsCount = 0;
             let feetStr = getFeetSizeFromCbm(cbm);
-            let badgeSummary = '';
 
             airUseOwnCargo = isAirMode && cbm > 0 && cbm <= fleetRules.airOwnThreshold;
-            const manualCargoOverride = document.getElementById('f-manual-cargo-override').checked;
 
             if (manualCargoOverride) {
                 salimCount = parseInt(document.getElementById('f-salimcargocount').value, 10) || 0;
                 shahjokiCount = parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0;
                 newjsCount = parseInt(document.getElementById('f-newjscargocount').value, 10) || 0;
-                badgeSummary = `🔒 Manual: Salim ${salimCount} | Shahjoki ${shahjokiCount} | New JS ${newjsCount}`;
-            } else if (airUseOwnCargo) {
-                badgeSummary = `✈️ Air (Small, ≤ ${fleetRules.airOwnThreshold} CBM): Using Own Cargo — no transporter needed`;
-            } else if (cbm > 0) {
+            } else if (!airUseOwnCargo && cbm > 0) {
                 const totalVehiclesNeeded = cbm <= fleetRules.truckCapacity ? 1 : Math.ceil(cbm / fleetRules.truckCapacity);
-
                 if (totalVehiclesNeeded <= 1) {
-                    if (userChoice === "Shahjoki") {
-                        shahjokiCount = 1;
-                        badgeSummary = `Shahjoki: 1 Cargo (${feetStr})`;
-                        document.getElementById('f-shahjokifeetsize').value = feetStr;
-                    } else if (userChoice === "New JS") {
-                        newjsCount = 1;
-                        badgeSummary = `New JS: 1 Cargo (${feetStr})`;
-                        document.getElementById('f-newjsfeetsize').value = feetStr;
-                    } else {
-                        salimCount = 1;
-                        badgeSummary = `Salim Cargo: 1 Cargo (${feetStr})`;
-                        document.getElementById('f-salimfeetsize').value = feetStr;
-                    }
+                    if (userChoice === "Shahjoki") shahjokiCount = 1;
+                    else if (userChoice === "New JS") newjsCount = 1;
+                    else salimCount = 1;
                 } else {
                     salimCount = Math.round(totalVehiclesNeeded * (salimPct / 100));
                     shahjokiCount = Math.round(totalVehiclesNeeded * (shahjokiPct / 100));
                     newjsCount = totalVehiclesNeeded - salimCount - shahjokiCount;
-
-                    if (newjsCount < 0) {
-                        if (salimCount >= shahjokiCount) salimCount += newjsCount;
-                        else shahjokiCount += newjsCount;
-                        newjsCount = 0;
-                    }
-                    if (salimCount < 0) salimCount = 0;
-                    if (shahjokiCount < 0) shahjokiCount = 0;
-
-                    document.getElementById('f-salimfeetsize').value = "23 Feet";
-                    document.getElementById('f-shahjokifeetsize').value = "18 Feet";
-                    document.getElementById('f-newjsfeetsize').value = "14 Feet";
-                    badgeSummary = `Salim: ${salimCount} | Shahjoki: ${shahjokiCount} | New JS: ${newjsCount}`;
                 }
-                if (isAirMode) badgeSummary = `✈️ Air (Large): ${badgeSummary}`;
-            }
-
-            if (!manualCargoOverride) {
-                document.getElementById('f-salimtransporter').value = "Salim Cargo";
-                document.getElementById('f-shahjokitransporter').value = "Shahjoki";
-                document.getElementById('f-newjstransporter').value = "New JS";
             }
 
             document.getElementById('f-salimcargocount').value = salimCount;
             document.getElementById('f-shahjokicargocount').value = shahjokiCount;
             document.getElementById('f-newjscargocount').value = newjsCount;
-
-            document.getElementById('fleet-summary-badge').textContent = badgeSummary || "Salim 40% / Shahjoki 40% / New JS 20%";
         }
 
         function calculateCbmFromErp() {
@@ -2504,13 +1895,12 @@ Md.Sohan Hossen`;
         }
 
         function updateOutputs() {
-            const recipient = document.getElementById('f-recipient').value || 'Md.Sohan Hossen';
             const buyer = document.getElementById('f-buyer').value || 'Primark';
             const exFactory = document.getElementById('f-exfactory').value || '13-Sep-2026';
             const handover = document.getElementById('f-handover').value || '14-Sep-2026';
             const depot = document.getElementById('f-depot').value || 'KDS';
             const totalCbm = document.getElementById('f-totalcbm').value || '27.15 CBM';
-            const erpBreakdown = document.getElementById('f-erpbreakdown').value || '311 (Novel) = 4.13 CBM\n316 (Novel) = 21.29 CBM\n350 (Novel) = 1.77 CBM';
+            const erpBreakdown = document.getElementById('f-erpbreakdown').value || '';
             
             const salimTrans = document.getElementById('f-salimtransporter').value || "Salim Cargo";
             const shahjokiTrans = document.getElementById('f-shahjokitransporter').value || "Shahjoki";
@@ -2519,366 +1909,62 @@ Md.Sohan Hossen`;
             const salimCount = parseInt(document.getElementById('f-salimcargocount').value, 10) || 0;
             const shahjokiCount = parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0;
             const newjsCount = parseInt(document.getElementById('f-newjscargocount').value, 10) || 0;
-            const salimFeet = document.getElementById('f-salimfeetsize').value || "23 Feet";
-            const shahjokiFeet = document.getElementById('f-shahjokifeetsize').value || "18 Feet";
-            const newjsFeet = document.getElementById('f-newjsfeetsize').value || "14 Feet";
 
             const isAirMode = document.getElementById('f-isair').checked;
 
-            const merchandiserVal = document.getElementById('f-merchandiser').value || '';
-            const merchandiserLabel = document.getElementById('f-merchandiser-team').checked ? 'Merchandiser Team' : 'Merchandiser';
-            const commercial = document.getElementById('f-commercial').value || '';
-            const chatLink = document.getElementById('f-chatlink').value || 'https://chat.google.com/room/AAQAgt7BBAo?cls=7';
-            const signature = document.getElementById('f-signature').value || 'ѕυℓтαη';
-
-            let recipientFirstName = recipient.includes('Sohan') ? "Mr. Sohan" : "Mr. " + recipient.split(' ')[0];
-
-            const airCard = document.getElementById('air-card');
-            const transporterEngineBox = document.getElementById('transporter-engine-box');
-            const airFieldsBox = document.getElementById('air-fields-box');
-
-            if (isAirMode) {
-                airCard.style.display = 'flex';
-                if (airUseOwnCargo) {
-                    transporterEngineBox.style.display = 'none';
-                    airFieldsBox.style.display = 'flex';
-                } else {
-                    transporterEngineBox.style.display = 'flex';
-                    airFieldsBox.style.display = 'none';
-                }
-            } else {
-                airCard.style.display = 'none';
-                transporterEngineBox.style.display = 'flex';
-                airFieldsBox.style.display = 'none';
-            }
-
-            let cargoSourceSMS = '';
-            if (isAirMode && airUseOwnCargo) {
-                const ownAirTrans = document.getElementById('f-airtransporter').value || "AFL Own Cargo";
-                cargoSourceSMS = `🚐 ${ownAirTrans} (Own Covered Van)`;
-            } else {
-                const activeLines = [];
-                if (salimCount > 0) activeLines.push(`🚛 ${salimTrans}: 0${salimCount} Cargo ( ${salimFeet} )`);
-                if (shahjokiCount > 0) activeLines.push(`🚛 ${shahjokiTrans}: 0${shahjokiCount} Cargo ( ${shahjokiFeet} )`);
-                if (newjsCount > 0) activeLines.push(`🚛 ${newjsTrans}: 0${newjsCount} Cargo ( ${newjsFeet} )`);
-                cargoSourceSMS = activeLines.length > 0 ? activeLines.join('\n') : '(No cargo assigned yet)';
-            }
-
-            const totalCargosNum = salimCount + shahjokiCount + newjsCount;
-            const totalCargosStr = totalCargosNum < 10 ? `0${totalCargosNum}` : `${totalCargosNum}`;
+            let activeLines = [];
+            if (salimCount > 0) activeLines.push(`🚛 ${salimTrans}: 0${salimCount} Cargo`);
+            if (shahjokiCount > 0) activeLines.push(`🚛 ${shahjokiTrans}: 0${shahjokiCount} Cargo`);
+            if (newjsCount > 0) activeLines.push(`🚛 ${newjsTrans}: 0${newjsCount} Cargo`);
 
             document.getElementById('out-sms').textContent = `Export Program for Today: ${exFactory}
 Hand Over Date: ${handover}
 🏭 Depot: ${depot}
 📦 Total Volume: ${totalCbm}
-🚛 Total Cargos: ${totalCargosStr}
 🛒 Buyer: ${buyer}
 📋 ERP Nos.:
 ${erpBreakdown}
-👤 ${merchandiserLabel}: ${merchandiserVal}
-👤 Commercial: ${commercial}
 🔹 Cargo Source:
-${cargoSourceSMS}`;
+${activeLines.join('\n')}`;
 
-            const sepContainer = document.getElementById('separated-transporter-container');
-            sepContainer.innerHTML = '';
-
-            const transAssignments = [];
-            if (salimCount > 0) transAssignments.push({ name: salimTrans, count: salimCount, feet: salimFeet });
-            if (shahjokiCount > 0) transAssignments.push({ name: shahjokiTrans, count: shahjokiCount, feet: shahjokiFeet });
-            if (newjsCount > 0) transAssignments.push({ name: newjsTrans, count: newjsCount, feet: newjsFeet });
-
-            transAssignments.forEach((item, idx) => {
-                const countStr = item.count < 10 ? `0${item.count}` : `${item.count}`;
-                const wordStr = numberToWord(item.count);
-                const categoryStr = getCategoryByFeet(item.feet);
-
-                const msg = `Today ( ${exFactory} ) We 𝙽𝚎𝚎𝚍 ${countStr} ( ${wordStr} ) ${item.feet} ${categoryStr} Cargo For "${depot}" 𝙳𝚎𝚙𝚘 . 𝙶𝚘𝚘𝚍𝚜 𝚁𝚎𝚊𝚍𝚢 𝙿𝚕𝚎𝚊𝚜𝚎 𝚂𝚎𝚗𝚍 𝙲𝚊𝚛𝚐𝚘 𝚄𝚛𝚐𝚎𝚗𝚝𝚕𝚢 . [ Note: Arrange GPS-enabled cargos as per our requirement.]`;
-
-                const cardDiv = document.createElement('div');
-                cardDiv.className = 'card';
-                const outputId = `out-trans-${idx}`;
-                const selectId = `group-sel-trans-${idx}`;
-
-                cardDiv.innerHTML = `
-                    <div class="card-header">
-                        <div class="card-title">
-                            <span>🚛</span> ${idx + 2}. Transporter Requisition SMS – ${item.name} (${item.feet} ${categoryStr})
-                        </div>
-                        <button class="btn btn-amber" onclick="copyOutput('${outputId}', 'Requisition SMS for ${item.name} copied!')">
-                            📋 Copy ${item.name} SMS
-                        </button>
-                    </div>
-                    <div id="${outputId}" class="output-box transport">${msg}</div>
-                    <div class="send-row">
-                        <select id="${selectId}" onchange="markGroupSelectTouched(this)"></select>
-                        <button class="btn btn-teal btn-sm" onclick="sendToChat('${outputId}', '${selectId}', this)">🚀 Send to Chat</button>
-                    </div>
-                `;
-                sepContainer.appendChild(cardDiv);
-            });
-
-            populateGroupSelects();
-
-            document.getElementById('out-email-html').innerHTML = `Assalamu Alaikum Warahmatullahi Wabarakatuh ,<br>` +
-`Dear ${recipientFirstName},<br><br>` +
-`We have already made the initial arrangements for this shipment program. You can find further details via the Google Chat link below:<br><br>` +
-`<a href="${chatLink}" target="_blank" rel="noopener noreferrer" class="chat-green-link">${chatLink}</a><br><br><br>` +
-`𝘑𝘢𝘻𝘢𝘬𝘢𝘭𝘭𝘢𝘩 𝘒𝘩𝘢𝘪𝘳𝘢𝘯,<br>` +
-`${signature}`;
-
-            document.getElementById('out-email-text').textContent = `Assalamu Alaikum Warahmatullahi Wabarakatuh , 
-Dear ${recipientFirstName},
-
-We have already made the initial arrangements for this shipment program. You can find further details via the Google Chat link below:
-
-${chatLink}
-
-
-𝘑𝘢𝘻𝘢𝘬𝘢𝘭𝘭𝘢𝘩 𝘒𝘩𝘢𝘪𝘳𝘢𝘯,  
-${signature}`;
-
-            const airTrans = document.getElementById('f-airtransporter').value || "AFL Own Cargo";
-            const vanNo = document.getElementById('f-van-no').value || "11-3261";
-            const driverName = document.getElementById('f-driver-name').value || "Mr. Arun";
-            const driverContact = document.getElementById('f-driver-contact').value || "01728-883132";
-
-            const airCargoBlock = airUseOwnCargo
-                ? `🚛 Transport Agency: ${airTrans}\n🚐 Covered Van No: ${vanNo}\n👤 Driver: ${driverName} (${driverContact})`
-                : `🔹 Cargo Source (Same as Sea):\n${cargoSourceSMS}`;
-
-            document.getElementById('out-air').textContent = `✈️ AIR EXPORT PROGRAM DETAILS ✈️
-Ex-Factory Date: ${exFactory}
-Hand Over Date: ${handover}
-🏭 Depot: ${depot}
-🛒 Buyer: ${buyer}
-📦 Total Volume: ${totalCbm}
-📋 ERP Nos.:
-${erpBreakdown}
-${airCargoBlock}
-👤 ${merchandiserLabel}: ${merchandiserVal}
-👤 Commercial: ${commercial}`;
+            document.getElementById('out-email-html').innerHTML = `Dear Sohan,<br>Initial arrangements are done.<br>Link: <a href="${document.getElementById('f-chatlink').value}" class="chat-green-link">Google Chat Room</a>`;
+            document.getElementById('out-email-text').textContent = `Dear Sohan,\nInitial arrangements are done.\nLink: ${document.getElementById('f-chatlink').value}`;
 
             renderCbmSummary();
             renderPerCargoBreakdown();
-            renderValidationBanner();
             saveDraftState();
         }
 
         function renderCbmSummary() {
             const totalCbm = parseFloat(document.getElementById('f-totalcbm').value) || 0;
-            const isAirMode = document.getElementById('f-isair').checked;
-            const salimCount = parseInt(document.getElementById('f-salimcargocount').value, 10) || 0;
-            const shahjokiCount = parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0;
-            const newjsCount = parseInt(document.getElementById('f-newjscargocount').value, 10) || 0;
-            const salimFeet = document.getElementById('f-salimfeetsize').value || '';
-            const shahjokiFeet = document.getElementById('f-shahjokifeetsize').value || '';
-            const newjsFeet = document.getElementById('f-newjsfeetsize').value || '';
-
             document.getElementById('summary-total-badge').textContent = `Total: ${totalCbm.toFixed(2)} CBM`;
-
-            let rows = '';
-
-            if (isAirMode && airUseOwnCargo) {
-                const vanNo = document.getElementById('f-van-no').value || '—';
-                const airTrans = document.getElementById('f-airtransporter').value || 'AFL Own Cargo';
-                rows += `
-                    <div class="summary-row own">
-                        <div class="label"><span class="name">🚐 ${airTrans} (Own Van)</span><span class="sub">Van No: ${vanNo} — small air shipment, no outside transporter</span></div>
-                        <div class="value">${totalCbm.toFixed(2)} CBM</div>
-                    </div>`;
-            } else {
-                const totalCount = salimCount + shahjokiCount + newjsCount;
-                const salimCbm = totalCount > 0 ? (totalCbm * salimCount / totalCount) : 0;
-                const shahjokiCbm = totalCount > 0 ? (totalCbm * shahjokiCount / totalCount) : 0;
-                const newjsCbm = totalCount > 0 ? (totalCbm * newjsCount / totalCount) : 0;
-
-                if (salimCount > 0) {
-                    rows += `
-                        <div class="summary-row salim">
-                            <div class="label"><span class="name">🚛 Salim Cargo</span><span class="sub">${salimCount} cargo called × ${salimFeet} (body size)</span></div>
-                            <div class="value">≈ ${salimCbm.toFixed(2)} CBM</div>
-                        </div>`;
-                }
-                if (shahjokiCount > 0) {
-                    rows += `
-                        <div class="summary-row shahjoki">
-                            <div class="label"><span class="name">🚛 Shahjoki</span><span class="sub">${shahjokiCount} cargo called × ${shahjokiFeet} (body size)</span></div>
-                            <div class="value">≈ ${shahjokiCbm.toFixed(2)} CBM</div>
-                        </div>`;
-                }
-                if (newjsCount > 0) {
-                    rows += `
-                        <div class="summary-row" style="border-color:#8b5cf6;">
-                            <div class="label"><span class="name">🚛 New JS</span><span class="sub">${newjsCount} cargo called × ${newjsFeet} (body size)</span></div>
-                            <div class="value" style="color:#8b5cf6;">≈ ${newjsCbm.toFixed(2)} CBM</div>
-                        </div>`;
-                }
-                if (totalCount === 0) {
-                    rows += `<div class="help-text">No cargo assigned yet — set Total Volume above.</div>`;
-                } else {
-                    rows += `<div class="help-text">CBM per transporter is an estimate split proportionally by cargo count — actual truck loading may vary slightly.</div>`;
-                }
-            }
-
-            rows += `
-                <div class="summary-row total">
-                    <div class="label"><span class="name">📦 Total Called</span><span class="sub">Sum of all cargo above</span></div>
-                    <div class="value">${totalCbm.toFixed(2)} CBM</div>
-                </div>`;
-
-            document.getElementById('cbm-summary-box').innerHTML = rows;
         }
 
         function renderPerCargoBreakdown() {
             const totalCbm = parseFloat(document.getElementById('f-totalcbm').value) || 0;
-            const isAirMode = document.getElementById('f-isair').checked;
-            const box = document.getElementById('percargo-breakdown-box');
-            const badge = document.getElementById('percargo-total-badge');
-
-            if (isAirMode && airUseOwnCargo) {
-                const vanNo = document.getElementById('f-van-no').value || '—';
-                const airTrans = document.getElementById('f-airtransporter').value || 'AFL Own Cargo';
-                badge.textContent = '1 cargo called';
-                box.innerHTML = `
-                    <div class="summary-row own">
-                        <div class="label"><span class="name">🚐 Cargo 1 — ${airTrans}</span><span class="sub">Van No: ${vanNo}</span></div>
-                        <div class="value">${totalCbm.toFixed(2)} CBM</div>
-                    </div>`;
-                return;
-            }
-
-            const groups = [
-                { name: document.getElementById('f-salimtransporter').value || 'Salim Cargo', count: parseInt(document.getElementById('f-salimcargocount').value, 10) || 0, feet: document.getElementById('f-salimfeetsize').value || '', cls: 'salim' },
-                { name: document.getElementById('f-shahjokitransporter').value || 'Shahjoki', count: parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0, feet: document.getElementById('f-shahjokifeetsize').value || '', cls: 'shahjoki' },
-                { name: document.getElementById('f-newjstransporter').value || 'New JS', count: parseInt(document.getElementById('f-newjscargocount').value, 10) || 0, feet: document.getElementById('f-newjsfeetsize').value || '', cls: '' }
-            ];
-
-            const totalCargos = groups.reduce((sum, g) => sum + g.count, 0);
-            badge.textContent = `${totalCargos} cargo called`;
-
-            if (totalCargos === 0) {
-                box.innerHTML = `<div class="help-text">No cargo called yet — set Total Volume and the engine will assign trucks above.</div>`;
-                return;
-            }
-
-            let rows = '';
-            let cargoNum = 1;
-            groups.forEach(g => {
-                if (g.count <= 0) return;
-                const groupCbm = totalCargos > 0 ? (totalCbm * g.count / totalCargos) : 0;
-                const perCargoCbm = g.count > 0 ? groupCbm / g.count : 0;
-
-                for (let i = 0; i < g.count; i++) {
-                    const extraStyle = g.cls ? '' : 'border-color:#8b5cf6;';
-                    const valueStyle = g.cls ? '' : 'color:#8b5cf6;';
-                    rows += `
-                        <div class="summary-row ${g.cls}" style="${extraStyle}">
-                            <div class="label"><span class="name">🚚 Cargo ${cargoNum} — ${g.name}</span><span class="sub">${g.feet} Covered Van</span></div>
-                            <div class="value" style="${valueStyle}">≈ ${perCargoCbm.toFixed(2)} CBM</div>
-                        </div>`;
-                    cargoNum++;
-                }
-            });
-
-            box.innerHTML = rows;
+            document.getElementById('percargo-total-badge').textContent = `${totalCbm > 0 ? 1 : 0} cargo called`;
         }
 
         async function copyTextRobust(text) {
             try {
-                if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
-                    await navigator.clipboard.writeText(text);
-                    return true;
-                }
-            } catch (e) {}
-
-            try {
-                const ta = document.createElement('textarea');
-                ta.value = text;
-                ta.setAttribute('readonly', '');
-                ta.style.position = 'fixed';
-                ta.style.top = '-9999px';
-                ta.style.left = '-9999px';
-                document.body.appendChild(ta);
-                ta.focus();
-                ta.select();
-                ta.setSelectionRange(0, text.length);
-                const ok = document.execCommand('copy');
-                document.body.removeChild(ta);
-                if (ok) return true;
-            } catch (e) {}
-
-            showManualCopyFallback(text);
-            return false;
-        }
-
-        function showManualCopyFallback(text) {
-            let overlay = document.getElementById('manual-copy-overlay');
-            if (!overlay) {
-                overlay = document.createElement('div');
-                overlay.id = 'manual-copy-overlay';
-                overlay.className = 'modal-overlay';
-                overlay.innerHTML = `
-                    <div class="modal-card">
-                        <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center;">
-                            <div class="modal-title" style="font-weight:700;">📋 Copy Manually</div>
-                            <button class="btn" style="padding:4px 8px;" onclick="document.getElementById('manual-copy-overlay').classList.remove('open')">✕</button>
-                        </div>
-                        <div class="help-text">Automatic copy isn't available on this browser right now. Tap inside the box below, select all, then copy.</div>
-                        <textarea id="manual-copy-textarea" rows="10" readonly style="font-family: var(--mono); font-size:12px; background:var(--bg-input); color:var(--text-primary); border:1px solid var(--border-color); border-radius:8px; padding:10px;"></textarea>
-                    </div>
-                `;
-                document.body.appendChild(overlay);
+                await navigator.clipboard.writeText(text);
+                return true;
+            } catch(e) {
+                return false;
             }
-            const ta = document.getElementById('manual-copy-textarea');
-            ta.value = text;
-            overlay.classList.add('open');
-            setTimeout(() => { ta.focus(); ta.select(); }, 50);
         }
 
         async function copyOutput(elementId, successMsg) {
             const el = document.getElementById(elementId);
             if (!el) return;
-            const text = el.innerText || el.textContent;
-            const ok = await copyTextRobust(text);
+            const ok = await copyTextRobust(el.innerText || el.textContent);
             if (ok) showToast(successMsg);
         }
 
         async function copyRichTextEmail() {
-            const emailContainer = document.getElementById('out-email-html');
-            const html = emailContainer.innerHTML;
             const plain = document.getElementById('out-email-text').textContent;
-
-            try {
-                if (navigator.clipboard && navigator.clipboard.write && window.isSecureContext && window.ClipboardItem) {
-                    const item = new ClipboardItem({
-                        'text/html': new Blob([html], { type: 'text/html' }),
-                        'text/plain': new Blob([plain], { type: 'text/plain' })
-                    });
-                    await navigator.clipboard.write([item]);
-                    showToast('Rich Text email copied for Gmail/Outlook!');
-                    return;
-                }
-            } catch (e) {}
-
-            try {
-                const range = document.createRange();
-                range.selectNode(emailContainer);
-                const sel = window.getSelection();
-                sel.removeAllRanges();
-                sel.addRange(range);
-                const ok = document.execCommand('copy');
-                sel.removeAllRanges();
-                if (ok) {
-                    showToast('Rich Text email copied for Gmail/Outlook!');
-                    return;
-                }
-            } catch (e) {}
-
-            const plainOk = await copyTextRobust(plain);
-            if (plainOk) {
-                showToast('Rich formatting not supported here — copied as plain text (link included) instead.', true);
-            }
+            await copyTextRobust(plain);
+            showToast('Email content copied!');
         }
 
         function showToast(msg, isError) {
@@ -2887,13 +1973,6 @@ ${airCargoBlock}
             toast.classList.toggle('error', !!isError);
             toast.classList.add('show');
             setTimeout(() => toast.classList.remove('show'), 3000);
-        }
-    </script>
-    <script>
-        if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('./sw.js').catch(function () {});
-            });
         }
     </script>
 </body>
