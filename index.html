@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Export Program & Transport Order Generator - Sultan (Store)</title>
-    <!-- SheetJS for Excel Export -->
-    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAiZElEQVR42s2bebjdZXXvP+v9DXs++4xJDkkICSEMkRlBASUMIlyHim2ipeLYOlFba6/aR7kmsZNWi6Kl1UqxDve2hloQqAUtkoiAIAmQAAFC5jlnPnv8De+77h+/vU9OFPX2tvbek2c/Zz95zt6/d03f9V3DK/wn/aiqyPr1HpdemgIIEAAv33zPKc/1uPPqufw5scdya1nkEh0kpYKVUK2PqB8j+ZpKOIrJ7Rav8LSmZhPT0WOct/jZYx50v/qswCKi/xnnlv8EyQVuM8gqC6Cod9X2+y7cVrSvHzd6WasZn5rU4oIemkR3j8LuUeTgJEw0oBWDM+AFSKmM9vbC3Lkwfz46dxh6BlpUhrZiyj8gkju5uPgQYAFYpx4rcf9RRfzHFKDrPGSVFeDWR+6fd/Nw+7p9OX3rVJy8pL17FP3hc/Dgc8jWfU6OTCtRIiiCCBgjGAMqIAKI4rJvxXhKqSTMn2/0tDPg3JfDCaeh1eGncP7X2bbrG/zu4kMzilgl9r9WAbrawFpF0K8/eO+cv1xof39vmPzO1FRryP7rZrj9MTVP7rHUI0PgCaEnBB54HiICOst5EMCAmI4iTPZShdQpcaIgjqF5np63Qrj419B5S0fAfIXd22/iw0uPoCqsQVgr7levgPtX+1y6Ns0hnL7tn67fUTIfnxyvD7tvPIR8e2Nq9owbDYyhEIJvEFXUOpyb5akdq4sIiId0/ql0FdFRgvGylxgktWi77QhyTl9ykc+r3oHOP+kgEX/Ku+VmAFarz1pJf3UK0HWeyCp74QN/u/z543tunlC9JP36w8itD6fmwKSnxVDI+5mFnUMVVBUjkA88fKP4gU/ogbVKPVJUhSgFMIgIIgYlU0xXGdJ5r8bPFNVqKCJWz7na59Xvg0p1gx6sX88nKk//e0NC/s+Bbo2IrHU9G7/0jtZg8QvxEwfK8sl7UrPlgKelUMgF4GzmugoO8I3SWzCUfIdvFJfGtNtNCvk8uVyOKHVEUQJ+jum20EgzM4rIvKGrBL/jFR0FGT87erOmlPosV33Ql1NW1E2L30s+Jl9ltRrWovDLAdL7pcKvXm1YsQLkUg223Hxjq7f4KfvFH4bm49+1Mtb0pbcoIoK4TJuqWSj3hCkDYUzgmiRRi1qtRq1ep9Vq02g0aEcJ7WaT2vQUaiNyNCkU8jTTAAGkGwZ0w8Vk1p+xmUCuKFhr2PI9K1MjeXPiRb8WXL6mmn5C7kHXZICyYYP+33tAhlIg5/ny1Nu+qdaskg//Syrrd3rSV8jQfFZsW4WCFzOYT0mjOlGUkDrF2YQgCIiiCFXF2pRcrgBAksT4QYgxQl+1wmRaZiou4nW9AA/MUW/IQsTrAKcgxs88ojmhzDnF5q75rO+FhXX129/zFh77coYHvyBVyi9ze2S9ka2/druOpq+Vd38nkV2TgfQVwLrMz0U6f+4oe016/BaNRoNWO8YYQz6fJ02TLlnCWUuSJlQqVdrtJmmSYDwfEUOpWKCQDxlJ+mi7PKYDjCI+GC9738kY2sUGPFQE8QK0XYPCQJJ/4xcCU+6/u/6DNdewYo1jDfrzlPDiClAE1hlklZVn/2KdHopXylu/k8hEO6CS4xiIUcWpUA3bVGWKWrNFlKS4NEXVzSgnDHMY42UKU0Wdw6kjjqMsFr0Azw8IfEO+1MNIMoTTzIvF+GAyHNBj0qY38zvDDR9NmuAXk+I1Xwr8Uv9tU38iqzJgxL0YJpgXVcD61RnB2fynn2MiWWnefmdipuJAusJ341MzRwm9lLybYrrRot5o4ns+xvNQVfKFIuVKlVy+gPEDUmtJnCN2jiiOUOdIkpg0TVBVVAHbpiTTGWfKUsoMuM62msy8V1QVXIr4BcS2g9adH0hsO17Z81H9HKvEsvrF8U5+Hrszm/74bRqEf89b7kpkx3QgPTlIuy4vnQM5nEJvUCNMJ5muNxExOGfx/QA8P3uqSxF1+JoSiOKLwzOG1Doiq4w0I/wgRyGfxzlHsVgEYEqOIyWXAaLxj2aDLjZ0yJPSIVfG4KIWRBHEDcxxpyeVlbcGLuLttb+Ur71YipSfYXhmreOBG05mqLJJbvhRTu7aaWSgIKR6VPiuAlwG/fMK07TrEzQaLVQtYgxGhOUDeV5/5vH095QRdeQDQzUfUA4NzdhRixLGp3o89Px+frh7glZQRJ0ixqNczNPQKpNpFc9k7o34GSCSgeFMSKjL3rcbhIPz6T3jAiSNGdnwbZVFV7niVasjrUfn1G4qPMdqZ2YzRv8YBdz2jKAYhoq3yl07ivKdHZbBkpC6TuxJprEulRXBE4dN2iRJShD4NJptivkcr1lU5vqrz+WExYsQ4xH4Pp6AqCNKElKEJIqJmg3OOH6Q5U/t5B+2HOFQ6mOtJY5jNBCOPrAbCnSsroh2eAeCtmuYBcsZeNdn6Z9boVKEea98vWxZ+2birRcX/WWX3wr6Cp451uj+T7s+W/74fYzEF8pnfpJSzfsZbJjOp7oeoDMOZESxaYJTJTRKf+hx9nCZ977qbBafuIRcpYrnefieh+cbcIpvHc6mpNYRt1pIELDCGKbalq9uGUW8gDRNcSadBVs665UJrjNpWCFtIxe8nWmpkOyPaBegb8kyhq54i3fo7j9Miws3Xlj4kL6ndaP8zexQ8Gfle8f3/2hAjHySmx531FIjfXmwXSsIPwtBiicZFrTjlHMWD/Cy40osHeph4aIFTqp11KIXj413mD3E4IAt0A39vE4xS3H0ch4mDPGY4pLYBim3qZrS94S99pS+3eA3v5P/XqSo/33Oat53o1S493at2vB1o9v3T/T2jJroS6p004f14Dq/M604fM62Lq2C9M3a+eSInJ0Xq9u3y92yXf6/6X40IspC6zt/195/u06q3/fbl/lH4f/3G+zP3A92S47x7+L/215o2m2oO3X7uS48A763eS32PveZ+G3iG32j733m9y2N65L0+b818O/h580a5v/6yT6A/1y4D7Iu5R951X0L5/zG9s63//O42//6P3//m//a812m63/2n368f5P/3O7zX6A//i/6p/9A/6p/3C7v9a+3H//b/+/3+63/mP/4D6P//b2/u2/mX/7L1m6035v/46u/vK//9r/8w///6N7X3O//fN/4T7/8S7N294I3z112N++4x97y//28/3j///8Tf///+r//7+f//f/7//d///j///8D+f/+b+d//8/w5/1+3x4H3O/7sL3D//j33f7jP/83///+f/v9w58/s//b3/b4d4/0u/2G/3///2/+5f7s/s//9s6v/98f//+r/2X///f54/b5m7m5v+t/u9f+9/v///N//ff/+v/+m////s3////3e/zX/v5b/t//v3e5/1/6v////20/3O////i//S6n////r39v/3//7f///7/5X//+v3v///9j//+//3f/7X9v/2+/8P///4t///e//x4/m/3///15/7/7//x//r//4x//2//x8/f///v/+/+/3s039v1s2/6/m5mZm39/f/1/v//f4H///v///+O/9//1/r//vf1f+j6v/+n/f2///v/+f+/7f+n//e/7y+X///j9///x7X/s8//5v93f9z8///e/m9m2f/9///j5///9/+s3e39/f1/e/+r/+ff///+//3j////9m/2b4///v8/f2///u7+3//83u/1/+l//r9//27+p+050=">
     <style>
         :root {
             --bg-main: #0b0f19;
@@ -129,6 +128,7 @@
         .btn-purple { background-color: var(--accent-purple); color: white; }
         .btn-danger { background-color: #ef4444; color: white; }
         .btn-teal { background-color: var(--accent-teal); color: #062825; }
+        .btn-excel { background-color: #107c41; color: white; }
         .btn-sm { padding: 6px 10px; font-size: 11px; }
 
         main {
@@ -146,6 +146,7 @@
             main { grid-template-columns: 1fr; }
         }
 
+        /* ===== MOBILE (phone-width Chrome) ===== */
         @media (max-width: 760px) {
             header {
                 flex-direction: column;
@@ -169,6 +170,8 @@
                 padding-left: 12px;
                 padding-right: 12px;
             }
+            .header-actions::-webkit-scrollbar { height: 4px; }
+            .header-actions::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 4px; }
 
             .header-actions .btn {
                 flex-shrink: 0;
@@ -201,6 +204,11 @@
 
             .send-row { flex-direction: column; align-items: stretch; }
             .send-row select { width: 100%; }
+        }
+
+        @media (max-width: 400px) {
+            .brand-text h1 { font-size: 12px; }
+            .header-actions .btn { font-size: 10.5px; padding: 7px 10px; }
         }
 
         .card {
@@ -312,7 +320,13 @@
             padding: 2px 8px;
             border-radius: 4px;
             border: 1px solid rgba(16, 185, 129, 0.3);
+            transition: all 0.2s ease;
             display: inline-block;
+        }
+
+        .chat-green-link:hover {
+            background: rgba(16, 185, 129, 0.3);
+            color: #34d399 !important;
         }
 
         #toast {
@@ -398,6 +412,10 @@
             gap: 10px;
         }
 
+        .trans-list-item .meta { display: flex; flex-direction: column; gap: 2px; overflow: hidden; }
+        .trans-list-item .meta .url { font-size: 10.5px; color: var(--text-secondary); font-family: var(--mono); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 260px; }
+        .trans-list-item .actions { display: flex; gap: 6px; flex-shrink: 0; }
+
         .send-row {
             display: flex;
             gap: 8px;
@@ -437,17 +455,51 @@
         .summary-row.salim .value { color: var(--accent-blue); }
         .summary-row.shahjoki .value { color: var(--accent-amber); }
         .summary-row.own .value { color: var(--code-air); }
+
+        .code-box {
+            background: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px;
+            font-family: var(--mono);
+            font-size: 10.8px;
+            color: #93c5fd;
+            white-space: pre-wrap;
+            word-break: break-word;
+            max-height: 220px;
+            overflow-y: auto;
+        }
+
+        .step-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent-teal);
+            color: #062825;
+            font-size: 10.5px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
     </style>
+    <!-- SheetJS CDN for Excel Generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!-- PWA: install + offline support -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#10B981">
+    <link rel="apple-touch-icon" href="./logo-512-maskable.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Export Gen">
 </head>
 <body>
 
     <header>
         <div class="brand-title">
             <div class="brand-logo-container">
-                <svg class="brand-logo-img" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="26" cy="26" r="26" fill="#10B981"/>
-                    <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-weight="bold" font-size="22" font-family="sans-serif">S</text>
-                </svg>
+                <img class="brand-logo-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAiZElEQVR42s2bebjdZXXvP+v9DXs++4xJDkkICSEMkRlBASUMIlyHim2ipeLYOlFba6/aR7kmsZNWi6Kl1UqxDve2hloQqAUtkoiAIAmQAAFC5jlnPnv8De+77h+/vU9OFPX2tvbek2c/Zz95zt6/d03f9V3DK/wn/aiqyPr1HpdemgIIEAAv33zPKc/1uPPqufw5scdya1nkEh0kpYKVUK2PqB8j+ZpKOIrJ7Rav8LSmZhPT0WOct/jZYx50v/qswCKi/xnnlv8EyQVuM8gqC6Cod9X2+y7cVrSvHzd6WasZn5rU4oIemkR3j8LuUeTgJEw0oBWDM+AFSKmM9vbC3Lkwfz46dxh6BlpUhrZiyj8gkju5uPgQYAFYpx4rcf9RRfzHFKDrPGSVFeDWR+6fd/Nw+7p9OX3rVJy8pL17FP3hc/Dgc8jWfU6OTCtRIiiCCBgjGAMqIAKI4rJvxXhKqSTMn2/0tDPg3JfDCaeh1eGncP7X2bbrG/zu4kMzilgl9r9WAbrawFpF0K8/eO+cv1xof39vmPzO1FRryP7rZrj9MTVP7rHUI0PgCaEnBB54HiICOst5EMCAmI4iTPZShdQpcaIgjqF5np63Qrj419B5S0fAfIXd22/iw0uPoCqsQVgr7levgPtX+1y6Ns0hnL7tn67fUTIfnxyvD7tvPIR8e2Nq9owbDYyhEIJvEFXUOpyb5akdq4sIiId0/ql0FdFRgvGylxgktWi77QhyTl9ykc+r3oHOP+kgEX/Ku+VmAFarz1pJf3UK0HWeyCp74QN/u/z543tunlC9JP36w8itD6fmwKSnxVDI+5mFnUMVVBUjkA88fKP4gU/ogbVKPVJUhSgFMIgIIgYlU0xXGdJ5r8bPFNVqKCJWz7na59Xvg0p1gx6sX88nKk//e0NC/s+Bbo2IrHU9G7/0jtZg8QvxEwfK8sl7UrPlgKelUMgF4GzmugoO8I3SWzCUfIdvFJfGtNtNCvk8uVyOKHVEUQJ+jum20EgzM4rIvKGrBL/jFR0FGT87erOmlPosV33Ql1NW1E2L30s+Jl9ltRrWovDLAdL7pcKvXm1YsQLkUg223Hxjq7f4KfvFH4bm49+1Mtb0pbcoIoK4TJuqWSj3hCkDYUzgmiRRi1qtRq1ep9Vq02g0aEcJ7WaT2vQUaiNyNCkU8jTTAAGkGwZ0w8Vk1p3xmUCuKFhr2PI9K1MjeXPiRb8WXL6mmn5C7kHXZICyYYP+33tAhlIg5/ny1Nu+qdaskg//Syrrd3rSV8jQfFZsW4WCFzOYT0mjOlGUkDrF2YQgCIiiCFXF2pRcrgBAksT4QYgxQl+1wmRaZiou4nW9AA/MUW/IQsTrAKcgxs88ojmhzDnF5q75rO+FhXX129/zFh77coYHvyBVyi9ze2S9ka2/druOpq+Vd38nkV2TgfQVwLrMz0U6f+4oe016/BaNRoNWO8YYQz6fJ02TLlnCWUuSJlQqVdrtJmmSYDwfEUOpWKCQDxlJ+mi7PKYDjCI+GC9738kY2sUGPFQE8QK0XYPCQJJ/4xcCU+6/u/6DNdewYo1jDfrzlPDiClAE1hlklZVn/2KdHopXylu/k8hEO6CS4xiIUcWpUA3bVGWKWrNFlKS4NEXVzSgnDHMY42UKU0Wdw6kjjqMsFr0Azw8IfEO+1MNIMoTTzIvF+GAyHNBj0qY38zvDDR9NmuAXk+I1Xwr8Uv9tU38iqzJgxL0YJpgXVcD61RnB2fynn2MiWWnefmdipuJAusJ341MzRwm9lLybYrrRot5o4ns+xvNQVfKFIuVKlVy+gPEDUmtJnCN2jiiOUOdIkpg0TVBVVAHbpiTTGWfKUsoMuM62msy8V1QVXIr4BcS2g9adH0hsO17Z81H9HKvEsvrF8U5+Hrszm/74bRqEf89b7kpkx3QgPTlIuy4vnQM5nEJvUCNMJ5muNxExOGfx/QA8P3uqSxF1+JoSiOKLwzOG1Doiq4w0I/wgRyGfxzlHsVgEYEqOIyWXAaLxj2aDLjZ0yJPSIVfG4KIWRBHEDcxxpyeVlbcGLuLttb+Ur71YipSfYXhmreOBG05mqLJJbvhRTu7aaWSgIKR6VPiuAlwG/fMK07TrEzQaLVQtYgxGhOUDeV5/5vH095QRdeQDQzUfUA4NzdhRixLGp3o89Px+frh7glZQRJ0ixqNczNPQKpNpFc9k7o34GSCSgeFMSKjL3rcbhIPz6T3jAiSNGdnwbZVFV7niVasjrUfn1G4qPMdqZ2YzRv8YBdz2jKAYhoq3yl07ivKdHZbBkpC6TuxJprEulRXBE4dN2iRJShD4NJptivkcr1lU5vqrz+WExYsQ4xH4Pp6AqCNKElKEJIqJmg3OOH6Q5U/t5B+2HOFQ6mOtJY5jNBCOPrAbCnSsroh2eAeCtmuYBcsZeNdn6Z9boVKEea98vWxZ+2birRcX/WWX3wr6Cp451uj+T7s+W/74fYzEF8pnfpJSzfsZbJjOp7oeoDMOZESxaYJTJTRKf+hx9nCZ977qbBafuIRcpYrnefieh+cbcIpvHc6mpNYRt1pIELDCGKbalq9uGUW8gDRNcSadBVs665UJrjNpWCFtIxe8nWmpkOyPaBegb8kyhq54i3fo7j9Miws3Xlj4kL6ndaP8zexQ8Gfle8f3/2hAjHySmx531FIjfXmwXSsIPwtBiicZFrTjlHMWD/Cy40osHeph4aIFTqp11KIXj413mD3E4IAt0A39vE4xS3H0ch4mDPGY4pLYBim3qZrS94S99pS+3eA3v5P/XqSo/33Oat53o1S493at2vB1o9v3T/T2jJroS6p004f14Dq/M604fM62Lq2C9M3a+eSInJ0Xq9u3y92yXf6/6X40IspC6zt/195/u06q3/fbl/lH4f/3G+zP3A92S47x7+L/215o2m2oO3X7uS48A763eS32PveZ+G3iG32j733m9y2N65L0+b818O/h580a5v/6yT6A/1y4D7Iu5R951X0L5/zG9s63//O42//6P3//m//a812m63/2n368f5P/3O7zX6A//i/6p/9A/6p/3C7v9a+3H//b/+/3+63/mP/4D6P//b2/u2/mX/7L1m6035v/46u/vK//9r/8w///6N7X3O//fN/4T7/8S7N294I3z112N++4x97y//28/3j///8Tf///+r//7+f//f/7//d///j///8D+f/+b+d//8/w5/1+3x4H3O/7sL3D//j33f7jP/83///+f/v9w58/s//b3/b4d4/0u/2G/3///2/+5f7s/s//9s6v/98f//+r/2X///f54/b5m7m5v+t/u9f+9/v///N//ff/+v/+m////s3////3e/zX/v5b/t//v3e5/1/6v////20/3O////i//S6n////r39v/3//7f///7/5X//+v3v///9j//+//3f/7X9v/2+/8P///4t///e//x4/m/3///15/7/7//x//r//4x//2//x8/f///v/+/+/3s039v1s2/6/m5mZm39/f/1/v//f4H///v///+O/9//1/r//vf1f+j6v/+n/f2///v/+f+/7f+n//e/7y+X///j9///x7X/s8//5v93f9z8///e/m9m2f/9///j5///9/+s3e39/f1/e/+r/+ff///+//3j////9m/2b4///v8/f2///u7+3//83u/1/+l//r9//27+p+050=">
             </div>
             <div class="brand-text">
                 <h1>Export Program & Transport Order Generator</h1>
@@ -456,8 +508,7 @@
         </div>
         <div class="header-actions">
             <button class="btn btn-success" onclick="saveProgramToHistory()">💾 Save Program</button>
-            <button class="btn" style="background:#0e7490;" onclick="exportHistoryExcel('day')">📊 Excel (Today)</button>
-            <button class="btn" style="background:#0369a1;" onclick="exportHistoryExcel('month')">📅 Excel (Month)</button>
+            <button class="btn btn-excel" onclick="exportCurrentProgramToExcel()">📊 Export Excel</button>
             <button class="btn" style="background:#334155;" onclick="openHistoryModal()">📜 History</button>
             <button class="btn" style="background:#0e7490;" onclick="openBackupModal()">🛡️ Backup / Restore</button>
             <button class="btn" style="background:#475569;" onclick="openFleetRulesModal()">📊 Fleet Rules</button>
@@ -470,7 +521,7 @@
     </header>
 
     <main>
-        <!-- LEFT COLUMN: Inputs -->
+        <!-- LEFT COLUMN: Input Section -->
         <div style="display: flex; flex-direction: column; gap: 20px;">
             
             <div class="card">
@@ -520,7 +571,7 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="f-depot">Depot</label>
-                        <input type="text" id="f-depot" oninput="checkModeFromDepotAndText(); recalculateFleet(); updateOutputs();" placeholder="KDS / OCL">
+                        <input type="text" id="f-depot" oninput="checkModeFromDepotAndText(); recalculateFleet(); updateOutputs();" placeholder="KDS / OCL / All Port ( Kamarpara-Tungi )">
                     </div>
                     <div class="form-group">
                         <label for="f-totalcbm">Total Volume (Program CBM)</label>
@@ -535,6 +586,7 @@
                     <textarea id="f-erpbreakdown" rows="4" oninput="calculateCbmFromErp(); updateOutputs();" placeholder="311 (Novel) = 4.13 CBM&#10;316 (Novel) = 21.29 CBM&#10;350 (Novel) = 1.77 CBM"></textarea>
                 </div>
 
+                <!-- TRANSPORTER ALLOCATION ENGINE -->
                 <div id="transporter-engine-box" style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); padding: 12px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px;">
                     <div style="display: flex; justify-content: space-between; align-items: center;">
                         <label style="color: #34d399; font-weight: 700;">🚛 Transporter Allocation Engine</label>
@@ -542,7 +594,7 @@
                     </div>
 
                     <div class="form-group" style="background: rgba(59, 130, 246, 0.1); padding: 8px; border-radius: 6px; border: 1px solid rgba(59, 130, 246, 0.3);">
-                        <label style="color: #60a5fa;">🎯 Select Primary Transporter (For Single Cargo)</label>
+                        <label style="color: #60a5fa;">🎯 Select Primary Transporter (For Single / Small Volume Cargo)</label>
                         <select id="f-singletransporter-choice" onchange="recalculateFleet(); updateOutputs();">
                             <option value="Salim Cargo" selected>Salim Cargo</option>
                             <option value="Shahjoki">Shahjoki</option>
@@ -550,11 +602,13 @@
                         </select>
                     </div>
 
+                    <!-- MANUAL CARGO OVERRIDE -->
                     <div style="background: rgba(244, 63, 94, 0.08); border: 1px solid rgba(244, 63, 94, 0.3); padding: 10px; border-radius: 8px; display:flex; align-items:center; gap:6px;">
                         <input type="checkbox" id="f-manual-cargo-override" onchange="recalculateFleet(); updateOutputs();" style="width:auto;">
-                        <label for="f-manual-cargo-override" style="cursor:pointer; text-transform:none; font-weight:700; color:#fca5a5;">🔒 Manually set cargo count & feet size below</label>
+                        <label for="f-manual-cargo-override" style="cursor:pointer; text-transform:none; font-weight:700; color:#fca5a5;">🔒 Manually set cargo count & feet size below (auto engine won't touch them until you uncheck this)</label>
                     </div>
 
+                    <!-- Transporter #1 Slot -->
                     <div class="form-row">
                         <div class="form-group">
                             <label for="f-salimtransporter">Transporter #1</label>
@@ -575,6 +629,7 @@
                         </div>
                     </div>
 
+                    <!-- Transporter #2 Slot -->
                     <div class="form-row">
                         <div class="form-group">
                             <label for="f-shahjokitransporter">Transporter #2</label>
@@ -595,6 +650,7 @@
                         </div>
                     </div>
 
+                    <!-- Transporter #3 Slot (New JS) -->
                     <div class="form-row">
                         <div class="form-group">
                             <label for="f-newjstransporter">Transporter #3</label>
@@ -614,12 +670,65 @@
                             </select>
                         </div>
                     </div>
+
+                    <!-- MANUAL % OVERRIDE -->
+                    <div style="background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.3); padding: 10px; border-radius: 8px; display:flex; flex-direction:column; gap:8px;">
+                        <div style="display:flex; align-items:center; gap:6px;">
+                            <input type="checkbox" id="f-manual-split-override" onchange="recalculateFleet(); updateOutputs();" style="width:auto;">
+                            <label for="f-manual-split-override" style="cursor:pointer; text-transform:none; font-weight:700; color:#c4b5fd;">🎚️ Manually set % split for today (overrides Fleet Rules just for this program)</label>
+                        </div>
+                        <div id="manual-split-inputs" class="form-row" style="display:none;">
+                            <div class="form-group">
+                                <label>Salim %</label>
+                                <input type="number" id="f-manual-salim-pct" min="0" max="100" value="40" oninput="recalculateFleet(); updateOutputs();">
+                            </div>
+                            <div class="form-group">
+                                <label>Shahjoki %</label>
+                                <input type="number" id="f-manual-shahjoki-pct" min="0" max="100" value="40" oninput="recalculateFleet(); updateOutputs();">
+                            </div>
+                            <div class="form-group">
+                                <label>New JS %</label>
+                                <input type="number" id="f-manual-newjs-pct" min="0" max="100" value="20" oninput="recalculateFleet(); updateOutputs();">
+                            </div>
+                        </div>
+                        <div id="manual-split-total-hint" class="help-text" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <!-- AIR EXPORT VEHICLE & DRIVER FIELDS -->
+                <div id="air-fields-box" style="background: rgba(244, 63, 94, 0.08); border: 1px solid rgba(244, 63, 94, 0.2); padding: 12px; border-radius: 8px; display: flex; flex-direction: column; gap: 10px;">
+                    <label style="color: #f43f5e; font-weight: 700;">✈️ Air Export — Own Cargo (small shipments only)</label>
+                    <div class="help-text">Shown automatically when Air volume is small enough for our own covered van. Larger air shipments use the same 🚛 Transporter Allocation Engine as Sea, above.</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-airtransporter">Air Cargo Source</label>
+                            <select id="f-airtransporter" onchange="updateOutputs()"></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-van-no">Covered Van No.</label>
+                            <input type="text" id="f-van-no" oninput="updateOutputs()" placeholder="11-3261 or 11-3260">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-driver-name">Driver Name</label>
+                            <input type="text" id="f-driver-name" oninput="updateOutputs()" placeholder="Mr. Arun / Mr. Anwar">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-driver-contact">Driver Contact</label>
+                            <input type="text" id="f-driver-contact" oninput="updateOutputs()" placeholder="01728-883132 / 01939-385175">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
                         <label for="f-merchandiser">Merchandiser Name</label>
                         <input type="text" id="f-merchandiser" oninput="updateOutputs()" placeholder="Auto-detected Merchandiser">
+                        <div style="display:flex; align-items:center; gap:6px; margin-top:2px;">
+                            <input type="checkbox" id="f-merchandiser-team" onchange="updateOutputs()" style="width:auto;">
+                            <label for="f-merchandiser-team" style="cursor:pointer; text-transform:none; font-weight:500; color:var(--text-secondary);">Email said "Team" — label as "Merchandiser Team"</label>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="f-commercial">Commercial</label>
@@ -630,6 +739,7 @@
                 <div class="form-group">
                     <label for="f-chatlink" style="color:#34d399;">🟢 Google Chat Room URL</label>
                     <input type="text" id="f-chatlink" oninput="updateOutputs()" value="https://chat.google.com/room/AAQAgt7BBAo?cls=7">
+                    <div class="help-text">Shown as a plain clickable link in the email — most reliable across Gmail, Outlook, and pasting into Chat itself.</div>
                 </div>
 
                 <div class="form-row">
@@ -646,14 +756,17 @@
             </div>
         </div>
 
-        <!-- RIGHT COLUMN: Outputs -->
+        <!-- RIGHT COLUMN: Output Section -->
         <div style="display: flex; flex-direction: column; gap: 20px;">
+
+            <div id="validation-banner" style="display:none; background:rgba(245,158,11,0.1); border:1px solid rgba(245,158,11,0.4); color:#fbbf24; padding:12px 14px; border-radius:10px; font-size:12px; line-height:1.7;"></div>
 
             <div class="card" style="flex-direction:row; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
                 <div class="card-title" style="border:none; padding:0;"><span>🚀</span> Send everything for today's program</div>
-                <button class="btn btn-teal" onclick="sendAllToChat()">🚀 Send All to Chat</button>
+                <button class="btn btn-teal" onclick="sendAllToChat()">🚀 Send All to Chat (using default groups)</button>
             </div>
 
+            <!-- Output 1: Main Store Google Chat / SMS Format -->
             <div class="card" id="sea-sms-card">
                 <div class="card-header">
                     <div class="card-title">
@@ -664,23 +777,56 @@
                     </button>
                 </div>
                 <div id="out-sms" class="output-box sms"></div>
+                <div class="send-row">
+                    <select id="group-sel-sms" onchange="markGroupSelectTouched(this)"></select>
+                    <button class="btn btn-teal btn-sm" onclick="sendToChat('out-sms', 'group-sel-sms', this)">🚀 Send to Chat</button>
+                </div>
             </div>
 
+            <!-- Output 2: TRANSPORTER REQUISITION SMS (Big & Small Cargo Feet Format) -->
             <div id="separated-transporter-container" style="display: flex; flex-direction: column; gap: 20px;"></div>
 
+            <!-- Output 3: Email Reply Format -->
             <div class="card">
                 <div class="card-header">
                     <div class="card-title">
                         <span>✉️</span> 3. Professional Email Reply Format
                     </div>
-                    <button class="btn btn-primary" onclick="copyOutput('out-email-text', 'Plain text copied!')">
-                        📋 Copy Plain Text
-                    </button>
+                    <div style="display:flex; gap:8px;">
+                        <button class="btn btn-success" onclick="copyRichTextEmail()">
+                            📧 Copy Rich Text
+                        </button>
+                        <button class="btn btn-primary" onclick="copyOutput('out-email-text', 'Plain text copied!')">
+                            📋 Copy Plain Text
+                        </button>
+                    </div>
                 </div>
                 <div id="out-email-html" class="output-box email"></div>
                 <div id="out-email-text" style="display:none;"></div>
+                <div class="send-row">
+                    <select id="group-sel-email" onchange="markGroupSelectTouched(this)"></select>
+                    <button class="btn btn-teal btn-sm" onclick="sendToChat('out-email-text', 'group-sel-email', this)">🚀 Send to Chat</button>
+                </div>
             </div>
 
+            <!-- Output 4: AIR EXPORT SPECIAL FORMAT -->
+            <div class="card" id="air-card">
+                <div class="card-header">
+                    <div class="card-title">
+                        <span>✈️</span> 4. Air Export Special Program SMS <span id="air-badge" class="badge" style="background:#f43f5e; color:white;">AIR ACTIVE</span>
+                    </div>
+                    <button class="btn btn-purple" onclick="copyOutput('out-air', 'Air Export SMS copied!')">
+                        📋 Copy Air SMS
+                    </button>
+                </div>
+                <div id="out-air" class="output-box air"></div>
+                <div class="send-row">
+                    <select id="group-sel-air" onchange="markGroupSelectTouched(this)"></select>
+                    <button class="btn btn-teal btn-sm" onclick="sendToChat('out-air', 'group-sel-air', this)">🚀 Send to Chat</button>
+                </div>
+            </div>
+
+            <!-- CBM / CARGO CALL SUMMARY -->
             <div class="card">
                 <div class="card-header">
                     <div class="card-title"><span>📦</span> CBM & Cargo Call Summary</div>
@@ -689,8 +835,253 @@
                 <div id="cbm-summary-box" style="display:flex; flex-direction:column; gap:8px;"></div>
             </div>
 
+            <!-- PER-CARGO CBM BREAKDOWN -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title"><span>🚚</span> Per-Cargo Call Breakdown</div>
+                    <span class="badge" id="percargo-total-badge">0 cargo called</span>
+                </div>
+                <div class="help-text">Exactly which cargo you called, one line per truck — how many CBM that specific cargo is carrying. Always reflects whatever is currently in the Transporter Allocation Engine above, including any manual edits.</div>
+                <div id="percargo-breakdown-box" style="display:flex; flex-direction:column; gap:8px;"></div>
+            </div>
+
         </div>
     </main>
+
+    <!-- MANAGE TRANSPORTS MODAL -->
+    <div id="transport-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <div class="modal-title" style="font-weight:700;">
+                    <span>🚛</span> Manage Transport Agencies
+                </div>
+                <button class="btn" style="padding:4px 8px;" onclick="closeTransportModal()">✕</button>
+            </div>
+            
+            <div class="form-group">
+                <label>Add New Transporter</label>
+                <div style="display:flex; gap:8px;">
+                    <input type="text" id="new-trans-name" placeholder="Agency Name">
+                    <button class="btn btn-success" onclick="addTransporter()">Add</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Active Transporter List</label>
+                <div id="transporter-list-container" style="display:flex; flex-direction:column; gap:8px; max-height:200px; overflow-y:auto;"></div>
+            </div>
+
+            <div style="display:flex; justify-content:flex-end;">
+                <button class="btn btn-primary" onclick="closeTransportModal()">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BACKUP / RESTORE MODAL -->
+    <div id="backup-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <div class="modal-title" style="font-weight:700;"><span>🛡️</span> Backup / Restore</div>
+                <button class="btn" style="padding:4px 8px;" onclick="closeBackupModal()">✕</button>
+            </div>
+            <div class="help-text">Your Chat groups, relay link, Fleet Rules, transporters and saved History live only in this phone's browser. A backup file lets you bring them back after changing phones, clearing Chrome data, or moving to a new link.</div>
+            <div id="backup-summary" class="help-text"></div>
+
+            <div class="form-group">
+                <label style="color:#5eead4;">1. Make a backup</label>
+                <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                    <button class="btn btn-success" onclick="downloadBackup()">⬇️ Download file</button>
+                    <button class="btn btn-teal" id="backup-share-btn" onclick="shareBackup()" style="display:none;">📤 Share (WhatsApp, Drive…)</button>
+                    <button class="btn btn-amber" onclick="copyBackupText()">📋 Copy as text</button>
+                </div>
+                <div class="help-text" style="color:#fbbf24;">⚠️ The backup contains your Chat webhook links, which work like passwords. Keep it private — don't post it in a group.</div>
+            </div>
+
+            <div class="form-group">
+                <label style="color:#5eead4;">2. Restore from a backup</label>
+                <input type="file" id="restore-file-input" onchange="onRestoreFileChosen(this)">
+                <div class="help-text">Or paste the backup text here:</div>
+                <textarea id="restore-text" rows="4" placeholder='{"app":"export-program-generator", ...}'></textarea>
+                <button class="btn btn-primary" style="align-self:flex-start;" onclick="restoreFromTextarea()">♻️ Restore from pasted text</button>
+                <div class="help-text">Restoring replaces the matching items in this app with the ones from the backup. Only restore backups you made yourself.</div>
+            </div>
+
+            <div style="display:flex; justify-content:flex-end;">
+                <button class="btn btn-primary" onclick="closeBackupModal()">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLEET ALLOCATION RULES MODAL -->
+    <div id="fleet-rules-modal" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <div class="modal-title" style="font-weight:700;"><span>📊</span> Fleet Allocation Rules</div>
+                <button class="btn" style="padding:4px 8px;" onclick="closeFleetRulesModal()">✕</button>
+            </div>
+            <div class="help-text">These control how "Total Volume (CBM)" gets split between Salim Cargo, Shahjoki, and New JS, and which feet size gets picked. Change them any time your real-world rules change — no code editing needed.</div>
+
+            <div class="form-group">
+                <label>Default transporter split (%)</label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Salim %</label>
+                        <input type="number" id="rule-salim-pct" min="0" max="100" value="40">
+                    </div>
+                    <div class="form-group">
+                        <label>Shahjoki %</label>
+                        <input type="number" id="rule-shahjoki-pct" min="0" max="100" value="40">
+                    </div>
+                    <div class="form-group">
+                        <label>New JS %</label>
+                        <input type="number" id="rule-newjs-pct" min="0" max="100" value="20">
+                    </div>
+                </div>
+                <div class="help-text">Used for larger shipments split across multiple trucks. Should add up to 100%.</div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>≤ this CBM → 08 Feet</label>
+                    <input type="number" id="rule-thresh-08" value="5" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label>≤ this CBM → 14 Feet</label>
+                    <input type="number" id="rule-thresh-14" value="10" step="0.1">
+                </div>
+                <div class="form-group">
+                    <label>≤ this CBM → 18 Feet</label>
+                    <input type="number" id="rule-thresh-18" value="15" step="0.1">
+                </div>
+            </div>
+            <div class="help-text" id="thresh23-hint">Above the 18 Feet threshold, cargo is split across 23-Feet trucks.</div>
+
+            <div class="form-group">
+                <label>CBM capacity per 23 Feet truck</label>
+                <input type="number" id="rule-truck-capacity" value="30" step="0.5">
+            </div>
+
+            <div class="form-group">
+                <label>✈️ Air Export: use our own cargo (van) below this CBM</label>
+                <input type="number" id="rule-air-own-threshold" value="5" step="0.1">
+            </div>
+
+            <div style="display:flex; justify-content:flex-end; gap:8px;">
+                <button class="btn btn-danger" onclick="resetFleetRules()">Reset to Defaults</button>
+                <button class="btn btn-primary" onclick="saveFleetRulesAndClose()">Save & Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HISTORY MODAL -->
+    <div id="history-modal" class="modal-overlay">
+        <div class="modal-card wide">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <div class="modal-title" style="font-weight:700;"><span>📜</span> Saved Program History</div>
+                <button class="btn" style="padding:4px 8px;" onclick="closeHistoryModal()">✕</button>
+            </div>
+            <div class="help-text">Saved locally in this browser only. Use "Save Program" in the header each day to build up a record for reporting or quick re-use.</div>
+
+            <div class="form-row">
+                <input type="text" id="history-search" placeholder="Search by buyer, depot, ERP no..." oninput="renderHistoryList()">
+                <div style="display:flex; gap:6px;">
+                    <button class="btn btn-excel" onclick="exportHistoryExcel()">📊 Export Excel</button>
+                    <button class="btn btn-success" onclick="exportHistoryCSV()">⬇️ Export CSV</button>
+                </div>
+            </div>
+
+            <div id="history-list-container" style="display:flex; flex-direction:column; gap:8px; max-height:360px; overflow-y:auto;"></div>
+
+            <div style="display:flex; justify-content:flex-end;">
+                <button class="btn btn-primary" onclick="closeHistoryModal()">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHAT AUTO-SEND SETTINGS MODAL -->
+    <div id="chat-settings-modal" class="modal-overlay">
+        <div class="modal-card wide">
+            <div class="modal-header" style="display:flex; justify-content:space-between; align-items:center;">
+                <div class="modal-title" style="font-weight:700;">
+                    <span>🔔</span> Google Chat Auto-Send Setup
+                </div>
+                <button class="btn" style="padding:4px 8px;" onclick="closeChatSettingsModal()">✕</button>
+            </div>
+
+            <div class="help-text" style="background:rgba(20,184,166,0.08); border:1px solid rgba(20,184,166,0.25); padding:10px 12px; border-radius:8px;">
+                Google Chat webhook URLs can't be called directly from a browser (CORS). This tool sends through a tiny free
+                <strong>Google Apps Script relay</strong> you deploy once.
+            </div>
+
+            <div class="form-group">
+                <label style="color:#5eead4;"><span class="step-num">1</span>&nbsp; Deploy the relay (one-time, ~2 min)</label>
+                <div class="help-text">
+                    Go to <strong>script.google.com</strong> → New project → paste the code below → Deploy → "New deployment" → type "Web app" → Execute as <strong>Me</strong>, who has access <strong>Anyone</strong> → Deploy → copy the Web App URL.
+                </div>
+                <div class="code-box" id="apps-script-code">function doPost(e) {
+  var data = JSON.parse(e.postData.contents);
+  var options = {
+    method: "post",
+    contentType: "application/json; charset=UTF-8",
+    payload: JSON.stringify({ text: data.text }),
+    muteHttpExceptions: true
+  };
+  var response = UrlFetchApp.fetch(data.webhookUrl, options);
+  return ContentService.createTextOutput(JSON.stringify({
+    ok: response.getResponseCode() === 200,
+    code: response.getResponseCode()
+  })).setMimeType(ContentService.MimeType.JSON);
+}</div>
+                <button class="btn btn-amber btn-sm" style="align-self:flex-start;" onclick="copyAppsScriptCode()">📋 Copy Apps Script Code</button>
+            </div>
+
+            <div class="form-group">
+                <label style="color:#5eead4;"><span class="step-num">2</span>&nbsp; Paste your relay Web App URL</label>
+                <input type="text" id="relay-url" placeholder="https://script.google.com/macros/s/AKfycb.../exec" oninput="saveChatSettings()">
+            </div>
+
+            <div class="form-group">
+                <label style="color:#5eead4;"><span class="step-num">3</span>&nbsp; Add a Chat group (one per Space/room)</label>
+                <div class="form-row">
+                    <input type="text" id="new-group-name" placeholder="Group name e.g. Store Team">
+                    <input type="text" id="new-group-webhook" placeholder="https://chat.googleapis.com/v1/spaces/.../messages?key=...&token=...">
+                </div>
+                <button class="btn btn-success" style="align-self:flex-start;" onclick="addChatGroup()">➕ Add Group</button>
+            </div>
+
+            <div class="form-group">
+                <label>Configured Groups</label>
+                <div id="chat-group-list-container" style="display:flex; flex-direction:column; gap:8px; max-height:220px; overflow-y:auto;"></div>
+            </div>
+
+            <div class="form-group">
+                <label style="color:#5eead4;"><span class="step-num">4</span>&nbsp; Default group per message type</label>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Store SMS default</label>
+                        <select id="default-group-sms" onchange="saveChatSettings(); populateGroupSelects();"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Email default</label>
+                        <select id="default-group-email" onchange="saveChatSettings(); populateGroupSelects();"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Air SMS default</label>
+                        <select id="default-group-air" onchange="saveChatSettings(); populateGroupSelects();"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Recent Sends</label>
+                <div id="delivery-log-container" style="display:flex; flex-direction:column; gap:5px; max-height:150px; overflow-y:auto;"></div>
+            </div>
+
+            <div style="display:flex; justify-content:flex-end;">
+                <button class="btn btn-primary" onclick="closeChatSettingsModal()">Done</button>
+            </div>
+        </div>
+    </div>
 
     <div id="toast">
         <span>✅</span>
@@ -699,106 +1090,1638 @@
 
     <script>
         let transportList = ["Salim Cargo", "Shahjoki", "New JS", "AFL Own Cargo"];
+        let chatGroups = [];
+        let relayUrl = "";
+        let messageDefaults = { sms: "", email: "", air: "" };
+        let deliveryLog = [];
+        let touchedSelects = new Set();
+
         const DEFAULT_FLEET_RULES = { salimPct: 40, shahjokiPct: 40, newjsPct: 20, thresh08: 5, thresh14: 10, thresh18: 15, truckCapacity: 30, airOwnThreshold: 5 };
         let fleetRules = { ...DEFAULT_FLEET_RULES };
+        let airUseOwnCargo = false;
+
         let programHistory = [];
 
-        const sampleSeaEmail = `Dear Mr.Sultan Mahamud,\n\nBuyer : Primark\n\nErp No : 311 (Novel) = 4.13 Cbm\nErp No : 316 (Novel) = 21.29 Cbm\nErp No : 350 (Novel) = 1.77 Cbm\n\nEx-Factory Date: 13/09/2026\nHand Over Date: 14/09/2026\n\nDeport : KDS\nTotal Cbm =Actual 27.15 Cbm.\n\nToday shipment plan for Primark\nPlease arrange the cargo for shipment Purpose.\n\n(As per Merchant Team Mr. Rakibul Islam\n& Commercial Mr. Golam Mostafa Confirmed me)\n\nThanks\nMd.Sohan Hossen`;
+        const ownDrivers = [
+            { van: "11-3261", driver: "Mr. Arun", contact: "01728-883132" },
+            { van: "11-3260", driver: "Mr. Anwar", contact: "01939-385175" }
+        ];
+
+        const sampleSeaEmail = `Dear Mr.Sultan Mahamud,
+
+Buyer : Primark
+
+Erp No : 311 (Novel) = 4.13 Cbm
+Erp No : 316 (Novel) = 21.29 Cbm
+Erp No : 350 (Novel) = 1.77 Cbm
+
+Ex-Factory Date: 13/09/2026
+Hand Over Date: 14/09/2026
+
+Deport : KDS
+Total Cbm =Actual 27.15 Cbm.
+
+Today shipment plan for Primark
+Please arrange the cargo for shipment Purpose.
+
+(As per Merchant Team Mr. Rakibul Islam
+& Commercial Mr. Golam Mostafa Confirmed me)
+
+Thanks
+Md.Sohan Hossen`;
+
+        const sampleAirEmail = `Dear Mr.Sultan Mahamud,
+
+Buyer : Tudorknight (Next)
+
+Erp No : 181 = 0.95 Cbm
+
+Ex-Factory Date: 13/09/2026
+Hand Over Date: 13/09/2026
+
+Deport : All Port ( Kamarpara-Tungi )
+Total Cbm = Actual 0.95 Cbm.
+
+Air Freight Program Request.
+
+(As per Merchant Team Mr. Rakibul Islam
+& Commercial Mr. Shahin Confirmed me)
+
+Thanks
+Md.Sohan Hossen`;
 
         window.onload = function() {
+            loadTransportList();
             populateTransporterDropdowns();
+            loadFleetRules();
             renderFleetBadgeInfo();
+            loadChatSettings();
+            loadHistory();
             loadSampleData('sea');
         };
 
         function populateTransporterDropdowns() {
-            ['f-salimtransporter', 'f-shahjokitransporter', 'f-newjstransporter'].forEach((id, idx) => {
-                const sel = document.getElementById(id);
-                sel.innerHTML = '';
-                transportList.forEach(t => sel.add(new Option(t, t)));
-                sel.value = transportList[idx] || transportList[0];
+            const salimSel = document.getElementById('f-salimtransporter');
+            const shahjokiSel = document.getElementById('f-shahjokitransporter');
+            const newjsSel = document.getElementById('f-newjstransporter');
+            const airSel = document.getElementById('f-airtransporter');
+
+            const currentSalim = salimSel.value || "Salim Cargo";
+            const currentShahjoki = shahjokiSel.value || "Shahjoki";
+            const currentNewjs = newjsSel.value || "New JS";
+            const currentAir = airSel.value || "AFL Own Cargo";
+
+            salimSel.innerHTML = '';
+            shahjokiSel.innerHTML = '';
+            newjsSel.innerHTML = '';
+            airSel.innerHTML = '';
+
+            transportList.forEach(t => {
+                salimSel.add(new Option(t, t));
+                shahjokiSel.add(new Option(t, t));
+                newjsSel.add(new Option(t, t));
+                airSel.add(new Option(t, t));
             });
+
+            salimSel.value = transportList.includes(currentSalim) ? currentSalim : "Salim Cargo";
+            shahjokiSel.value = transportList.includes(currentShahjoki) ? currentShahjoki : "Shahjoki";
+            newjsSel.value = transportList.includes(currentNewjs) ? currentNewjs : "New JS";
+            airSel.value = transportList.includes(currentAir) ? currentAir : "AFL Own Cargo";
+        }
+
+        function openTransportModal() {
+            renderTransporterList();
+            document.getElementById('transport-modal').classList.add('open');
+        }
+
+        function closeTransportModal() {
+            document.getElementById('transport-modal').classList.remove('open');
+            populateTransporterDropdowns();
+            updateOutputs();
+        }
+
+        function renderTransporterList() {
+            const container = document.getElementById('transporter-list-container');
+            container.innerHTML = '';
+
+            transportList.forEach((t, index) => {
+                const item = document.createElement('div');
+                item.className = 'trans-list-item';
+                item.innerHTML = `
+                    <span style="font-weight:600;">🚛 ${t}</span>
+                    ${transportList.length > 1 ? `<button class="btn btn-danger" style="padding:3px 8px; font-size:11px;" onclick="removeTransporter(${index})">Delete</button>` : ''}
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function addTransporter() {
+            const nameInput = document.getElementById('new-trans-name');
+            const name = nameInput.value.trim();
+            if (!name) return;
+
+            if (transportList.includes(name)) {
+                showToast('Transporter already exists!');
+                return;
+            }
+
+            transportList.push(name);
+            saveTransportList();
+            nameInput.value = '';
+            renderTransporterList();
+            showToast(`Added ${name}!`);
+        }
+
+        function removeTransporter(index) {
+            if (transportList.length <= 1) return;
+            const removed = transportList.splice(index, 1);
+            saveTransportList();
+            renderTransporterList();
+            showToast(`Removed ${removed[0]}`);
+        }
+
+        // ================= EXCEL EXPORT FUNCTIONS =================
+
+        function exportCurrentProgramToExcel() {
+            if (typeof XLSX === 'undefined') {
+                showToast('SheetJS library failed to load. Check internet connection.', true);
+                return;
+            }
+
+            const p = collectCurrentProgram();
+            if (!p.buyer && !p.depot) {
+                showToast('No active shipment program data to export!', true);
+                return;
+            }
+
+            const wb = XLSX.utils.book_new();
+
+            // Sheet 1: Program Overview
+            const overviewData = [
+                ["FIELD / PARAMETER", "VALUE"],
+                ["Mode", p.isAir ? "AIR EXPORT" : "SEA EXPORT"],
+                ["Buyer Name", p.buyer],
+                ["Ex-Factory Date", p.exFactory],
+                ["Hand Over Date", p.handover],
+                ["Depot / Port", p.depot],
+                ["Total Volume", p.totalCbm],
+                ["Sender / Recipient", p.recipient],
+                ["Merchandiser", p.merchandiser + (p.merchandiserTeam ? " (Team)" : "")],
+                ["Commercial Contact", p.commercial],
+                ["Export Generator Signature", p.signature],
+                ["Google Chat Link", document.getElementById('f-chatlink').value]
+            ];
+
+            const wsOverview = XLSX.utils.aoa_to_sheet(overviewData);
+            wsOverview['!cols'] = [{ wch: 25 }, { wch: 45 }];
+            XLSX.utils.book_append_sheet(wb, wsOverview, "Shipment Summary");
+
+            // Sheet 2: ERP Breakdown
+            const erpRows = [["ERP / STYLE NO", "DESCRIPTION / BRAND", "VOLUME (CBM)"]];
+            const erpLines = p.erpBreakdown.split('\n');
+            let totalErpCbm = 0;
+
+            erpLines.forEach(line => {
+                if (line.includes('=')) {
+                    const parts = line.split('=');
+                    const erpFull = parts[0].trim();
+                    const cbmVal = parseFloat(parts[1]) || 0;
+                    totalErpCbm += cbmVal;
+
+                    let erpNo = erpFull;
+                    let desc = "";
+                    const match = erpFull.match(/^(.*?)\s*\((.*?)\)$/);
+                    if (match) {
+                        erpNo = match[1];
+                        desc = match[2];
+                    }
+
+                    erpRows.push([erpNo, desc, cbmVal]);
+                }
+            });
+            erpRows.push(["TOTAL ERP VOLUME", "", totalErpCbm]);
+
+            const wsErp = XLSX.utils.aoa_to_sheet(erpRows);
+            wsErp['!cols'] = [{ wch: 20 }, { wch: 25 }, { wch: 15 }];
+            XLSX.utils.book_append_sheet(wb, wsErp, "ERP Breakdown");
+
+            // Sheet 3: Transporter Allocation
+            const transRows = [["TRANSPORTER", "CARGO COUNT", "FEET SIZE", "TRANSPORT TYPE"]];
+            if (p.isAir && airUseOwnCargo) {
+                transRows.push([p.airTransporter, 1, "Covered Van", `Van: ${p.vanNo} | Driver: ${p.driverName} (${p.driverContact})`]);
+            } else {
+                if (parseInt(p.salimCount, 10) > 0) transRows.push([p.salimTransporter, parseInt(p.salimCount, 10), p.salimFeet, "Commercial Fleet"]);
+                if (parseInt(p.shahjokiCount, 10) > 0) transRows.push([p.shahjokiTransporter, parseInt(p.shahjokiCount, 10), p.shahjokiFeet, "Commercial Fleet"]);
+                if (parseInt(p.newjsCount, 10) > 0) transRows.push([p.newjsTransporter, parseInt(p.newjsCount, 10), p.newjsFeet, "Commercial Fleet"]);
+            }
+
+            const wsTrans = XLSX.utils.aoa_to_sheet(transRows);
+            wsTrans['!cols'] = [{ wch: 22 }, { wch: 15 }, { wch: 18 }, { wch: 35 }];
+            XLSX.utils.book_append_sheet(wb, wsTrans, "Transporter Allocation");
+
+            const fileName = `Export_Program_${(p.buyer || 'Shipment').replace(/[^a-zA-Z0-9]/g, '_')}_${p.exFactory || 'Date'}.xlsx`;
+            XLSX.writeFile(wb, fileName);
+            showToast('Exported Excel report successfully!');
+        }
+
+        function exportHistoryExcel() {
+            if (typeof XLSX === 'undefined') {
+                showToast('SheetJS library failed to load. Check internet connection.', true);
+                return;
+            }
+            if (programHistory.length === 0) {
+                showToast('No history records to export!', true);
+                return;
+            }
+
+            const wb = XLSX.utils.book_new();
+
+            // Summary Sheet
+            const summaryRows = [[
+                "SAVED DATE", "MODE", "BUYER", "EX-FACTORY DATE", "HANDOVER DATE", 
+                "DEPOT", "TOTAL CBM", "SALIM CARGO", "SHAHJOKI", "NEW JS", "MERCHANDISER", "COMMERCIAL"
+            ]];
+
+            programHistory.forEach(p => {
+                summaryRows.push([
+                    new Date(p.savedAt).toLocaleString(),
+                    p.isAir ? "AIR" : "SEA",
+                    p.buyer || "",
+                    p.exFactory || "",
+                    p.handover || "",
+                    p.depot || "",
+                    p.totalCbm || "",
+                    `${p.salimCount || 0} (${p.salimFeet || ''})`,
+                    `${p.shahjokiCount || 0} (${p.shahjokiFeet || ''})`,
+                    `${p.newjsCount || 0} (${p.newjsFeet || ''})`,
+                    p.merchandiser || "",
+                    p.commercial || ""
+                ]);
+            });
+
+            const wsSummary = XLSX.utils.aoa_to_sheet(summaryRows);
+            wsSummary['!cols'] = [
+                { wch: 20 }, { wch: 8 }, { wch: 20 }, { wch: 15 }, { wch: 15 },
+                { wch: 18 }, { wch: 15 }, { wch: 18 }, { wch: 18 }, { wch: 18 },
+                { wch: 20 }, { wch: 20 }
+            ];
+            XLSX.utils.book_append_sheet(wb, wsSummary, "History Summary");
+
+            // Itemized ERP Breakdown Sheet
+            const itemizedRows = [["SAVED DATE", "BUYER", "EX-FACTORY DATE", "DEPOT", "ERP / STYLE NO", "VOLUME (CBM)"]];
+            programHistory.forEach(p => {
+                if (p.erpBreakdown) {
+                    p.erpBreakdown.split('\n').forEach(line => {
+                        if (line.includes('=')) {
+                            const parts = line.split('=');
+                            itemizedRows.push([
+                                new Date(p.savedAt).toLocaleDateString(),
+                                p.buyer || "",
+                                p.exFactory || "",
+                                p.depot || "",
+                                parts[0].trim(),
+                                parseFloat(parts[1]) || parts[1].trim()
+                            ]);
+                        }
+                    });
+                }
+            });
+
+            const wsItemized = XLSX.utils.aoa_to_sheet(itemizedRows);
+            wsItemized['!cols'] = [{ wch: 15 }, { wch: 20 }, { wch: 15 }, { wch: 18 }, { wch: 25 }, { wch: 15 }];
+            XLSX.utils.book_append_sheet(wb, wsItemized, "ERP Itemized Log");
+
+            const fileName = `Export_Program_History_Report_${new Date().toISOString().slice(0, 10)}.xlsx`;
+            XLSX.writeFile(wb, fileName);
+            showToast('History exported to Excel!');
+        }
+
+        // ============== CHAT AUTO-SEND: SETTINGS STORAGE ==============
+
+        function loadChatSettings() {
+            try {
+                const savedRelay = localStorage.getItem('chat_relay_url');
+                const savedGroups = localStorage.getItem('chat_groups');
+                const savedDefaults = localStorage.getItem('chat_message_defaults');
+                const savedLog = localStorage.getItem('chat_delivery_log');
+                relayUrl = savedRelay || "";
+                chatGroups = savedGroups ? JSON.parse(savedGroups) : [];
+                messageDefaults = savedDefaults ? JSON.parse(savedDefaults) : { sms: "", email: "", air: "" };
+                deliveryLog = savedLog ? JSON.parse(savedLog) : [];
+            } catch (e) {
+                relayUrl = "";
+                chatGroups = [];
+                messageDefaults = { sms: "", email: "", air: "" };
+                deliveryLog = [];
+            }
+            document.getElementById('relay-url').value = relayUrl;
+            renderChatGroupList();
+            populateDefaultGroupPickers();
+            renderDeliveryLog();
+            populateGroupSelects();
+        }
+
+        function saveChatSettings() {
+            relayUrl = document.getElementById('relay-url').value.trim();
+            const smsSel = document.getElementById('default-group-sms');
+            const emailSel = document.getElementById('default-group-email');
+            const airSel = document.getElementById('default-group-air');
+            messageDefaults = {
+                sms: smsSel ? smsSel.value : messageDefaults.sms,
+                email: emailSel ? emailSel.value : messageDefaults.email,
+                air: airSel ? airSel.value : messageDefaults.air
+            };
+            try {
+                localStorage.setItem('chat_relay_url', relayUrl);
+                localStorage.setItem('chat_groups', JSON.stringify(chatGroups));
+                localStorage.setItem('chat_message_defaults', JSON.stringify(messageDefaults));
+            } catch (e) {}
+        }
+
+        function populateDefaultGroupPickers() {
+            ['default-group-sms', 'default-group-email', 'default-group-air'].forEach((id, i) => {
+                const key = ['sms', 'email', 'air'][i];
+                const sel = document.getElementById(id);
+                if (!sel) return;
+                sel.innerHTML = '';
+                sel.add(new Option('— none —', ''));
+                chatGroups.forEach(g => sel.add(new Option(g.name, g.name)));
+                sel.value = chatGroups.some(g => g.name === messageDefaults[key]) ? messageDefaults[key] : '';
+            });
+        }
+
+        function renderDeliveryLog() {
+            const container = document.getElementById('delivery-log-container');
+            if (!container) return;
+            if (deliveryLog.length === 0) {
+                container.innerHTML = '<div class="help-text">Nothing sent yet.</div>';
+                return;
+            }
+            container.innerHTML = deliveryLog.slice(-20).reverse().map(entry => `
+                <div style="display:flex; justify-content:space-between; font-size:11px; padding:6px 8px; background:var(--bg-input); border-radius:6px; border:1px solid var(--border-color);">
+                    <span>${entry.ok ? '✅' : '❌'} ${entry.type} → ${entry.group || '—'}</span>
+                    <span style="color:var(--text-secondary);">${entry.time}</span>
+                </div>
+            `).join('');
+        }
+
+        function logDelivery(type, group, ok, detail) {
+            const time = new Date().toLocaleString();
+            deliveryLog.push({ time, type, group, ok, detail: detail || '' });
+            if (deliveryLog.length > 100) deliveryLog = deliveryLog.slice(-100);
+            try { localStorage.setItem('chat_delivery_log', JSON.stringify(deliveryLog)); } catch (e) {}
+            renderDeliveryLog();
+        }
+
+        function markGroupSelectTouched(sel) {
+            touchedSelects.add(sel.id);
+        }
+
+        function openChatSettingsModal() {
+            document.getElementById('relay-url').value = relayUrl;
+            renderChatGroupList();
+            populateDefaultGroupPickers();
+            renderDeliveryLog();
+            document.getElementById('chat-settings-modal').classList.add('open');
+        }
+
+        function closeChatSettingsModal() {
+            saveChatSettings();
+            document.getElementById('chat-settings-modal').classList.remove('open');
+            populateGroupSelects();
+        }
+
+        async function copyAppsScriptCode() {
+            const code = document.getElementById('apps-script-code').innerText;
+            const ok = await copyTextRobust(code);
+            if (ok) showToast('Apps Script code copied — paste into script.google.com');
+        }
+
+        function addChatGroup() {
+            const nameInput = document.getElementById('new-group-name');
+            const urlInput = document.getElementById('new-group-webhook');
+            const name = nameInput.value.trim();
+            const url = urlInput.value.trim();
+
+            if (!name || !url) {
+                showToast('Enter both a group name and webhook URL', true);
+                return;
+            }
+            if (!url.startsWith('https://chat.googleapis.com/')) {
+                showToast('That doesn\'t look like a Chat webhook URL', true);
+                return;
+            }
+            if (chatGroups.some(g => g.name === name)) {
+                showToast('A group with that name already exists', true);
+                return;
+            }
+
+            chatGroups.push({ name, webhook: url });
+            nameInput.value = '';
+            urlInput.value = '';
+            saveChatSettings();
+            renderChatGroupList();
+            populateDefaultGroupPickers();
+            populateGroupSelects();
+            showToast(`Added group "${name}"`);
+        }
+
+        function removeChatGroup(index) {
+            const removed = chatGroups.splice(index, 1);
+            saveChatSettings();
+            renderChatGroupList();
+            populateDefaultGroupPickers();
+            populateGroupSelects();
+            showToast(`Removed ${removed[0] ? removed[0].name : 'group'}`);
+        }
+
+        function renderChatGroupList() {
+            const container = document.getElementById('chat-group-list-container');
+            if (!container) return;
+            container.innerHTML = '';
+
+            if (chatGroups.length === 0) {
+                container.innerHTML = '<div class="help-text">No groups yet — add one above.</div>';
+                return;
+            }
+
+            chatGroups.forEach((g, index) => {
+                const item = document.createElement('div');
+                item.className = 'trans-list-item';
+                item.innerHTML = `
+                    <div class="meta">
+                        <span style="font-weight:600;">🔔 ${g.name}</span>
+                        <span class="url">${g.webhook}</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-teal btn-sm" onclick="testChatGroup(${index})">Test</button>
+                        <button class="btn btn-danger btn-sm" onclick="removeChatGroup(${index})">Delete</button>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function populateGroupSelects() {
+            const staticMap = { 'group-sel-sms': 'sms', 'group-sel-email': 'email', 'group-sel-air': 'air' };
+            const selectIds = Object.keys(staticMap);
+            document.querySelectorAll('select[id^="group-sel-trans-"]').forEach(sel => selectIds.push(sel.id));
+
+            selectIds.forEach(id => {
+                const sel = document.getElementById(id);
+                if (!sel) return;
+                const current = sel.value;
+                const wasTouched = touchedSelects.has(id);
+                sel.innerHTML = '';
+                if (chatGroups.length === 0) {
+                    sel.add(new Option('No groups configured — set up in 🔔 Chat Auto-Send', ''));
+                    return;
+                }
+                chatGroups.forEach(g => sel.add(new Option(g.name, g.name)));
+
+                if (wasTouched && chatGroups.some(g => g.name === current)) {
+                    sel.value = current;
+                    return;
+                }
+
+                let defaultVal = '';
+                if (staticMap[id]) {
+                    defaultVal = messageDefaults[staticMap[id]] || '';
+                } else {
+                    const cardTitle = sel.closest('.card') ? sel.closest('.card').querySelector('.card-title').textContent : '';
+                    const matched = chatGroups.find(g => cardTitle.includes(g.name));
+                    defaultVal = matched ? matched.name : '';
+                }
+                if (chatGroups.some(g => g.name === defaultVal)) {
+                    sel.value = defaultVal;
+                } else if (chatGroups.some(g => g.name === current)) {
+                    sel.value = current;
+                }
+            });
+        }
+
+        async function relayPost(webhookUrl, text) {
+            if (!relayUrl) {
+                throw new Error('No relay URL set. Open 🔔 Chat Auto-Send Setup and complete steps 1–2.');
+            }
+            const res = await fetch(relayUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                body: JSON.stringify({ webhookUrl, text })
+            });
+            let data;
+            try { data = await res.json(); } catch (e) { data = null; }
+            if (!res.ok || (data && data.ok === false)) {
+                throw new Error('Relay reported failure' + (data && data.code ? ` (code ${data.code})` : ''));
+            }
+            return data;
+        }
+
+        async function testChatGroup(index) {
+            const g = chatGroups[index];
+            if (!g) return;
+            try {
+                await relayPost(g.webhook, `✅ Test message from Export Program Generator — "${g.name}" is connected.`);
+                showToast(`Test sent to ${g.name}!`);
+                logDelivery('Test', g.name, true);
+            } catch (err) {
+                showToast(`Test failed: ${err.message}`, true);
+                logDelivery('Test', g.name, false, err.message);
+            }
+        }
+
+        async function sendToChat(outputElId, selectElId, btnEl) {
+            const sel = document.getElementById(selectElId);
+            const groupName = sel ? sel.value : '';
+            const group = chatGroups.find(g => g.name === groupName);
+
+            if (!group) {
+                showToast('Pick a Chat group first (or add one in 🔔 Chat Auto-Send Setup)', true);
+                return;
+            }
+
+            const el = document.getElementById(outputElId);
+            const text = (el.innerText || el.textContent || '').trim();
+            if (!text) {
+                showToast('Nothing to send yet', true);
+                return;
+            }
+
+            const originalLabel = btnEl ? btnEl.innerHTML : null;
+            if (btnEl) { btnEl.disabled = true; btnEl.innerHTML = '⏳ Sending...'; }
+
+            try {
+                await relayPost(group.webhook, text);
+                showToast(`Sent to ${group.name} ✅`);
+                logDelivery(outputElId, group.name, true);
+            } catch (err) {
+                showToast(`Send failed: ${err.message}`, true);
+                logDelivery(outputElId, group.name, false, err.message);
+            } finally {
+                if (btnEl) { btnEl.disabled = false; btnEl.innerHTML = originalLabel; }
+            }
+        }
+
+        async function sendAllToChat() {
+            const issues = validateProgram();
+            if (issues.length > 0) {
+                if (!confirm(`Heads up — this program has warnings:\n\n${issues.join('\n')}\n\nSend to Chat anyway?`)) return;
+            }
+            if (chatGroups.length === 0) {
+                showToast('No Chat groups configured yet — open 🔔 Chat Auto-Send Setup', true);
+                return;
+            }
+
+            const jobs = [];
+            jobs.push({ outId: 'out-sms', selId: 'group-sel-sms', label: 'Store SMS' });
+            document.querySelectorAll('[id^="out-trans-"]').forEach(el => {
+                const idx = el.id.split('-').pop();
+                jobs.push({ outId: el.id, selId: `group-sel-trans-${idx}`, label: `Transporter SMS #${idx}` });
+            });
+            jobs.push({ outId: 'out-email-text', selId: 'group-sel-email', label: 'Email' });
+            const airCard = document.getElementById('air-card');
+            if (airCard && airCard.style.display !== 'none') {
+                jobs.push({ outId: 'out-air', selId: 'group-sel-air', label: 'Air Export SMS' });
+            }
+
+            let sent = 0, skipped = 0, failed = 0;
+            for (const job of jobs) {
+                const sel = document.getElementById(job.selId);
+                const groupName = sel ? sel.value : '';
+                const group = chatGroups.find(g => g.name === groupName);
+                const el = document.getElementById(job.outId);
+                const text = el ? (el.innerText || el.textContent || '').trim() : '';
+
+                if (!group || !text) { skipped++; continue; }
+
+                try {
+                    await relayPost(group.webhook, text);
+                    logDelivery(job.label, group.name, true);
+                    sent++;
+                } catch (err) {
+                    logDelivery(job.label, group.name, false, err.message);
+                    failed++;
+                }
+            }
+
+            showToast(`Send All done — ${sent} sent, ${failed} failed, ${skipped} skipped`, failed > 0);
+        }
+
+        // ============== FLEET ALLOCATION RULES ==============
+
+        function loadFleetRules() {
+            try {
+                const saved = localStorage.getItem('fleet_rules');
+                fleetRules = saved ? { ...DEFAULT_FLEET_RULES, ...JSON.parse(saved) } : { ...DEFAULT_FLEET_RULES };
+            } catch (e) {
+                fleetRules = { ...DEFAULT_FLEET_RULES };
+            }
+        }
+
+        function saveFleetRules() {
+            try { localStorage.setItem('fleet_rules', JSON.stringify(fleetRules)); } catch (e) {}
         }
 
         function renderFleetBadgeInfo() {
             const box = document.getElementById('fleet-badge-info-box');
-            box.innerHTML = `📐 <strong>CBM Conversion Engine:</strong><br>
-                • 01–5 CBM = 08ft | 5.01–10 CBM = 14ft | 10.01–15 CBM = 18ft | 15.01–30 CBM = 23ft`;
+            if (!box) return;
+            const r = fleetRules;
+            const fmt = (n) => (Number.isInteger(n) ? n : n.toFixed(2));
+            box.innerHTML = `📐 <strong>CBM to Feet Conversion Engine:</strong><br>
+                • 01 – ${fmt(r.thresh08)} CBM = 08 Feet Covered Van<br>
+                • ${fmt(r.thresh08 + 0.01)} – ${fmt(r.thresh14)} CBM = 14 Feet Covered Van<br>
+                • ${fmt(r.thresh14 + 0.01)} – ${fmt(r.thresh18)} CBM = 18 Feet Covered Van<br>
+                • ${fmt(r.thresh18 + 0.01)} – ${fmt(r.truckCapacity)} CBM = 23 Feet Covered Van<br>
+                <span style="color:var(--text-secondary); font-size:10.5px;">Above ${fmt(r.truckCapacity)} CBM, volume is split across multiple 23 Feet trucks. Edit these in 📊 Fleet Rules.</span>`;
+        }
+
+        function openFleetRulesModal() {
+            document.getElementById('rule-salim-pct').value = fleetRules.salimPct;
+            document.getElementById('rule-shahjoki-pct').value = fleetRules.shahjokiPct;
+            document.getElementById('rule-newjs-pct').value = fleetRules.newjsPct;
+            document.getElementById('rule-thresh-08').value = fleetRules.thresh08;
+            document.getElementById('rule-thresh-14').value = fleetRules.thresh14;
+            document.getElementById('rule-thresh-18').value = fleetRules.thresh18;
+            document.getElementById('rule-truck-capacity').value = fleetRules.truckCapacity;
+            document.getElementById('rule-air-own-threshold').value = fleetRules.airOwnThreshold;
+            document.getElementById('fleet-rules-modal').classList.add('open');
+        }
+
+        function closeFleetRulesModal() {
+            document.getElementById('fleet-rules-modal').classList.remove('open');
+        }
+
+        function saveFleetRulesAndClose() {
+            fleetRules = {
+                salimPct: parseFloat(document.getElementById('rule-salim-pct').value) || DEFAULT_FLEET_RULES.salimPct,
+                shahjokiPct: parseFloat(document.getElementById('rule-shahjoki-pct').value) || DEFAULT_FLEET_RULES.shahjokiPct,
+                newjsPct: parseFloat(document.getElementById('rule-newjs-pct').value) || DEFAULT_FLEET_RULES.newjsPct,
+                thresh08: parseFloat(document.getElementById('rule-thresh-08').value) || DEFAULT_FLEET_RULES.thresh08,
+                thresh14: parseFloat(document.getElementById('rule-thresh-14').value) || DEFAULT_FLEET_RULES.thresh14,
+                thresh18: parseFloat(document.getElementById('rule-thresh-18').value) || DEFAULT_FLEET_RULES.thresh18,
+                truckCapacity: parseFloat(document.getElementById('rule-truck-capacity').value) || DEFAULT_FLEET_RULES.truckCapacity,
+                airOwnThreshold: parseFloat(document.getElementById('rule-air-own-threshold').value) || DEFAULT_FLEET_RULES.airOwnThreshold
+            };
+            const pctSum = fleetRules.salimPct + fleetRules.shahjokiPct + fleetRules.newjsPct;
+            saveFleetRules();
+            renderFleetBadgeInfo();
+            closeFleetRulesModal();
+            recalculateFleet();
+            updateOutputs();
+            if (Math.abs(pctSum - 100) > 0.5) {
+                showToast(`Fleet rules saved — heads up, your % adds up to ${pctSum}%, not 100%`, true);
+            } else {
+                showToast('Fleet rules saved');
+            }
+        }
+
+        function resetFleetRules() {
+            fleetRules = { ...DEFAULT_FLEET_RULES };
+            saveFleetRules();
+            renderFleetBadgeInfo();
+            openFleetRulesModal();
+            recalculateFleet();
+            updateOutputs();
+            showToast('Fleet rules reset to defaults');
+        }
+
+        // ============== PROGRAM HISTORY ==============
+
+        function loadHistory() {
+            try {
+                const saved = localStorage.getItem('program_history');
+                programHistory = saved ? JSON.parse(saved) : [];
+            } catch (e) {
+                programHistory = [];
+            }
+        }
+
+        function saveHistory() {
+            try { localStorage.setItem('program_history', JSON.stringify(programHistory)); } catch (e) {}
+        }
+
+        function collectCurrentProgram() {
+            return {
+                savedAt: new Date().toISOString(),
+                recipient: document.getElementById('f-recipient').value,
+                buyer: document.getElementById('f-buyer').value,
+                exFactory: document.getElementById('f-exfactory').value,
+                handover: document.getElementById('f-handover').value,
+                depot: document.getElementById('f-depot').value,
+                totalCbm: document.getElementById('f-totalcbm').value,
+                erpBreakdown: document.getElementById('f-erpbreakdown').value,
+                salimTransporter: document.getElementById('f-salimtransporter').value,
+                salimCount: document.getElementById('f-salimcargocount').value,
+                salimFeet: document.getElementById('f-salimfeetsize').value,
+                shahjokiTransporter: document.getElementById('f-shahjokitransporter').value,
+                shahjokiCount: document.getElementById('f-shahjokicargocount').value,
+                shahjokiFeet: document.getElementById('f-shahjokifeetsize').value,
+                newjsTransporter: document.getElementById('f-newjstransporter').value,
+                newjsCount: document.getElementById('f-newjscargocount').value,
+                newjsFeet: document.getElementById('f-newjsfeetsize').value,
+                manualSplitOverride: document.getElementById('f-manual-split-override').checked,
+                manualCargoOverride: document.getElementById('f-manual-cargo-override').checked,
+                manualSalimPct: document.getElementById('f-manual-salim-pct').value,
+                manualShahjokiPct: document.getElementById('f-manual-shahjoki-pct').value,
+                manualNewjsPct: document.getElementById('f-manual-newjs-pct').value,
+                isAir: document.getElementById('f-isair').checked,
+                airTransporter: document.getElementById('f-airtransporter').value,
+                vanNo: document.getElementById('f-van-no').value,
+                driverName: document.getElementById('f-driver-name').value,
+                driverContact: document.getElementById('f-driver-contact').value,
+                merchandiser: document.getElementById('f-merchandiser').value,
+                merchandiserTeam: document.getElementById('f-merchandiser-team').checked,
+                commercial: document.getElementById('f-commercial').value,
+                signature: document.getElementById('f-signature').value
+            };
+        }
+
+        function saveProgramToHistory() {
+            const program = collectCurrentProgram();
+            if (!program.buyer && !program.depot) {
+                showToast('Nothing meaningful to save yet', true);
+                return;
+            }
+            programHistory.push(program);
+            saveHistory();
+            showToast(`Saved: ${program.buyer || 'Program'} — ${program.exFactory || ''}`);
+        }
+
+        function openHistoryModal() {
+            renderHistoryList();
+            document.getElementById('history-modal').classList.add('open');
+        }
+
+        function closeHistoryModal() {
+            document.getElementById('history-modal').classList.remove('open');
+        }
+
+        function renderHistoryList() {
+            const container = document.getElementById('history-list-container');
+            const query = (document.getElementById('history-search').value || '').toLowerCase();
+
+            const filtered = programHistory
+                .map((p, idx) => ({ p, idx }))
+                .filter(({ p }) => {
+                    if (!query) return true;
+                    return [p.buyer, p.depot, p.erpBreakdown, p.merchandiser, p.commercial].join(' ').toLowerCase().includes(query);
+                })
+                .reverse();
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="help-text">No saved programs yet — click "💾 Save Program" in the header after generating one.</div>';
+                return;
+            }
+
+            container.innerHTML = filtered.map(({ p, idx }) => `
+                <div class="trans-list-item">
+                    <div class="meta">
+                        <span style="font-weight:600;">${p.buyer || 'Unknown buyer'} — ${p.exFactory || '?'} ${p.isAir ? '✈️' : '🚛'}</span>
+                        <span class="url">${p.depot || ''} • ${p.totalCbm || ''} • saved ${new Date(p.savedAt).toLocaleString()}</span>
+                    </div>
+                    <div class="actions">
+                        <button class="btn btn-primary btn-sm" onclick="loadHistoryItem(${idx})">Load</button>
+                        <button class="btn btn-danger btn-sm" onclick="deleteHistoryItem(${idx})">Delete</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function loadHistoryItem(idx) {
+            const p = programHistory[idx];
+            if (!p) return;
+
+            document.getElementById('f-recipient').value = p.recipient || '';
+            document.getElementById('f-buyer').value = p.buyer || '';
+            document.getElementById('f-exfactory').value = p.exFactory || '';
+            document.getElementById('f-handover').value = p.handover || '';
+            document.getElementById('f-depot').value = p.depot || '';
+            document.getElementById('f-totalcbm').value = p.totalCbm || '';
+            document.getElementById('f-erpbreakdown').value = p.erpBreakdown || '';
+            document.getElementById('f-salimcargocount').value = p.salimCount || '0';
+            document.getElementById('f-salimfeetsize').value = p.salimFeet || '23 Feet';
+            document.getElementById('f-shahjokicargocount').value = p.shahjokiCount || '0';
+            document.getElementById('f-shahjokifeetsize').value = p.shahjokiFeet || '18 Feet';
+            document.getElementById('f-newjscargocount').value = p.newjsCount || '0';
+            document.getElementById('f-newjscargocount').value = p.newjsCount || '0';
+            document.getElementById('f-newjsfeetsize').value = p.newjsFeet || '14 Feet';
+            document.getElementById('f-manual-split-override').checked = !!p.manualSplitOverride;
+            document.getElementById('f-manual-cargo-override').checked = !!p.manualCargoOverride;
+            syncManualSplitVisibility();
+            if (p.manualSalimPct !== undefined) document.getElementById('f-manual-salim-pct').value = p.manualSalimPct;
+            if (p.manualShahjokiPct !== undefined) document.getElementById('f-manual-shahjoki-pct').value = p.manualShahjokiPct;
+            if (p.manualNewjsPct !== undefined) document.getElementById('f-manual-newjs-pct').value = p.manualNewjsPct;
+            document.getElementById('f-isair').checked = !!p.isAir;
+            document.getElementById('f-van-no').value = p.vanNo || '';
+            document.getElementById('f-driver-name').value = p.driverName || '';
+            document.getElementById('f-driver-contact').value = p.driverContact || '';
+            document.getElementById('f-merchandiser').value = p.merchandiser || '';
+            document.getElementById('f-merchandiser-team').checked = !!p.merchandiserTeam;
+            document.getElementById('f-commercial').value = p.commercial || '';
+
+            populateTransporterDropdowns();
+            if (p.salimTransporter) document.getElementById('f-salimtransporter').value = p.salimTransporter;
+            if (p.shahjokiTransporter) document.getElementById('f-shahjokitransporter').value = p.shahjokiTransporter;
+            if (p.newjsTransporter) document.getElementById('f-newjstransporter').value = p.newjsTransporter;
+            if (p.airTransporter) document.getElementById('f-airtransporter').value = p.airTransporter;
+
+            closeHistoryModal();
+            updateOutputs();
+            showToast('Loaded saved program — review before sending');
+        }
+
+        function deleteHistoryItem(idx) {
+            programHistory.splice(idx, 1);
+            saveHistory();
+            renderHistoryList();
+            showToast('Deleted saved program');
+        }
+
+        function exportHistoryCSV() {
+            if (programHistory.length === 0) {
+                showToast('No history to export', true);
+                return;
+            }
+            const cols = ['savedAt','buyer','exFactory','handover','depot','totalCbm','salimTransporter','salimCount','salimFeet','shahjokiTransporter','shahjokiCount','shahjokiFeet','newjsTransporter','newjsCount','newjsFeet','isAir','merchandiser','commercial'];
+            const escape = v => `"${String(v == null ? '' : v).replace(/"/g, '""')}"`;
+            const rows = [cols.join(',')].concat(
+                programHistory.map(p => cols.map(c => escape(p[c])).join(','))
+            );
+            const blob = new Blob([rows.join('\n')], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `export-program-history-${new Date().toISOString().slice(0,10)}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('History exported as CSV');
+        }
+
+        // ============== BACKUP / RESTORE ==============
+
+        const BACKUP_SHAPES = {
+            chat_groups: 'array', chat_delivery_log: 'array', program_history: 'array',
+            transport_list: 'array', chat_message_defaults: 'object', fleet_rules: 'object'
+        };
+        const BACKUP_KEYS = ['chat_relay_url', 'chat_groups', 'chat_message_defaults', 'chat_delivery_log', 'fleet_rules', 'program_history', 'transport_list'];
+
+        function loadTransportList() {
+            try {
+                const saved = JSON.parse(localStorage.getItem('transport_list') || 'null');
+                if (Array.isArray(saved) && saved.length > 0 && saved.every(t => typeof t === 'string' && t.trim())) {
+                    transportList = saved;
+                }
+            } catch (e) {}
+        }
+
+        function saveTransportList() {
+            try { localStorage.setItem('transport_list', JSON.stringify(transportList)); } catch (e) {}
+        }
+
+        function buildBackupJson() {
+            const data = {
+                chat_relay_url: relayUrl || '',
+                chat_groups: JSON.stringify(chatGroups),
+                chat_message_defaults: JSON.stringify(messageDefaults),
+                chat_delivery_log: JSON.stringify(deliveryLog),
+                fleet_rules: JSON.stringify(fleetRules),
+                program_history: JSON.stringify(programHistory),
+                transport_list: JSON.stringify(transportList)
+            };
+            return JSON.stringify({ app: 'export-program-generator', version: 1, exportedAt: new Date().toISOString(), data }, null, 2);
+        }
+
+        function backupFileName() {
+            return `export-gen-backup-${new Date().toISOString().slice(0, 10)}.json`;
+        }
+
+        function renderBackupSummary() {
+            const el = document.getElementById('backup-summary');
+            if (!el) return;
+            el.innerHTML = `A backup right now would contain: <strong>${programHistory.length}</strong> saved program(s), <strong>${chatGroups.length}</strong> Chat group(s)${relayUrl ? ' plus your relay link' : ''}, <strong>${transportList.length}</strong> transporter(s), and your Fleet Rules.`;
+        }
+
+        function canShareBackupFile() {
+            try {
+                if (!navigator.share || !navigator.canShare || typeof File !== 'function') return false;
+                return navigator.canShare({ files: [new File(['x'], 'x.json', { type: 'text/plain' })] });
+            } catch (e) { return false; }
+        }
+
+        function openBackupModal() {
+            renderBackupSummary();
+            document.getElementById('backup-share-btn').style.display = canShareBackupFile() ? 'inline-flex' : 'none';
+            document.getElementById('backup-modal').classList.add('open');
+        }
+
+        function closeBackupModal() {
+            document.getElementById('backup-modal').classList.remove('open');
+        }
+
+        function downloadBackup() {
+            const blob = new Blob([buildBackupJson()], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = backupFileName();
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            setTimeout(() => URL.revokeObjectURL(url), 2000);
+            showToast('Backup saved — look in your Downloads folder');
+        }
+
+        async function shareBackup() {
+            try {
+                const file = new File([buildBackupJson()], backupFileName(), { type: 'text/plain' });
+                if (!navigator.canShare || !navigator.canShare({ files: [file] })) {
+                    showToast('Sharing files is not supported here — use Download instead', true);
+                    return;
+                }
+                await navigator.share({ files: [file], title: 'Export Generator backup' });
+                showToast('Backup shared');
+            } catch (err) {
+                if (err && err.name !== 'AbortError') showToast('Share failed: ' + err.message, true);
+            }
+        }
+
+        async function copyBackupText() {
+            const ok = await copyTextRobust(buildBackupJson());
+            if (ok) showToast('Backup text copied — paste it somewhere safe');
+        }
+
+        function backupShapeOk(key, value) {
+            const want = BACKUP_SHAPES[key];
+            if (!want) return true;
+            if (want === 'array') return Array.isArray(value);
+            return value !== null && typeof value === 'object' && !Array.isArray(value);
+        }
+
+        function restoreFromText(text) {
+            let obj;
+            try { obj = JSON.parse(text); } catch (e) {
+                showToast('That is not a valid backup — nothing was changed', true);
+                return false;
+            }
+            if (!obj || obj.app !== 'export-program-generator' || !obj.data || typeof obj.data !== 'object') {
+                showToast('This is not an Export Generator backup — nothing was changed', true);
+                return false;
+            }
+
+            const toWrite = {};
+            for (const key of BACKUP_KEYS) {
+                const raw = obj.data[key];
+                if (typeof raw !== 'string') continue;
+                if (key !== 'chat_relay_url') {
+                    let parsed;
+                    try { parsed = JSON.parse(raw); } catch (e) {
+                        showToast(`Backup looks damaged (${key}) — nothing was changed`, true);
+                        return false;
+                    }
+                    if (!backupShapeOk(key, parsed)) {
+                        showToast(`Backup looks damaged (${key}) — nothing was changed`, true);
+                        return false;
+                    }
+                }
+                toWrite[key] = raw;
+            }
+
+            const keys = Object.keys(toWrite);
+            if (keys.length === 0) {
+                showToast('There is nothing to restore in that file', true);
+                return false;
+            }
+
+            const when = obj.exportedAt ? new Date(obj.exportedAt).toLocaleString() : 'an unknown date';
+            if (!confirm(`Restore the backup made on ${when}?`)) {
+                return false;
+            }
+
+            try {
+                keys.forEach(k => localStorage.setItem(k, toWrite[k]));
+            } catch (e) {
+                showToast('Could not save — browser storage is full or blocked', true);
+                return false;
+            }
+
+            loadTransportList();
+            populateTransporterDropdowns();
+            loadFleetRules();
+            renderFleetBadgeInfo();
+            loadChatSettings();
+            loadHistory();
+            recalculateFleet();
+            updateOutputs();
+            renderBackupSummary();
+            showToast(`Backup restored (${keys.length} item${keys.length === 1 ? '' : 's'})`);
+            return true;
+        }
+
+        function onRestoreFileChosen(input) {
+            const f = input.files && input.files[0];
+            if (!f) return;
+            const reader = new FileReader();
+            reader.onload = () => { restoreFromText(String(reader.result)); input.value = ''; };
+            reader.onerror = () => showToast('Could not read that file', true);
+            reader.readAsText(f);
+        }
+
+        function restoreFromTextarea() {
+            const box = document.getElementById('restore-text');
+            const text = box.value.trim();
+            if (!text) { showToast('Paste the backup text first', true); return; }
+            if (restoreFromText(text)) box.value = '';
+        }
+
+        // ============== VALIDATION ==============
+
+        function validateProgram() {
+            const issues = [];
+            const buyer = document.getElementById('f-buyer').value.trim();
+            const depot = document.getElementById('f-depot').value.trim();
+            const totalCbmRaw = document.getElementById('f-totalcbm').value;
+            const totalCbm = parseFloat(totalCbmRaw) || 0;
+            const erpText = document.getElementById('f-erpbreakdown').value;
+            const salimCount = parseInt(document.getElementById('f-salimcargocount').value, 10) || 0;
+            const shahjokiCount = parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0;
+            const newjsCount = parseInt(document.getElementById('f-newjscargocount').value, 10) || 0;
+            const isAir = document.getElementById('f-isair').checked;
+            const driverContact = document.getElementById('f-driver-contact').value.trim();
+
+            if (!buyer) issues.push('⚠️ Buyer name is blank.');
+            if (!depot) issues.push('⚠️ Depot is blank.');
+
+            let erpSum = 0;
+            erpText.split('\n').forEach(line => {
+                const parts = line.split('=');
+                if (parts.length > 1) {
+                    const v = parseFloat(parts[1]);
+                    if (!isNaN(v)) erpSum += v;
+                }
+            });
+            if (erpSum > 0 && totalCbm > 0 && Math.abs(erpSum - totalCbm) > 0.5) {
+                issues.push(`⚠️ ERP breakdown sums to ${erpSum.toFixed(2)} CBM but Total Volume says ${totalCbm.toFixed(2)} CBM.`);
+            }
+
+            if (totalCbm > 0 && salimCount === 0 && shahjokiCount === 0 && newjsCount === 0 && !(document.getElementById('f-isair').checked && airUseOwnCargo)) {
+                issues.push('⚠️ Volume is set but no cargo is assigned to any transporter.');
+            }
+
+            if (document.getElementById('f-manual-split-override').checked) {
+                const mSum = (parseFloat(document.getElementById('f-manual-salim-pct').value) || 0) +
+                             (parseFloat(document.getElementById('f-manual-shahjoki-pct').value) || 0) +
+                             (parseFloat(document.getElementById('f-manual-newjs-pct').value) || 0);
+                if (Math.abs(mSum - 100) > 0.5) {
+                    issues.push(`⚠️ Manual % override adds up to ${mSum}%, not 100%.`);
+                }
+            }
+
+            if (isAir && driverContact && !/^0\d{9,10}$/.test(driverContact.replace(/[\s-]/g, ''))) {
+                issues.push('⚠️ Driver contact doesn\'t look like a valid phone number.');
+            }
+
+            return issues;
+        }
+
+        function renderValidationBanner() {
+            const banner = document.getElementById('validation-banner');
+            const issues = validateProgram();
+            if (issues.length === 0) {
+                banner.style.display = 'none';
+                banner.innerHTML = '';
+            } else {
+                banner.style.display = 'block';
+                banner.innerHTML = '<strong>Before you send:</strong><br>' + issues.join('<br>');
+            }
+        }
+
+        function numberToWord(num) {
+            const words = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+            let n = parseInt(num, 10);
+            return words[n] || (n < 10 ? '0' + n : n.toString());
+        }
+
+        function formatDateString(dateStr) {
+            if (!dateStr) return '';
+            dateStr = dateStr.trim();
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            let match = dateStr.match(/^(\d{1,2})[\/\.-](\d{1,2})[\/\.-](\d{2,4})/);
+            if (match) {
+                let day = match[1].padStart(2, '0');
+                let monthIdx = parseInt(match[2], 10) - 1;
+                let year = match[3];
+                if (year.length === 2) year = '20' + year;
+                if (monthIdx >= 0 && monthIdx < 12) {
+                    return `${day}-${monthNames[monthIdx]}-${year}`;
+                }
+            }
+            return dateStr;
+        }
+
+        function getFeetSizeFromCbm(cbm) {
+            const val = parseFloat(cbm) || 0;
+            if (val <= fleetRules.thresh08) return "08 Feet";
+            if (val <= fleetRules.thresh14) return "14 Feet";
+            if (val <= fleetRules.thresh18) return "18 Feet";
+            return "23 Feet";
+        }
+
+        function getCategoryByFeet(feetStr) {
+            if (feetStr.includes("23") || feetStr.includes("18")) {
+                return "(Big)";
+            }
+            return "(Small)";
         }
 
         function loadSampleData(type) {
-            document.getElementById('raw-email').value = sampleSeaEmail;
+            if (type === 'air') {
+                document.getElementById('raw-email').value = sampleAirEmail;
+            } else {
+                document.getElementById('raw-email').value = sampleSeaEmail;
+            }
             parseEmail();
+            showToast(type === 'air' ? 'Air export sample loaded!' : 'Sea export sample loaded!');
+        }
+
+        function resetForm() {
+            document.getElementById('raw-email').value = '';
+            document.getElementById('f-recipient').value = '';
+            document.getElementById('f-buyer').value = '';
+            document.getElementById('f-exfactory').value = '';
+            document.getElementById('f-handover').value = '';
+            document.getElementById('f-depot').value = '';
+            document.getElementById('f-totalcbm').value = '';
+            document.getElementById('f-erpbreakdown').value = '';
+            document.getElementById('f-shahjokicargocount').value = '0';
+            document.getElementById('f-salimcargocount').value = '0';
+            document.getElementById('f-newjscargocount').value = '0';
+            document.getElementById('f-manual-split-override').checked = false;
+            document.getElementById('f-manual-cargo-override').checked = false;
+            document.getElementById('f-manual-salim-pct').value = fleetRules.salimPct;
+            document.getElementById('f-manual-shahjoki-pct').value = fleetRules.shahjokiPct;
+            document.getElementById('f-manual-newjs-pct').value = fleetRules.newjsPct;
+            syncManualSplitVisibility();
+            document.getElementById('f-merchandiser').value = '';
+            document.getElementById('f-merchandiser-team').checked = false;
+            document.getElementById('f-commercial').value = '';
+            document.getElementById('f-isair').checked = false;
+            document.getElementById('f-van-no').value = '';
+            document.getElementById('f-driver-name').value = '';
+            document.getElementById('f-driver-contact').value = '';
+            document.getElementById('f-singletransporter-choice').value = "Salim Cargo";
+
+            updateOutputs();
+            showToast('Form cleared');
+        }
+
+        function checkModeFromDepotAndText() {
+            const text = document.getElementById('raw-email').value.toUpperCase();
+            const depotVal = document.getElementById('f-depot').value.toUpperCase();
+            const isAirCheckbox = document.getElementById('f-isair');
+
+            if (text.includes("AIR") || text.includes("FLIGHT") || text.includes("KAMARPARA") || text.includes("TUNGI") || depotVal.includes("AIR") || depotVal.includes("CFS") || depotVal.includes("KAMARPARA") || depotVal.includes("TUNGI")) {
+                isAirCheckbox.checked = true;
+            } else {
+                isAirCheckbox.checked = false;
+            }
+        }
+
+        function extractNameFromSegment(segment) {
+            if (!segment) return '';
+            let s = segment
+                .replace(/\bteam\b/i, ' ')
+                .replace(/\bover\s*phone\b/gi, ' ')
+                .replace(/confirmed[\s\S]*$/i, '')
+                .trim();
+
+            const STOP = '(?:and|Mr|Mrs|Ms|Md|Miss|Confirmed|Team|Commercial|Over|Phone|Via|By|On|Call)';
+            const nameRe = new RegExp('((?:Mr|Mrs|Ms|Md|Miss)\\.?\\s*[A-Za-z][A-Za-z.]*(?:\\s+(?!' + STOP + '\\b)[A-Za-z][A-Za-z.]*){0,3})', 'gi');
+
+            const matches = [...s.matchAll(nameRe)].map(m => m[1].trim());
+            if (matches.length > 0) return matches.join(' & ');
+
+            const words = s.split(/\s+/).filter(Boolean);
+            if (words.length > 1) return words.slice(1).join(' ').trim();
+            return s.trim();
+        }
+
+        function findRoleSeparatorIndex(block) {
+            let first = -1;
+            for (let i = 0; i < block.length; i++) {
+                if (block[i] !== '&') continue;
+                if (first === -1) first = i;
+                const after = block.slice(i + 1);
+                if (!/^\s*(?:Mr|Mrs|Ms|Md|Miss)\b/i.test(after)) return i;
+            }
+            return first;
         }
 
         function parseEmail() {
             const text = document.getElementById('raw-email').value;
-            if (!text.trim()) return;
+            if (!text.trim()) {
+                showToast('Please paste an email body first');
+                return;
+            }
 
             const buyerMatch = text.match(/Buyer\s*:\s*([^\n\r]+)/i);
             if (buyerMatch) document.getElementById('f-buyer').value = buyerMatch[1].trim();
 
             const exFacMatch = text.match(/Ex-Factory\s*Date\s*:\s*([0-9\/\.-]+)/i);
-            if (exFacMatch) document.getElementById('f-exfactory').value = exFacMatch[1].trim();
+            if (exFacMatch) document.getElementById('f-exfactory').value = formatDateString(exFacMatch[1]);
 
             const handMatch = text.match(/Hand\s*Over\s*Date\s*:\s*([0-9\/\.-]+)/i);
-            if (handMatch) document.getElementById('f-handover').value = handMatch[1].trim();
+            if (handMatch) document.getElementById('f-handover').value = formatDateString(handMatch[1]);
 
             const depotMatch = text.match(/(?:Deport|Depot)\s*:\s*([^\n\r]+)/i);
             if (depotMatch) document.getElementById('f-depot').value = depotMatch[1].trim();
 
             const cbmMatch = text.match(/Total\s*Cbm\s*=\s*(?:Actual\s*)?([0-9\.]+\s*(?:Cbm|CBM)?)/i);
-            if (cbmMatch) document.getElementById('f-totalcbm').value = cbmMatch[1].trim();
+            if (cbmMatch) {
+                let cbmVal = cbmMatch[1].trim();
+                if (!/cbm/i.test(cbmVal)) cbmVal += ' CBM';
+                document.getElementById('f-totalcbm').value = cbmVal;
+            }
 
+            const erpLines = [];
+            const lines = text.split('\n');
+            lines.forEach(line => {
+                if (/Erp|Style/i.test(line) && line.includes('=')) {
+                    let cleanLine = line.replace(/^(?:Erp\s*No|ERP|Style)\s*:\s*/i, '').trim();
+                    let parts = cleanLine.split('=');
+                    if (parts.length === 2) {
+                        let erpNo = parts[0].trim();
+                        let erpCbm = parts[1].trim();
+                        if (!/cbm/i.test(erpCbm)) erpCbm += ' CBM';
+                        erpLines.push(`${erpNo} = ${erpCbm}`);
+                    }
+                }
+            });
+            if (erpLines.length > 0) {
+                document.getElementById('f-erpbreakdown').value = erpLines.join('\n');
+            }
+
+            let merchandiserFound = false;
+            let commercialFound = false;
+
+            const asPerMatch = text.match(/As\s*per\s*([\s\S]*?)\)/i);
+            if (asPerMatch) {
+                const block = asPerMatch[1].replace(/confirmed[\s\S]*$/i, '').trim();
+                const ampIdx = findRoleSeparatorIndex(block);
+                if (ampIdx !== -1) {
+                    const merchSeg = block.slice(0, ampIdx);
+                    const commSeg = block.slice(ampIdx + 1);
+
+                    const merchName = extractNameFromSegment(merchSeg);
+                    if (merchName) {
+                        document.getElementById('f-merchandiser').value = merchName;
+                        document.getElementById('f-merchandiser-team').checked = /\bteam\b/i.test(merchSeg);
+                        merchandiserFound = true;
+                    }
+
+                    const commName = extractNameFromSegment(commSeg);
+                    if (commName) {
+                        document.getElementById('f-commercial').value = commName;
+                        commercialFound = true;
+                    }
+                }
+            }
+
+            if (!merchandiserFound) {
+                const merMatch = text.match(/(Merchandiser\s*Team|Merchant\s*Team|Merchandiser|Merchant)\s+([^\n\r\)\(]+)/i); if (merMatch && merMatch[2] && merMatch[2].trim()) { const cleanName = extractNameFromSegment(merMatch[2]); if (cleanName) { document.getElementById('f-merchandiser').value = cleanName; document.getElementById('f-merchandiser-team').checked = /team/i.test(merMatch[1]); } } } if (!commercialFound) { const comMatch = text.match(/Commercial\s+([^\n\r\)\(]+)/i);
+                if (comMatch && comMatch[1] && comMatch[1].trim()) {
+                    const cleanName = extractNameFromSegment(comMatch[1]);
+                    if (cleanName) document.getElementById('f-commercial').value = cleanName;
+                }
+            }
+
+            const senderMatch = text.match(/(?:Thanks|Regards|Best Regards)[\s\n\r]+([^\n\r]+)/i);
+            if (senderMatch) document.getElementById('f-recipient').value = senderMatch[1].trim();
+
+            checkModeFromDepotAndText();
             recalculateFleet();
+            updateOutputs();
+            
+            document.getElementById('parse-status').textContent = 'Parsed Successfully';
+            showToast('Email parsed successfully!');
+        }
+
+        function markCargoManuallyEdited() {
+            const box = document.getElementById('f-manual-cargo-override');
+            if (!box.checked) {
+                box.checked = true;
+                document.getElementById('fleet-summary-badge').textContent = '🔒 Manual cargo entry — auto engine paused';
+            }
             updateOutputs();
         }
 
+        function syncManualSplitVisibility() {
+            const manualOverride = document.getElementById('f-manual-split-override').checked;
+            document.getElementById('manual-split-inputs').style.display = manualOverride ? 'grid' : 'none';
+            if (!manualOverride) document.getElementById('manual-split-total-hint').style.display = 'none';
+        }
+
         function recalculateFleet() {
-            const cbm = parseFloat(document.getElementById('f-totalcbm').value) || 0;
-            if (cbm > 15) {
-                document.getElementById('f-salimcargocount').value = 1;
-                document.getElementById('f-shahjokicargocount').value = 1;
-                document.getElementById('f-newjscargocount').value = 0;
+            const rawCbm = document.getElementById('f-totalcbm').value;
+            const cbm = parseFloat(rawCbm) || 0;
+            const userChoice = document.getElementById('f-singletransporter-choice').value;
+            const isAirMode = document.getElementById('f-isair').checked;
+            const manualOverride = document.getElementById('f-manual-split-override').checked;
+
+            syncManualSplitVisibility();
+            const manualHint = document.getElementById('manual-split-total-hint');
+
+            let salimPct, shahjokiPct, newjsPct;
+            if (manualOverride) {
+                salimPct = parseFloat(document.getElementById('f-manual-salim-pct').value) || 0;
+                shahjokiPct = parseFloat(document.getElementById('f-manual-shahjoki-pct').value) || 0;
+                newjsPct = parseFloat(document.getElementById('f-manual-newjs-pct').value) || 0;
+                const sum = salimPct + shahjokiPct + newjsPct;
+                manualHint.style.display = 'block';
+                manualHint.textContent = Math.abs(sum - 100) > 0.5
+                    ? `⚠️ These add up to ${sum}%, not 100% — counts below may not reflect your intent exactly.`
+                    : `✅ Adds up to ${sum}%.`;
             } else {
-                document.getElementById('f-salimcargocount').value = 1;
-                document.getElementById('f-shahjokicargocount').value = 0;
-                document.getElementById('f-newjscargocount').value = 0;
+                salimPct = fleetRules.salimPct;
+                shahjokiPct = fleetRules.shahjokiPct;
+                newjsPct = fleetRules.newjsPct;
+                manualHint.style.display = 'none';
+            }
+
+            let salimCount = 0;
+            let shahjokiCount = 0;
+            let newjsCount = 0;
+
+            let feetStr = getFeetSizeFromCbm(cbm);
+            let badgeSummary = '';
+
+            airUseOwnCargo = isAirMode && cbm > 0 && cbm <= fleetRules.airOwnThreshold;
+            const manualCargoOverride = document.getElementById('f-manual-cargo-override').checked;
+
+            if (manualCargoOverride) {
+                salimCount = parseInt(document.getElementById('f-salimcargocount').value, 10) || 0;
+                shahjokiCount = parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0;
+                newjsCount = parseInt(document.getElementById('f-newjscargocount').value, 10) || 0;
+                badgeSummary = `🔒 Manual: Salim ${salimCount} | Shahjoki ${shahjokiCount} | New JS ${newjsCount}`;
+            } else if (airUseOwnCargo) {
+                badgeSummary = `✈️ Air (Small, ≤ ${fleetRules.airOwnThreshold} CBM): Using Own Cargo — no transporter needed`;
+            } else if (cbm > 0) {
+                const totalVehiclesNeeded = cbm <= fleetRules.truckCapacity ? 1 : Math.ceil(cbm / fleetRules.truckCapacity);
+
+                if (totalVehiclesNeeded <= 1) {
+                    if (userChoice === "Shahjoki") {
+                        shahjokiCount = 1;
+                        badgeSummary = `Shahjoki: 1 Cargo (${feetStr})`;
+                        document.getElementById('f-shahjokifeetsize').value = feetStr;
+                    } else if (userChoice === "New JS") {
+                        newjsCount = 1;
+                        badgeSummary = `New JS: 1 Cargo (${feetStr})`;
+                        document.getElementById('f-newjsfeetsize').value = feetStr;
+                    } else {
+                        salimCount = 1;
+                        badgeSummary = `Salim Cargo: 1 Cargo (${feetStr})`;
+                        document.getElementById('f-salimfeetsize').value = feetStr;
+                    }
+                } else {
+                    salimCount = Math.round(totalVehiclesNeeded * (salimPct / 100));
+                    shahjokiCount = Math.round(totalVehiclesNeeded * (shahjokiPct / 100));
+                    newjsCount = totalVehiclesNeeded - salimCount - shahjokiCount;
+
+                    if (newjsCount < 0) {
+                        if (salimCount >= shahjokiCount) salimCount += newjsCount;
+                        else shahjokiCount += newjsCount;
+                        newjsCount = 0;
+                    }
+                    if (salimCount < 0) salimCount = 0;
+                    if (shahjokiCount < 0) shahjokiCount = 0;
+
+                    document.getElementById('f-salimfeetsize').value = "23 Feet";
+                    document.getElementById('f-shahjokifeetsize').value = "18 Feet";
+                    document.getElementById('f-newjsfeetsize').value = "14 Feet";
+                    badgeSummary = `Salim: ${salimCount} | Shahjoki: ${shahjokiCount} | New JS: ${newjsCount}`;
+                }
+                if (isAirMode) badgeSummary = `✈️ Air (Large): ${badgeSummary}`;
+            }
+
+            if (!manualCargoOverride) {
+                document.getElementById('f-salimtransporter').value = "Salim Cargo";
+                document.getElementById('f-shahjokitransporter').value = "Shahjoki";
+                document.getElementById('f-newjstransporter').value = "New JS";
+            }
+
+            document.getElementById('f-salimcargocount').value = salimCount;
+            document.getElementById('f-shahjokicargocount').value = shahjokiCount;
+            document.getElementById('f-newjscargocount').value = newjsCount;
+
+            document.getElementById('fleet-summary-badge').textContent = badgeSummary || "Salim 40% / Shahjoki 40% / New JS 20%";
+        }
+
+        function calculateCbmFromErp() {
+            const lines = document.getElementById('f-erpbreakdown').value.split('\n');
+            let total = 0;
+            lines.forEach(line => {
+                const parts = line.split('=');
+                if (parts.length > 1) {
+                    const cbm = parseFloat(parts[1]);
+                    if (!isNaN(cbm)) total += cbm;
+                }
+            });
+            if (total > 0) {
+                document.getElementById('f-totalcbm').value = total.toFixed(2) + ' CBM';
+                recalculateFleet();
             }
         }
 
         function updateOutputs() {
+            const recipient = document.getElementById('f-recipient').value || 'Md.Sohan Hossen';
             const buyer = document.getElementById('f-buyer').value || 'Primark';
             const exFactory = document.getElementById('f-exfactory').value || '13-Sep-2026';
             const handover = document.getElementById('f-handover').value || '14-Sep-2026';
             const depot = document.getElementById('f-depot').value || 'KDS';
             const totalCbm = document.getElementById('f-totalcbm').value || '27.15 CBM';
+            const erpBreakdown = document.getElementById('f-erpbreakdown').value || '311 (Novel) = 4.13 CBM\n316 (Novel) = 21.29 CBM\n350 (Novel) = 1.77 CBM';
             
+            const salimTrans = document.getElementById('f-salimtransporter').value || "Salim Cargo";
+            const shahjokiTrans = document.getElementById('f-shahjokitransporter').value || "Shahjoki";
+            const newjsTrans = document.getElementById('f-newjstransporter').value || "New JS";
+
             const salimCount = parseInt(document.getElementById('f-salimcargocount').value, 10) || 0;
             const shahjokiCount = parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0;
+            const newjsCount = parseInt(document.getElementById('f-newjscargocount').value, 10) || 0;
+            const salimFeet = document.getElementById('f-salimfeetsize').value || "23 Feet";
+            const shahjokiFeet = document.getElementById('f-shahjokifeetsize').value || "18 Feet";
+            const newjsFeet = document.getElementById('f-newjsfeetsize').value || "14 Feet";
 
-            let activeLines = [];
-            if (salimCount > 0) activeLines.push(`🚛 Salim Cargo: 0${salimCount} Cargo ( 23 Feet )`);
-            if (shahjokiCount > 0) activeLines.push(`🚛 Shahjoki: 0${shahjokiCount} Cargo ( 18 Feet )`);
+            const isAirMode = document.getElementById('f-isair').checked;
 
-            document.getElementById('out-sms').textContent = `Export Program for Today: ${exFactory}\nHand Over Date: ${handover}\n🏭 Depot: ${depot}\n📦 Total Volume: ${totalCbm}\n🛒 Buyer: ${buyer}\n🔹 Cargo Source:\n${activeLines.join('\n')}`;
+            const merchandiserVal = document.getElementById('f-merchandiser').value || '';
+            const merchandiserLabel = document.getElementById('f-merchandiser-team').checked ? 'Merchandiser Team' : 'Merchandiser';
+            const commercial = document.getElementById('f-commercial').value || '';
+            const chatLink = document.getElementById('f-chatlink').value || 'https://chat.google.com/room/AAQAgt7BBAo?cls=7';
+            const signature = document.getElementById('f-signature').value || 'ѕυℓтαη';
 
-            document.getElementById('out-email-html').innerHTML = `Dear Sohan,<br>Initial arrangements are done.<br>Link: <a href="${document.getElementById('f-chatlink').value}" class="chat-green-link">${document.getElementById('f-chatlink').value}</a>`;
-            document.getElementById('out-email-text').textContent = `Dear Sohan,\nInitial arrangements are done.\nLink: ${document.getElementById('f-chatlink').value}`;
+            let recipientFirstName = recipient.includes('Sohan') ? "Mr. Sohan" : "Mr. " + recipient.split(' ')[0];
+
+            const airCard = document.getElementById('air-card');
+            const transporterEngineBox = document.getElementById('transporter-engine-box');
+            const airFieldsBox = document.getElementById('air-fields-box');
+
+            if (isAirMode) {
+                airCard.style.display = 'flex';
+                if (airUseOwnCargo) {
+                    transporterEngineBox.style.display = 'none';
+                    airFieldsBox.style.display = 'flex';
+                } else {
+                    transporterEngineBox.style.display = 'flex';
+                    airFieldsBox.style.display = 'none';
+                }
+            } else {
+                airCard.style.display = 'none';
+                transporterEngineBox.style.display = 'flex';
+                airFieldsBox.style.display = 'none';
+            }
+
+            let cargoSourceSMS = '';
+            if (isAirMode && airUseOwnCargo) {
+                const ownAirTrans = document.getElementById('f-airtransporter').value || "AFL Own Cargo";
+                cargoSourceSMS = `🚐 ${ownAirTrans} (Own Covered Van)`;
+            } else {
+                const activeLines = [];
+                if (salimCount > 0) activeLines.push(`🚛 ${salimTrans}: 0${salimCount} Cargo ( ${salimFeet} )`);
+                if (shahjokiCount > 0) activeLines.push(`🚛 ${shahjokiTrans}: 0${shahjokiCount} Cargo ( ${shahjokiFeet} )`);
+                if (newjsCount > 0) activeLines.push(`🚛 ${newjsTrans}: 0${newjsCount} Cargo ( ${newjsFeet} )`);
+                cargoSourceSMS = activeLines.length > 0 ? activeLines.join('\n') : '(No cargo assigned yet)';
+            }
+
+            const totalCargosNum = salimCount + shahjokiCount + newjsCount;
+            const totalCargosStr = totalCargosNum < 10 ? `0${totalCargosNum}` : `${totalCargosNum}`;
+
+            // 1. MAIN STORE SMS
+            document.getElementById('out-sms').textContent = `Export Program for Today: ${exFactory}
+Hand Over Date: ${handover}
+🏭 Depot: ${depot}
+📦 Total Volume: ${totalCbm}
+🚛 Total Cargos: ${totalCargosStr}
+🛒 Buyer: ${buyer}
+📋 ERP Nos.:
+${erpBreakdown}
+👤 ${merchandiserLabel}: ${merchandiserVal}
+👤 Commercial: ${commercial}
+🔹 Cargo Source:
+${cargoSourceSMS}`;
+
+            // 2. TRANSPORTER REQUISITION SMS
+            const sepContainer = document.getElementById('separated-transporter-container');
+            sepContainer.innerHTML = '';
+
+            const transAssignments = [];
+            if (salimCount > 0) transAssignments.push({ name: salimTrans, count: salimCount, feet: salimFeet });
+            if (shahjokiCount > 0) transAssignments.push({ name: shahjokiTrans, count: shahjokiCount, feet: shahjokiFeet });
+            if (newjsCount > 0) transAssignments.push({ name: newjsTrans, count: newjsCount, feet: newjsFeet });
+
+            transAssignments.forEach((item, idx) => {
+                const countStr = item.count < 10 ? `0${item.count}` : `${item.count}`;
+                const wordStr = numberToWord(item.count);
+                const categoryStr = getCategoryByFeet(item.feet);
+
+                const msg = `Today ( ${exFactory} ) We 𝙽𝚎𝚎𝚍 ${countStr} ( ${wordStr} ) ${item.feet} ${categoryStr} Cargo For "${depot}" 𝙳𝚎𝚙𝚘 . 𝙶𝚘𝚘𝚍𝚜 𝚁𝚎𝚊𝚍𝚢 𝙿𝚕𝚎𝚊𝚜𝚎 𝚂𝚎𝚗𝚍 𝙲𝚊𝚛𝚐𝚘 𝚄𝚛𝚐𝚎𝚗𝚝𝚕𝚢 . [ Note: Arrange GPS-enabled cargos as per our requirement.]`;
+
+                const cardDiv = document.createElement('div');
+                cardDiv.className = 'card';
+                const outputId = `out-trans-${idx}`;
+                const selectId = `group-sel-trans-${idx}`;
+
+                cardDiv.innerHTML = `
+                    <div class="card-header">
+                        <div class="card-title">
+                            <span>🚛</span> ${idx + 2}. Transporter Requisition SMS – ${item.name} (${item.feet} ${categoryStr})
+                        </div>
+                        <button class="btn btn-amber" onclick="copyOutput('${outputId}', 'Requisition SMS for ${item.name} copied!')">
+                            📋 Copy ${item.name} SMS
+                        </button>
+                    </div>
+                    <div id="${outputId}" class="output-box transport">${msg}</div>
+                    <div class="send-row">
+                        <select id="${selectId}" onchange="markGroupSelectTouched(this)"></select>
+                        <button class="btn btn-teal btn-sm" onclick="sendToChat('${outputId}', '${selectId}', this)">🚀 Send to Chat</button>
+                    </div>
+                `;
+                sepContainer.appendChild(cardDiv);
+            });
+
+            populateGroupSelects();
+
+            // 3. EMAIL FORMAT
+            document.getElementById('out-email-html').innerHTML = `Assalamu Alaikum Warahmatullahi Wabarakatuh ,<br>` +
+`Dear ${recipientFirstName},<br><br>` +
+`We have already made the initial arrangements for this shipment program. You can find further details via the Google Chat link below:<br><br>` +
+`<a href="${chatLink}" target="_blank" rel="noopener noreferrer" class="chat-green-link">${chatLink}</a><br><br><br>` +
+`𝘑𝘢𝘻𝘢𝘬𝘢𝘭𝘭𝘢𝘩 𝘒𝘩𝘢𝘪𝘳𝘢𝘯,<br>` +
+`${signature}`;
+
+            document.getElementById('out-email-text').textContent = `Assalamu Alaikum Warahmatullahi Wabarakatuh , 
+Dear ${recipientFirstName},
+
+We have already made the initial arrangements for this shipment program. You can find further details via the Google Chat link below:
+
+${chatLink}
+
+
+𝘑𝘢𝘻𝘢𝘬𝘢𝘭𝘭𝘢𝘩 𝘒𝘩𝘢𝘪𝘳𝘢𝘯,  
+${signature}`;
+
+            // 4. AIR EXPORT SMS FORMAT
+            const airTrans = document.getElementById('f-airtransporter').value || "AFL Own Cargo";
+            const vanNo = document.getElementById('f-van-no').value || "11-3261";
+            const driverName = document.getElementById('f-driver-name').value || "Mr. Arun";
+            const driverContact = document.getElementById('f-driver-contact').value || "01728-883132";
+
+            const airCargoBlock = airUseOwnCargo
+                ? `🚛 Transport Agency: ${airTrans}\n🚐 Covered Van No: ${vanNo}\n👤 Driver: ${driverName} (${driverContact})`
+                : `🔹 Cargo Source (Same as Sea):\n${cargoSourceSMS}`;
+
+            document.getElementById('out-air').textContent = `✈️ AIR EXPORT PROGRAM DETAILS ✈️
+Ex-Factory Date: ${exFactory}
+Hand Over Date: ${handover}
+🏭 Depot: ${depot}
+🛒 Buyer: ${buyer}
+📦 Total Volume: ${totalCbm}
+📋 ERP Nos.:
+${erpBreakdown}
+${airCargoBlock}
+👤 ${merchandiserLabel}: ${merchandiserVal}
+👤 Commercial: ${commercial}`;
+
+            renderCbmSummary();
+            renderPerCargoBreakdown();
+            renderValidationBanner();
         }
 
-        function copyOutput(elementId, successMsg) {
-            const el = document.getElementById(elementId);
-            navigator.clipboard.writeText(el.innerText || el.textContent);
-            showToast(successMsg);
-        }
+        function renderCbmSummary() {
+            const totalCbm = parseFloat(document.getElementById('f-totalcbm').value) || 0;
+            const isAirMode = document.getElementById('f-isair').checked;
+            const salimCount = parseInt(document.getElementById('f-salimcargocount').value, 10) || 0;
+            const shahjokiCount = parseInt(document.getElementById('f-shahjokicargocount').value, 10) || 0;
+            const newjsCount = parseInt(document.getElementById('f-newjscargocount').value, 10) || 0;
+            const salimFeet = document.getElementById('f-salimfeetsize').value || '';
+            const shahjokiFeet = document.getElementById('f-shahjokifeetsize').value || '';
+            const newjsFeet = document.getElementById('f-newjsfeetsize').value || '';
 
-        function showToast(msg) {
-            const toast = document.getElementById('toast');
-            document.getElementById('toast-msg').textContent = msg;
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 3000);
-        }
-    </script>
-</body>
-</html>
+            document.getElementById('summary-total-badge').textContent = `Total: ${totalCbm.toFixed(2)} CBM`;
+
+            let rows = '';
+
+            if (isAirMode && airUseOwnCargo) {
+                const vanNo = document.getElementById('f-van-no').value || '—';
+                const airTrans = document.getElementById('f-airtransporter').value || 'AFL Own Cargo';
+                rows += `
+                    <div class="summary-row own">
+                        <div class="label"><span class="name">🚐 ${airTrans} (Own Van)</span><span class="sub">Van No: ${vanNo} — small air shipment, no outside transporter</span></div>
+                        <div class="value">${totalCbm.toFixed(2)} CBM</div>
+                    </div>`;
+            } else {
+                const totalCount = salimCount + shahjokiCount + newjsCount;
+                const salimCbm = totalCount > 0 ? (totalCbm * salimCount / totalCount) : 0;
+                const shahjokiCbm = totalCount > 0 ? (totalCbm * shahj
